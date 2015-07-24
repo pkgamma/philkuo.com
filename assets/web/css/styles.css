@@ -2707,7 +2707,9 @@ hr {
 }
 
 .project_detail_footer div.h2,.project_detail_wrapper h2 {
-	font-size:2.25em
+	font-size:2.25em;
+	letter-spacing: -0.04em;
+	font-weight: 100;
 }
 
 .project_detail_wrapper h4 {
@@ -3038,7 +3040,9 @@ hr {
 }
 
 .project_detail_footer div.h2 {
-	padding-bottom:30px
+	padding-bottom:50px;
+	letter-spacing: -0.04em;
+	font-weight: 100;
 }
 
 .devices_wrapper {
