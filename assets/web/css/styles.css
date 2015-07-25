@@ -4760,11 +4760,11 @@ hr {
 }
 
 .hq_td1,.hq_td3 {
-	width:10%
+	width:15%
 }
 
 .hq_td2 {
-	width:80%
+	width:70%
 }
 }
 
@@ -5047,11 +5047,11 @@ body,html {
 }
 
 .hq_td1,.hq_td3 {
-	width:5%
+	width:15%
 }
 
 .hq_td2 {
-	width:90%
+	width:70%
 }
 }
 
@@ -6017,6 +6017,10 @@ div.h1,h1 {
 }
 
 h3 {
+	font-weight: 200;
+}
+
+h2 {
 	font-weight: 200;
 }
 }
