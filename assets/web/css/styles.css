@@ -186,6 +186,10 @@ hr {
 	clear:both
 }
 
+.mobileShow {
+	display: none;
+}
+
 .clear {
 	clear:both
 }
@@ -5171,6 +5175,10 @@ div.h1,h1 {
 
 h3 {
 	font-size:2.7em
+}
+
+.mobileShow {
+	display: inline;
 }
 
 .container,.row,body {
