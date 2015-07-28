@@ -1959,6 +1959,8 @@ hr {
 
 .wanted_list_txt {
 	font-size:1.25em;
+	letter-spacing: -0.015em;
+    font-weight: 200;
 	color:#fff;
 	text-transform:;
 	text-align:center;
