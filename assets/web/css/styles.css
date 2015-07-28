@@ -6171,20 +6171,6 @@ img.img_loader {
 	zoom:1
 }
 
-@media handheld,only screen and (max-width:375px) {
-div.h1,h1 {
-	font-weight:200;
-}
-
-div.h2,h2 {
-	font-weight: 200;
-}
-
-h3 {
-	font-weight: 200;
-}
-}
-
 @media handheld,only screen and (max-width:320px) {
 div.h1,h1 {
 	letter-spacing: -0.06em;
