@@ -31,7 +31,7 @@ figure img {
 	font-family:'MHei';
 	font-style:normal;
 	font-weight:200;
-	src:local('☺︎'), url("fonts/MHeiHK-Light.woff") format("woff"), url("fonts/MHeiHK-Light.ttf") format("truetype");
+	src:local('☺︎'), url("https://www.apple.com/wss/fonts/MHei/v1/MHeiHK-Light.woff") format("woff"), url("") format("truetype");
 	/* (C) Copyright 1991-2008 China Type Design Ltd. Monotype Imaging Inc. All rights reserved. */
 }
 
