@@ -31,7 +31,16 @@ figure img {
 	font-family:'Myriad Set Pro';
 	font-style:normal;
 	font-weight:200;
-	src:local('☺︎'), url("fonts/myriad-set-pro_thin.woff") format("woff"), url("fonts/myriad-set-pro_thin.ttf") format("truetype");
+	src:local('☺︎'), url("../../../../assets/web/css/fonts/myriad-set-pro_thin.woff") format("woff"), url("../../../../assets/web/css/fonts/myriad-set-pro_thin.ttf") format("truetype");
+	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
+
+@font-face {
+	font-family:'Myriad Set Pro';
+	font-style:normal;
+	font-weight:400;
+	src:url("../../../../assets/web/css/fonts/myriad-set-pro_text.eot");
+	src:local('☺︎'), url("../../../../assets/web/css/fonts/myriad-set-pro_text.woff") format("woff"), url("../../../../assets/web/css/fonts/myriad-set-pro_text.ttf") format("truetype");
 	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
 }
 
