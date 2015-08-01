@@ -42,7 +42,7 @@ figure img {
 body,html {
 	height:100%;
 	color:#333333;
-	font-family:Myriad Set Pro,,source-han-sans-traditional,Arial,Helvetica,sans-serif
+	font-family:Myriad Set Pro,SourceHanSansTC-Light,source-han-sans-traditional,Arial,Helvetica,sans-serif
 }
 
 html {
@@ -59,7 +59,7 @@ a {
 
 p {
 	font-style: normal;
-	font-family: "Myriad Set Pro","","source-han-sans-traditional","Lucida Grande","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+	font-family: "Myriad Set Pro","SourceHanSansTC-Light","source-han-sans-traditional","Lucida Grande","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
 	font-size: 18px;
 	letter-spacing: -0.015em;
 	line-height: 1.45;
@@ -101,7 +101,7 @@ h1,h2,h3,h4,h5,h6,li,table,ul {
 	background:0 0;
 	list-style-type:none;
 	font-style: normal;
-  font-family: "Myriad Set Pro","","source-han-sans-traditional","Lucida Grande","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  font-family: "Myriad Set Pro","SourceHanSansTC-Light","source-han-sans-traditional","Lucida Grande","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
 }
 
 div.h1,h1 {
@@ -111,7 +111,7 @@ div.h1,h1 {
 	line-height:115%;
 	padding-bottom:30px;
 	font-weight:100;
-	font-family: "Myriad Set Pro","","source-han-sans-traditional","Lucida Grande","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+	font-family: "Myriad Set Pro","SourceHanSansTC-Light","source-han-sans-traditional","Lucida Grande","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
 }
 
 h1.normal {
@@ -153,11 +153,11 @@ img.img_loader {
 }
 
 .bold,.btn,.btn_blue,.btn_dark,.btn_load_lightgrey,.btn_prod,.btn_prod1,.btn_prod2,.btn_prod3,.btn_prod4,.btn_prod5,.btn_v2,.career_item h3,.career_item h4,.colblock_v2 h4,.colblock_v4 h4,.colblock_v4_info_ovl_title,.data_item_bold,.f_headline,.f_item_txt2,.facewall_filter a.ffa,.filter_inspire .txt2,.filter_inspire .txt4,.filter_inspire h4,.filter_inspire_select_txt,.filter_work ul li a span,.gar_nav_m li a,.gar_nav_t,.heading_bold,.hq_txt1 span,.jobs_item h4,.jobs_item_info,.labs_author_info h4,.labs_comment_header,.labs_comment_item h4,.labs_comment_main,.labs_date_day,.labs_main_date,.labs_ovl_text h4,.prod_item_info h3,.prod_item_link div,.project_detail_share,.project_detail_wrapper h4,.project_social_facts,.quote_bubble,.search_open,.service_item h4,.social_bar_left,.social_flyout_info_txt2,.social_white_info span,.subnav,.wanted_list_txt,div.h1 span,h1 span,h3 {
-	font-family:Myriad Set Pro,,source-han-sans-traditional,Arial,Helvetica,sans-serif
+	font-family:Myriad Set Pro,SourceHanSansTC-Light,source-han-sans-traditional,Arial,Helvetica,sans-serif
 }
 
 .data_item_light,.f_headline span,.heading_light,.labs_header_text_inner,.row_skills .skills_num,h3 span,h3.light,input,textarea {
-	font-family:Myriad Set Pro,,source-han-sans-traditional,Arial,Helvetica,sans-serif
+	font-family:Myriad Set Pro,SourceHanSansTC-Light,source-han-sans-traditional,Arial,Helvetica,sans-serif
 }
 
 hr {
