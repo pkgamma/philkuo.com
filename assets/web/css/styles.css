@@ -194,6 +194,10 @@ hr {
 	display: none;
 }
 
+.mobileShowiPad {
+	display: none;
+}
+
 .clear {
 	clear:both
 }
@@ -4717,6 +4721,10 @@ hr {
 }
 
 @media screen and (max-device-width:1024px) and (orientation:portrait),screen and (max-width:1024px) and (orientation:portrait) {
+.mobileShowiPad {
+	display: inline;
+}
+
 .social_top {
 	display:none
 }
