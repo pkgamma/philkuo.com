@@ -1,1 +1,48 @@
-RewriteRule ^(.*)/$ /$1.html [L]
+ErrorDocument 400 http://PhilKuo.com
+ErrorDocument 403 http://PhilKuo.com
+ErrorDocument 404 http://PhilKuo.com
+ErrorDocument 502 http://PhilKuo.com
+ErrorDocument 503 http://PhilKuo.com
+ErrorDocument 504 http://PhilKuo.com
+
+RewriteEngine on
+
+RewriteOptions inherit
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} (.+)/$
+RewriteRule ^ %1 [L,R=301]
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html
+# Replace html with your file extension, eg: php, htm, asp
+
+RewriteCond %{HTTP_HOST} ^philkuo\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.philkuo\.com$
+RewriteRule ^TED$ "https\:\/\/youtu\.be\/0qZo7\-nx2Ik" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^philkuo\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.philkuo\.com$
+RewriteRule ^ted$ "https\:\/\/youtu\.be\/0qZo7\-nx2Ik" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^philkuo\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.philkuo\.com$
+RewriteRule ^TEDx$ "https\:\/\/youtu\.be\/0qZo7\-nx2Ik" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^philkuo\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.philkuo\.com$
+RewriteRule ^tedx$ "https\:\/\/youtu\.be\/0qZo7\-nx2Ik" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^philkuo\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.philkuo\.com$
+RewriteRule ^admin$ "http\:\/\/customers\.freehosting\.com\:2082\/cpsess3427562617\/frontend\/paper_lantern\/index\.html" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^philkuo\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.philkuo\.com$
+RewriteRule ^114RecapVideo$ "https\:\/\/vimeo\.com\/PhilKuo\/114" [R=301,L]
+
+
+
+
