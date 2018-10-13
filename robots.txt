@@ -1,4 +1,4 @@
 User-Agent: *
 Disallow: 
 
-Sitemap: http://philkuo.com/sitemap.xml
+Sitemap: https://philkuo.com/sitemap.xml
