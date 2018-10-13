@@ -1,0 +1,57 @@
+
+<script type="text/javascript" src="jquery.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".menu a").hover(function() {
+		$(this).next("em").animate({opacity: "show", top: "-75"}, "slow");
+	}, function() {
+		$(this).next("em").animate({opacity: "hide", top: "-85"}, "fast");
+	});
+
+
+});
+</script>
+
+<style type="text/css">
+body {
+	margin: 10px auto;
+	width: 570px;
+	font: 75%/120% Arial, Helvetica, sans-serif;
+}
+.menu {
+	margin: 100px 0 0;
+	padding: 0;
+	list-style: none;
+}
+.menu li {
+	padding: 0;
+	margin: 0 2px;
+	float: left;
+	position: relative;
+	text-align: center;
+}
+
+.menu li em {
+	background: url(images/hover.png) no-repeat;
+	width: 180px;
+	height: 45px;
+	position: absolute;
+	top: -85px;
+	left: -15px;
+	text-align: center;
+	padding: 20px 12px 10px;
+	font-style: normal;
+	z-index: 2;
+	display: none;
+}
+</style>
+
+<ul class="menu">
+	<li>
+		<a href="http://d500.com.cn/"><img src="wel/7.png"></a>
+		<em>想出名的??下名！</em>
+	</li>
+</ul>
+

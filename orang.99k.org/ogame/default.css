@@ -1,0 +1,45 @@
+/**
+ * CSS Reset
+ * http://blog.huyo.info
+ *
+ * Copyright (c) 2010 PCBETA (santalex@PBTEAM, huyo.info)
+ * Licensed under the MIT license
+ *
+ * $Date: 2010-09-13 09:48$
+ * $version: 0.0.9
+ */
+
+/* CSS Reset Start */
+html{overflow-y:scroll;}
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td {margin:0;padding:0;}
+body,button,input,select,textarea,article,aside,figure,footer,header,hgroup,menu,nav,section {
+    font:14px/1.6em "Microsoft Yahei","Lucida Grande",Calibri,"Trebuchet MS",Helvetica,Arial,Hiragino,STHeiti,"Microsoft Jhenghei",sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {font-size:100%;}
+address,cite,dfn,em,var {font-style:normal;}
+code,kbd,pre,samp {font-family:"courier new",courier,monospace;}
+small {font-size:12px;}
+ul,ol {list-style:none;}
+p {padding-bottom:12px;text-indent:24px;}
+a,a:visited {text-decoration:none;color:#000;}
+a:hover {text-decoration:underline;}
+sup {vertical-align:text-top;}
+sub {vertical-align:text-bottom;}
+legend {color:#000;}
+fieldset,img {border:0;}
+button,input,select,textarea {font-size:100%;}
+table {border-collapse:collapse;border-spacing:0;}
+/* For Internet Explorer 9 Platform Preview */
+article,aside,figure,footer,header,hgroup,menu,nav,section {display:block;}
+/* Clear */
+.clear {clear:both;height:0;line-height:0;overflow:hidden;}
+/* CSS Reset End */
+
+body {background:#000;}
+#main {margin:0 auto;width:982px;height:1019px;background:transparent url('background.jpg') top left no-repeat;}
+#top {margin-left:257px;width:466px;height:407px;}
+#logo {display:none;}
+#news {margin:210px auto 0;width:730px;height:324px;overflow:hidden;}
+#news ul li {float:left;width:50%;height:24px;line-height:24px;text-indent:30px;overflow:hidden;}
+#news ul li a, #news ul li a:hover, #news ul li a:link, #news ul li a:visited {color:#bbd1dd;}
+#footer {margin:0 auto;width:730px;height:34px;line-height:34px;font-size:12px;color:#295f80;text-align:right;}

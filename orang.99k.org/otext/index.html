@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html manifest="safari/OfflineApp.manifest">
+<head>
+    <title>Omail附加功能-Otext簡易版</title>
+    <!--[if IE]><script>document.write('<base href="' + location.protocol + '//' + location.host + location.pathname.replace(/\/[^\/]*$/, '/safari/') + '"/>')</script><![endif]-->
+    <base href="safari/">
+    <script id="DC_baseScript">if(navigator.userAgent.indexOf('AppleWebKit/') == -1) document.write('<base href="' + location.protocol + '//' + location.host + location.pathname.replace(/\/[^\/]*$/, '/safari/') + '"/>')</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="Images/Favicon.ico" sizes="32x32 16x16">
+    <script type="text/javascript" src="../Parts/redirector.js"></script>
+    <script type="text/javascript" src="Parts/parts.js" charset="utf-8"></script>
+    <script type="text/javascript" src="main.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../Scripts/UtilitySupport.js" charset="utf-8"></script>
+</head>
+<body onload="load();">
+    <div id="iframeContainer">
+        <div id="dropShadow">
+        </div>
+        <iframe id="editor" class="editable" width="100%" height="100%"></iframe></div>
+    <div id="toolbar">
+        <div id="centeredButtons">
+            <div id="leftJustifyButton"></div>
+            <div id="centerJustifyButton"></div>
+            <div id="fullJustifyButton"></div>
+            <div id="underlineButton"></div>
+            <div id="italicButton"></div>
+            <div id="boldButton"></div>
+            <select apple-style-relative="height: 20px;" id="fontColor" onchange="changeFontColor(event)">
+                <option data-rgb="rgb(0, 0, 0)" selected="selected">Black</option>
+                <option data-rgb="rgb(0, 0, 255)">Blue</option>
+                <option data-rgb="rgb(0, 128, 0)">Green</option>
+                <option data-rgb="rgb(255, 165, 0)">Orange</option>
+                <option data-rgb="rgb(255, 192, 203)">Pink</option>
+                <option data-rgb="rgb(255, 0, 0)">Red</option>
+                <option data-rgb="rgb(255, 255, 0)">Yellow</option>
+            </select>
+            <select apple-style-relative="height: 20px;" id="fontSize" onchange="changeFontSize(event)">
+                <option>10px</option>
+                <option>13px</option>
+                <option selected="selected">16px</option>
+                <option>18px</option>
+                <option>24px</option>
+                <option>32px</option>
+                <option>48px</option>
+            </select>
+            <select apple-style-relative="height: 20px;" id="fontFamily" onchange="changeFontFamily(event)">
+                <option>American Typewriter</option>
+                <option>American Typewriter Condensed</option>
+                <option>Arial</option>
+                <option>Arial Rounded MT Bold</option>
+                <option>Courier New</option>
+                <option>Georgia</option>
+                <option selected="selected">Helvetica</option>
+                <option>Marker Felt</option>
+                <option>Times New Roman</option>
+                <option>Trebuchet MS</option>
+                <option>Verdana</option>
+                <option>Zapfino</option>
+            </select>
+            <div id="rightJustifyButton"></div>
+        </div>
+        <div id="button1"></div>
+    </div>
+    <div id="button"></div>
+</body>
+</html>

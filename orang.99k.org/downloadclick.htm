@@ -1,0 +1,225 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><SCRIPT type="text/javascript">(function() {  function isText(node) {    return node.tagName == 'TEXTAREA' ||      node.tagName == 'INPUT' && node.type == 'text';  }  document.addEventListener('focus', function(event) {      if (isText(event.target))  {        event.target.setAttribute('littleurlfocussed', 'true');      }  }, true);  document.addEventListener('blur', function(event) {      if (isText(event.target)) {        event.target.removeAttribute('littleurlfocussed');      }  }, true);})();</SCRIPT><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8"><LINK href="./downloadclick_files/goog.css" rel="stylesheet" type="text/css"> <LINK href="./downloadclick_files/dlpage.css" rel="stylesheet" type="text/css">   <link rel="shortcut icon" href="http://r1kpvq.bay.livefilestore.com/y1pzLjxumF2oTiycz8yNPfdYvQL72pE23ixaIMzg3rQhdRrGIALDPVjJiXYjXJezKGzOffkA0qkf1h3hpd6S_L-j37_HVKwQdB8/animated_favicon1.gif" type="image/x-icon" /> 	 <TITLE>Obrowser下載頁面</TITLE> <SCRIPT type="text/javascript" src="./downloadclick_files/gu-util.js">
+  
+</SCRIPT> <SCRIPT type="text/javascript">
+  
+
+  
+  function getPageTagParams(opt_guid) {return '';}
+  function getPageThankYouParams() {return '';}
+  
+  function runGetAppsPageHook(apps) {return apps;}
+
+  function resetButtons(name) {
+    var buttons = document.getElementsByName(name);
+    for (i = 0; i < buttons.length; ++i) {
+      buttons[i].disabled = false;
+    }
+  }
+  function showThrobber(isVisible) {
+    var divThrobber = document.getElementById('throbber');
+    var imgThrobber = document.getElementById('throbber-img');
+    if (!divThrobber || !imgThrobber) {
+      return;
+    }
+    if (!isVisible) {
+      divThrobber.style.display = 'none';
+    }
+    
+    imgThrobber.src = isVisible ?
+      
+        "/tools/dlpage/res/chrome/images/chrome_throbber_fast_16.gif"
+      
+        : "";
+    if (isVisible) {
+      divThrobber.style.display = 'inline';
+    }
+  }
+  
+  function getThankyouUrl(queryString) {
+    var thankYouUrl = "thankyou.html?hl\x3dzh-tw";
+    if (areStatsEnabled()) {
+      queryString += '&statcb=';
+    }
+    queryString += getPageThankYouParams();
+    if (queryString.length == 0) {
+      return thankYouUrl;
+    }
+
+    if (thankYouUrl.indexOf('?') == -1) {
+      thankYouUrl += '?';
+    }
+    thankYouUrl += queryString;
+    return thankYouUrl;
+  }
+  function queueThankyou(timeout, queryString, opt_navDocument) {
+    var page = getThankyouUrl(queryString);
+    var doc = opt_navDocument || this.document;
+    setTimeout(function() {showThrobber(false);
+                           resetButtons("submitbutton");
+                           doc.location.href = page}, timeout);}
+  function getApps() {
+    var apps = new Array();
+    
+    
+    
+    
+      apps.push(_GU_createAppInfo(
+          "",
+          "",
+          "",
+          ""
+          + getPageTagParams("")));
+    
+    
+    
+    
+    return runGetAppsPageHook(apps);
+  }
+  function areStatsEnabled() {
+    var statcb = document.getElementById("statcb");
+    return (statcb && statcb.checked);
+  }
+  function isDownloadTaggingEnabled() {
+    
+    return true;
+  }
+  function getDownloadPath() {
+    
+      
+        return "http://cid-e67f8ad9c0defa2e.skydrive.live.com/self.aspx/.Public/%E6%A9%98%E5%AD%90%E7%80%8F%E8%A6%BD%E5%99%A8%E5%AE%89%E8%A3%9D.zip";
+      
+    
+  }
+  function downloadInstaller(statEnable, opt_buildDownloadPath, opt_filePath) {
+    var defaultDownloadPath = isDownloadTaggingEnabled() ?
+        _GU_buildDlPath : _GU_buildDlPathNoTag;
+    var buildDownloadPath = opt_buildDownloadPath || defaultDownloadPath;
+    var filePath = opt_filePath || getDownloadPath();
+
+     
+      var dlServer =
+      
+        "";
+      
+    location.href =
+        buildDownloadPath(getApps(),
+                          "zh-TW",
+                          statEnable,
+                          dlServer,
+                          filePath);
+     
+  }
+  function installViaDownload(opt_navDocument) {
+    queueThankyou(4000, '', opt_navDocument);
+    downloadInstaller(areStatsEnabled());
+  }
+  function isClickOnceEnabled() {
+    
+    return true;
+  }
+  function isOneClickEnabled() {
+    return true;
+  }
+  function installViaClickOnce(opt_navDocument) {
+    
+    queueThankyou(10000, '\x26clickonceinstalled=', opt_navDocument);
+    
+    downloadInstaller(areStatsEnabled(), _GU_buildClickOncePath, "");
+  }
+  function installViaOneClick(opt_navDocument) {
+    window.google.update.oneclick.install(
+      getApps(),
+      "zh-TW",
+      areStatsEnabled(),
+      function() {queueThankyou(4000, '\x26oneclickinstalled=', opt_navDocument);},
+      function(hr) {installViaDownload(opt_navDocument);});
+  }
+  function getInstallSource() {
+    
+      if (isOneClickEnabled() && _GU_isOneClickAvailable()) {
+        return 'oneclick';
+      } else if (isClickOnceEnabled() && _GU_isClickOnceAvailable()) {
+        return 'clickonce';
+      } else {
+        return 'download';
+      }
+    
+  }
+  function installApp(opt_navDocument) {
+    showThrobber(true);
+    sendDlPagePing("install", getInstallSource());
+    
+
+    var method = getInstallSource();
+    if (method === 'oneclick') {
+      installViaOneClick(opt_navDocument);
+    } else if (method === 'clickonce') {
+      installViaClickOnce(opt_navDocument);
+    } else {
+      installViaDownload(opt_navDocument);
+    }
+  }
+  
+  function sendDlPagePing(stage, installSource) {
+    var img = new Image();
+    var extra = GU_buildGlobalExtra(
+          "zh-TW", areStatsEnabled());
+    var tag = GU_BuildTag(getApps(), extra);
+    img.src = '' +
+        tag +
+        '&stage=' + stage +
+        '&installsource=' + installSource;
+  }
+  
+  
+  _GU_OnloadHandlerAdd(
+    function() {
+      if (isOneClickEnabled()) {
+      _GU_SetupOneClick();
+      }
+    }, 0); // front of list
+  
+  _GU_OnloadHandlerAdd(
+    function(pagename) {
+      sendDlPagePing(pagename, getInstallSource());
+    });  // added to end of body.onload handler list
+
+
+function runGetAppsPageHook(apps) {
+  try {
+    var app = apps[0];
+    if (_GU_isOneClickAvailable() &&
+        window.google.update.oneclick.getInstalledVersion(app.guid, true)) {
+      app.needsAdmin = true;
+    }
+  } catch (err) {
+  }
+  return apps;
+}
+
+</SCRIPT>  <SCRIPT type="text/javascript">
+  function goCancelled() {
+    this.document.location.href =
+      "http://philkuo.com/orang.99k.org/obrowser/site2.htm";
+  }
+
+</SCRIPT></HEAD><BODY onload="_GU_OnloadBody(&#39;eula&#39;);"><DIV id="container"><NOSCRIPT></NOSCRIPT>  <DIV id="header"><IMG class="logo" alt="" src="./downloadclick_files/chrome_logo.png"></A> <H1>&nbsp;</H1></DIV> <DIV id="main"> <DIV id="tos"><IFRAME src="./downloadclick_files/eula_text.htm"></IFRAME> <BR> <P><A href="./downloadclick_files/eula_text.htm">列印Obrowser服務條款</A></P>   <P><INPUT type="checkbox" name="checkbox" id="statcb"> <LABEL for="statcb"><B>隱私權選項：</B>在安裝Obrowser後傳送速度報告給Orang，就能助我們一臂之力，讓「Obrowser」更臻完美。 </LABEL></P> <DIV style="position: relative; width: 100%"><DIV id="throbber"><IMG id="throbber-img" width="16" height="16" alt="" src="./downloadclick_files/chrome_throbber_fast_16.gif"></DIV> <DIV style="display: inline"><a href="http://cid-e67f8ad9c0defa2e.skydrive.live.com/self.aspx/.Public/%E6%A9%98%E5%AD%90%E7%80%8F%E8%A6%BD%E5%99%A8%E5%AE%89%E8%A3%9D.zip?sa=332572796"><INPUT id="submit1" name="submitbutton" type="button" onclick="this.disabled=true;installApp();" value="接受並安裝"></DIV> <a href="http://philkuo.com/orang.99k.org/obrowser/site2.htm"><INPUT name="Button" type="button" onclick="goCancelled();" value="取消"></DIV></DIV></DIV> <DIV id="footer"><P></P></DIV></DIV> <SCRIPT type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ?
+      "" : "");
+  document.write(unescape("%3Cscript src='" + gaJsHost +
+      "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </SCRIPT><SCRIPT src="./downloadclick_files/ga.js" type="text/javascript"></SCRIPT> <SCRIPT type="text/javascript">
+  
+  if (typeof _gat != "undefined") {
+    var path = "/chrome";
+    
+      var pageTracker = _gat._getTracker("UA-4436568-1");
+      if (path) {
+        pageTracker._setCookiePath(path);
+      }
+      pageTracker._trackPageview();
+    
+    
+  }
+  </SCRIPT><OBJECT type="application/x-vnd.google.oneclickctrl.8" id="OneClickCtrl"></OBJECT></BODY></HTML>

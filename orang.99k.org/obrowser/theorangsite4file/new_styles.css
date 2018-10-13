@@ -1,0 +1,243 @@
+body, html { background:#F2F2F2 !important; }
+
+#main { position:relative; width:984px !important; padding:0 !important; margin:0 !important; background:#fff url(http://devimages.apple.com/assets/elements/layout/main_bodybg.png) 0 0 repeat-y; }
+#main #content { position:relative; padding:1.6em 20px !important; background: url(http://devimages.apple.com/assets/elements/layout/main_bodybg_transparent.png) 0 0 repeat-y; }
+
+#main .maincap.top { position:absolute; z-index:1; width:100%; padding-top:6px; background:transparent url(http://devimages.apple.com/assets/elements/layout/maincap_top.png) 0 0 no-repeat; top:0; }
+#main .maincap.bottom { position:absolute; width:100%; height:7px; background:transparent url(http://devimages.apple.com/assets/elements/layout/maincap_bottom.png) 0 100% no-repeat; bottom:0; }
+
+#main #content.grid2colc { padding:0 !important; background: transparent url(http://devimages.apple.com/assets/elements/layout/main_bodybg_transparent.png) 246px 0 repeat-y; }
+#main #content.grid2colc .column.last.maincontent { position:relative; float:left !important; width:655px; padding:4em 40px; }
+#main #content.grid2colc .column.last p.intro { font-size:14px !important; line-height:1.5em !important; }
+
+#main #content.grid2colc .column.first.sidebar .callout { background: #fff; background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f7f7f7)); font-size:11px; margin-left:3px; margin-right:13px; padding:10px 14px 15px; }
+#main #content.grid2colc .column.first.sidebar .callout .header { margin: -1em -13px 1em; }
+#main #content.grid2colc .column.first.sidebar .callout h3 { margin-bottom: .75em !important; }
+
+
+/*** nav ***/
+#main #content .sidebar { width:233px; height:100% !important; margin:0 !important; padding: 0 0 1.1em 13px !important; }
+#main #content .sidebar h2 { margin:1.1em 2px .4em; padding:0; }
+#main #content .sidebar .nav { margin:0 0 1.5em -11px; }
+#main #content .sidebar .nav li ul { display:none; width:100%; padding:0; background:#f3f3f3; }
+#main #content .sidebar .nav li a { display:block; padding:9px 0 9px 13px; color:#787c80; border-bottom:1px solid #e5e5e5; text-shadow:#fff 1px 1px; background:transparent url(http://devimages.apple.com/assets/elements/layout/adc_navarrows.png) no-repeat 217px 0 !important; }
+#main #content .sidebar .nav li ul li a { border-bottom:none; background:transparent url(http://devimages.apple.com/assets/elements/layout/adc_navarrows.png) no-repeat 100% 0 !important; }  
+#main #content .sidebar .nav li a:hover { color:#0088cc; background-position:217px -69px !important; }
+
+#main #content .sidebar .nav li#top-one-2line a,
+#main #content .sidebar .nav li#top-two-2line a,
+#main #content .sidebar .nav li#top-three-2line a,
+#main #content .sidebar .nav li#top-four-2line a,
+#main #content .sidebar .nav li#top-five-2line a,
+#main #content .sidebar .nav li#top-six-2line a {background-position:217px 9px !important; }
+
+#main #content .sidebar .nav li#top-one-2line a:hover,
+#main #content .sidebar .nav li#top-two-2line a:hover,
+#main #content .sidebar .nav li#top-three-2line a:hover,
+#main #content .sidebar .nav li#top-four-2line a:hover,
+#main #content .sidebar .nav li#top-five-2line a:hover,
+#main #content .sidebar .nav li#top-six-2line a:hover {background-position:217px -60px !important; }
+
+
+
+/* active no subnav */
+.active-one   #main #content .sidebar .nav #top-one,
+.active-two   #main #content .sidebar .nav #top-two,
+.active-three #main #content .sidebar .nav #top-three,
+.active-four  #main #content .sidebar .nav #top-four,
+.active-five  #main #content .sidebar .nav #top-five,
+.active-six   #main #content .sidebar .nav #top-six { background:transparent url(http://devimages.apple.com/iphone/images/nav_active.jpg) 0 0 repeat-x !important; }
+
+.active-one   #main #content .sidebar .nav #top-one-2line,
+.active-two   #main #content .sidebar .nav #top-two-2line,
+.active-three #main #content .sidebar .nav #top-three-2line,
+.active-four  #main #content .sidebar .nav #top-four-2line,
+.active-five  #main #content .sidebar .nav #top-five-2line,
+.active-six   #main #content .sidebar .nav #top-six-2line { background:transparent url(http://devimages.apple.com/iphone/images/nav_active_twoline.jpg) 0 0 repeat-x !important; }
+
+
+.active-one   #main #content .sidebar .nav #top-one a,
+.active-two   #main #content .sidebar .nav #top-two a,
+.active-three #main #content .sidebar .nav #top-three a,
+.active-four  #main #content .sidebar .nav #top-four a,
+.active-five  #main #content .sidebar .nav #top-five a,
+.active-six   #main #content .sidebar .nav #top-six a { color:#000; background-position:217px -33px !important; }
+
+.active-one #main #content .sidebar .nav li#top-one-2line a,
+.active-two #main #content .sidebar .nav li#top-two-2line a,
+.active-three #main #content .sidebar .nav li#top-three-2line a,
+.active-four #main #content .sidebar .nav li#top-four-2line a,
+.active-five #main #content .sidebar .nav li#top-five-2line a,
+.active-six #main #content .sidebar .nav li#top-six-2line a {background-position:217px 43% !important; }
+
+/* active with subnav */
+.sub-one   #main #content .sidebar .nav li#top-one a,
+.sub-two   #main #content .sidebar .nav li#top-two a,
+.sub-three #main #content .sidebar .nav li#top-three a,
+.sub-four  #main #content .sidebar .nav li#top-four a,
+.sub-five  #main #content .sidebar .nav li#top-five a,
+.sub-six   #main #content .sidebar .nav li#top-six a { background-position:-77px -33px !important; }
+
+.sub-one   #main #content .sidebar .nav li ul,
+.sub-two   #main #content .sidebar .nav li ul,
+.sub-three #main #content .sidebar .nav li ul,
+.sub-four  #main #content .sidebar .nav li ul,
+.sub-five  #main #content .sidebar .nav li ul,
+.sub-six   #main #content .sidebar .nav li ul { display:block !important; }
+
+.sub-one   #main #content .sidebar .nav li#top-one ul li a,
+.sub-two   #main #content .sidebar .nav li#top-two ul li a,
+.sub-three #main #content .sidebar .nav li#top-three ul li a,
+.sub-four  #main #content .sidebar .nav li#top-four ul li a,
+.sub-five  #main #content .sidebar .nav li#top-five ul li a,
+.sub-six   #main #content .sidebar .nav li#top-six ul li a { background-position:-377px 0 !important; padding-right:40px !important; }
+
+.sub-one   #main #content .sidebar .nav li#top-one ul li a:hover,
+.sub-two   #main #content .sidebar .nav li#top-two ul li a:hover,
+.sub-three #main #content .sidebar .nav li#top-three ul li a:hover,
+.sub-four  #main #content .sidebar .nav li#top-four ul li a:hover,
+.sub-five  #main #content .sidebar .nav li#top-five ul li a:hover,
+.sub-six   #main #content .sidebar .nav li#top-six ul li a:hover { background-position:-377px -74px !important; }
+
+.sub-one #main #content .sidebar .nav #top-two #sub-two,
+.sub-one #main #content .sidebar .nav #top-three #sub-three,
+.sub-one #main #content .sidebar .nav #top-four #sub-four,
+.sub-one #main #content .sidebar .nav #top-five #sub-five,
+.sub-one #main #content .sidebar .nav #top-six #sub-six { display:none !important; }
+
+.sub-two #main #content .sidebar .nav #top-one #sub-one,
+.sub-two #main #content .sidebar .nav #top-three #sub-three,
+.sub-two #main #content .sidebar .nav #top-four #sub-four,
+.sub-two #main #content .sidebar .nav #top-five #sub-five,
+.sub-two #main #content .sidebar .nav #top-five #sub-six { display:none !important; }
+
+.sub-three #main #content .sidebar .nav #top-one #sub-one,
+.sub-three #main #content .sidebar .nav #top-two #sub-two,
+.sub-three #main #content .sidebar .nav #top-four #sub-four,
+.sub-three #main #content .sidebar .nav #top-five #sub-five,
+.sub-three #main #content .sidebar .nav #top-six #sub-six { display:none !important; }
+
+.sub-four #main #content .sidebar .nav #top-one #sub-one,
+.sub-four #main #content .sidebar .nav #top-two #sub-two,
+.sub-four #main #content .sidebar .nav #top-three #sub-three,
+.sub-four #main #content .sidebar .nav #top-five #sub-five,
+.sub-four #main #content .sidebar .nav #top-six #sub-six { display:none !important; }
+
+.sub-five #main #content .sidebar .nav #top-one #sub-one,
+.sub-five #main #content .sidebar .nav #top-two #sub-two,
+.sub-five #main #content .sidebar .nav #top-three #sub-three,
+.sub-five #main #content .sidebar .nav #top-four #sub-four,
+.sub-five #main #content .sidebar .nav #top-six #sub-six { display:none !important; }
+
+.sub-six #main #content .sidebar .nav #top-one #sub-one,
+.sub-six #main #content .sidebar .nav #top-two #sub-two,
+.sub-six #main #content .sidebar .nav #top-three #sub-three,
+.sub-six #main #content .sidebar .nav #top-four #sub-four,
+.sub-six #main #content .sidebar .nav #top-five #sub-five { display:none !important; }
+
+/* subnav active */
+.sub-active #main #content .sidebar .nav li#top-one a,
+.sub-active #main #content .sidebar .nav li#top-two a,
+.sub-active #main #content .sidebar .nav li#top-three a,
+.sub-active #main #content .sidebar .nav li#top-four a,
+.sub-active #main #content .sidebar .nav li#top-five a,
+.sub-active #main #content .sidebar .nav li#top-six a { color:#686868; background-position: -77px 0 !important; }
+
+/* subnav specific */
+.sub-one.sub-active #main #content .sidebar .nav #top-one > a:hover { color:#000; background-position:-77px -33px !important }
+.sub-one.sub-active #main #content .sidebar .nav #top-two a,
+.sub-one.sub-active #main #content .sidebar .nav #top-three a,
+.sub-one.sub-active #main #content .sidebar .nav #top-four a,
+.sub-one.sub-active #main #content .sidebar .nav #top-five a,
+.sub-one.sub-active #main #content .sidebar .nav #top-six a { background-position:217px 0 !important; }
+
+.sub-one.sub-active #main #content .sidebar .nav #top-two a:hover,
+.sub-one.sub-active #main #content .sidebar .nav #top-three a:hover,
+.sub-one.sub-active #main #content .sidebar .nav #top-four a:hover,
+.sub-one.sub-active #main #content .sidebar .nav #top-five a:hover,
+.sub-one.sub-active #main #content .sidebar .nav #top-six a:hover { color:#0088cc; background-position:217px -69px !important; }
+
+.sub-two.sub-active #main #content .sidebar .nav #top-two > a:hover { color:#000; background-position:-77px -33px !important }
+.sub-two.sub-active #main #content .sidebar .nav #top-one a,
+.sub-two.sub-active #main #content .sidebar .nav #top-three a,
+.sub-two.sub-active #main #content .sidebar .nav #top-four a,
+.sub-two.sub-active #main #content .sidebar .nav #top-five a,
+.sub-two.sub-active #main #content .sidebar .nav #top-six a { background-position:217px 0 !important; }
+
+.sub-two.sub-active #main #content .sidebar .nav #top-one a:hover,
+.sub-two.sub-active #main #content .sidebar .nav #top-three a:hover,
+.sub-two.sub-active #main #content .sidebar .nav #top-four a:hover,
+.sub-two.sub-active #main #content .sidebar .nav #top-five a:hover,
+.sub-two.sub-active #main #content .sidebar .nav #top-six a:hover { color:#0088cc; background-position:217px -69px !important; }
+
+.sub-three.sub-active #main #content .sidebar .nav #top-three > a:hover { color:#000; background-position:-77px -33px !important }
+.sub-three.sub-active #main #content .sidebar .nav #top-one a,
+.sub-three.sub-active #main #content .sidebar .nav #top-two a,
+.sub-three.sub-active #main #content .sidebar .nav #top-four a,
+.sub-three.sub-active #main #content .sidebar .nav #top-five a,
+.sub-three.sub-active #main #content .sidebar .nav #top-six a { background-position:217px 0 !important; }
+
+.sub-three.sub-active #main #content .sidebar .nav #top-one a:hover,
+.sub-three.sub-active #main #content .sidebar .nav #top-two a:hover,
+.sub-three.sub-active #main #content .sidebar .nav #top-four a:hover,
+.sub-three.sub-active #main #content .sidebar .nav #top-five a:hover,
+.sub-three.sub-active #main #content .sidebar .nav #top-six a:hover { color:#0088cc; background-position:217px -69px !important; }
+
+.sub-four.sub-active #main #content .sidebar .nav #top-four > a:hover { color:#000; background-position:-77px -33px !important }
+.sub-four.sub-active #main #content .sidebar .nav #top-one a,
+.sub-four.sub-active #main #content .sidebar .nav #top-two a,
+.sub-four.sub-active #main #content .sidebar .nav #top-three a,
+.sub-four.sub-active #main #content .sidebar .nav #top-five a,
+.sub-four.sub-active #main #content .sidebar .nav #top-six a { background-position:217px 0 !important; }
+
+.sub-four.sub-active #main #content .sidebar .nav #top-one a:hover,
+.sub-four.sub-active #main #content .sidebar .nav #top-two a:hover,
+.sub-four.sub-active #main #content .sidebar .nav #top-three a:hover,
+.sub-four.sub-active #main #content .sidebar .nav #top-five a:hover,
+.sub-four.sub-active #main #content .sidebar .nav #top-six a:hover { color:#0088cc; background-position:217px -69px !important; }
+
+.sub-five.sub-active #main #content .sidebar .nav #top-five > a:hover { color:#000; background-position:-77px -33px !important }
+.sub-five.sub-active #main #content .sidebar .nav #top-one a,
+.sub-five.sub-active #main #content .sidebar .nav #top-two a,
+.sub-five.sub-active #main #content .sidebar .nav #top-three a,
+.sub-five.sub-active #main #content .sidebar .nav #top-four a,
+.sub-five.sub-active #main #content .sidebar .nav #top-six a { background-position:217px 0 !important; }
+
+.sub-five.sub-active #main #content .sidebar .nav #top-one a:hover,
+.sub-five.sub-active #main #content .sidebar .nav #top-two a:hover,
+.sub-five.sub-active #main #content .sidebar .nav #top-three a:hover,
+.sub-five.sub-active #main #content .sidebar .nav #top-four a:hover,
+.sub-five.sub-active #main #content .sidebar .nav #top-six a:hover { color:#0088cc; background-position:217px -69px !important; }
+
+.sub-six.sub-active #main #content .sidebar .nav #top-six > a:hover { color:#000; background-position:-77px -33px !important }
+.sub-six.sub-active #main #content .sidebar .nav #top-one a,
+.sub-six.sub-active #main #content .sidebar .nav #top-two a,
+.sub-six.sub-active #main #content .sidebar .nav #top-three a,
+.sub-six.sub-active #main #content .sidebar .nav #top-four a,
+.sub-six.sub-active #main #content .sidebar .nav #top-five a { background-position:217px 0 !important; }
+
+.sub-six.sub-active #main #content .sidebar .nav #top-one a:hover,
+.sub-six.sub-active #main #content .sidebar .nav #top-two a:hover,
+.sub-six.sub-active #main #content .sidebar .nav #top-three a:hover,
+.sub-six.sub-active #main #content .sidebar .nav #top-four a:hover,
+.sub-six.sub-active #main #content .sidebar .nav #top-five a:hover { color:#0088cc; background-position:217px -69px !important; }
+
+/* unique body id's set on page specific stylesheet for active states  */
+.sub-one /* replace .sub-one with body hook */ .sub-active #main #content .sidebar .nav li#top-one   li#unique-id a,
+.sub-two   .sub-active #main #content .sidebar .nav li#top-two   li#unique-id a,
+.sub-three .sub-active #main #content .sidebar .nav li#top-three li#unique-id a { color:#000 !important; background-position:-377px -37px !important; }
+
+/* For .active automatically added by pagenav.js */
+#main #content .sidebar .nav li#top-one ul li.active a,
+#main #content .sidebar .nav li#top-two ul li.active a,
+#main #content .sidebar .nav li#top-three ul li.active a,
+#main #content .sidebar .nav li#top-four ul li.active a,
+#main #content .sidebar .nav li#top-five ul li.active a,
+#main #content .sidebar .nav li#top-six ul li.active a,
+#main #content .sidebar .nav li#top-one ul li.active a:hover,
+#main #content .sidebar .nav li#top-two ul li.active a:hover,
+#main #content .sidebar .nav li#top-three ul li.active a:hover,
+#main #content .sidebar .nav li#top-four ul li.active a:hover,
+#main #content .sidebar .nav li#top-five ul li.active a:hover,
+#main #content .sidebar .nav li#top-six ul li.active a:hover { background-position:-377px -37px !important; }
+

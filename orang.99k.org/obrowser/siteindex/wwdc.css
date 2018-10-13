@@ -1,0 +1,301 @@
+/* -----------------------------
+	wwdc 2010
+	Global/Multiple Page Styles
+   ----------------------------- */
+a.pdf { background: url(http://images.apple.com/global/elements/icons/globaliconpdf12x12.gif) 0 0.4em no-repeat; display: block; padding-left: 20px; }
+a[rel="external"], a.external { background-position:100% 49%; }
+
+#main .page { border-top:1px solid #F1F1F1; clear:both; padding-top:12px; margin:0 20px; height:35px; }
+#main a.arrow_prev { background:transparent url(http://images.apple.com/server/macosx/images/pagenav_arrowleft20071009.gif) no-repeat scroll 0 0.2em; display:block; float:left; padding-left:20px; }
+#main a.arrow_next { background:transparent url(http://images.apple.com/server/macosx/images/pagenav_arrowright20071009.gif) no-repeat scroll 100% 0.2em; display:block; float:right; padding-right:20px; }
+#content #pagenav { width: 655px !important; position: absolute; right: 42px; bottom: 48px; }
+
+
+/* #main  */
+#main { background:none !important; background-color:#fff; width: 980px !important; }
+
+/* #content  */
+#main #content { border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; background:none !important; padding:3em 40px 40px !important; margin: 0 auto; position: relative; padding: 0; -webkit-box-shadow: rgba(0,0,0,0.3) 0 1px 3px; -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;  *border:1px solid; *border-color:#e5e5e5 #dbdbdb #d2d2d2; }
+
+#wwdc10_exp #main #content,
+#wwdc10_events #main #content,
+#wwdc10_awards #main #content,
+#wwdc10_faq #main #content,
+#wwdc10_sessions #main #content { background: #ffffff url(http://devimages.apple.com/wwdc/images/wwdc10_nav_bk.jpg) repeat-x !important; }
+
+#main #content h1 { margin-top: 50px; margin-bottom: .4em; }
+#main #content p.intro { font-size: 14px; line-height: 1.6em; }
+#main #content h1 + p.intro { margin-top: 0; }
+
+
+/* a.block  */
+#main #content a.block { display: block; text-decoration: none; }
+#main #content a.block p.sosumi em { font-size: 11px !important; line-height: 1em !important; }
+#main #content a.block em { font-style: normal; color: #08c; }
+#main #content a.block em.more { background:url("http://images.apple.com/global/elements/arrows/morearrow_08c.gif") no-repeat scroll 100% 50%; padding-right:10px; white-space:nowrap; }
+#main #content a.block:hover em { text-decoration: underline; }
+#main #content a.block p { color: #000; }
+
+
+/* .callout.buy-now  */
+#main #content .buy-now { width: 218px; position: relative; padding-bottom: 10px; margin-bottom: 3.65em; }
+#main #content .buy-now img { position: absolute; top: -45px; right: 6px; }
+#main #content .buy-now h4 { margin-bottom: 1.4em; }
+#main #content .buy-now p { font-size: 12px; }
+#main #content .buy-now a.button { margin-right: .5em; }
+
+
+/* img.framed */
+img.framed { border: 5px solid #fff; -moz-box-shadow: 1px 1px 4px rgba(0,0,0,.3); -moz-border-radius: 2px; -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,.3); -webkit-border-radius: 2px; }
+
+
+/* OverlayPanel */
+.OverlayPanel { position: relative; }
+.OverlayPanel .enlarge { display: block; position: absolute; height: 25px; width: 25px; background: url(http://devimages.apple.com/wwdc/images/wwdc10_plus_sign20100416.png) no-repeat; top: -8px; left: -8px; }
+.OverlayPanel .sosumi { color:#999 !important; font-size:11px !important; text-align:center; margin-top: 3px; -webkit-transition: color .3s linear; }
+.OverlayPanel:hover .sosumi { color:#08c !important; }
+.OverlayPanel img.framed { -webkit-transition: border-color .3s linear; }
+.OverlayPanel:hover img.framed { border-color: #f5f5f5; -webkit-transition: border-color .3s linear; }
+
+/* Hero Nav  */
+#main #content .hero-nav { background: #fff url(http://devimages.apple.com/wwdc/images/wwdc10_nav_bk.jpg) repeat-x !important; margin:-37px -40px 0; height:253px; text-align:center; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; }
+#main #content .hero-nav img.title { margin:25px 0 16px; }
+#main #content .hero-nav ul { text-align:center; margin-bottom:0; }
+#main #content .hero-nav li { display:-moz-inline-stack; display:inline-block; *display:inline; zoom: 1; vertical-align:top; margin: 0 -3px; *margin: 0 -1px; width:178px; height:150px; color:#ccc; text-align:center; background:transparent url( http://devimages.apple.com/wwdc/images/wwdc10_nav_pinline.jpg ) no-repeat scroll 0 100%; }
+#main #content .hero-nav li img { margin:15px 20px -2px; -webkit-box-shadow: rgba(0,0,0,0.3) 0 1px 3px; -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px; }
+#main #content .hero-nav li span { color:#fff; }
+#main #content .hero-nav li a { color:#ccc; display:inline-block; width:178px; height:150px; background:transparent url( http://devimages.apple.com/wwdc/images/wwdc10_nav_pinline.jpg ) no-repeat scroll 100% 100%; }
+#main #content .hero-nav li a:hover { text-decoration:none; background:transparent url(http://devimages.apple.com/wwdc/images/wwdc10_nav_hover.jpg) 100% 100% no-repeat scroll; }
+
+#wwdc10_exp #main .hero-nav a#experience-link,
+#wwdc10_sessions #main .hero-nav a#sessions-link,
+#wwdc10_events #main .hero-nav a#events-link,
+#wwdc10_faq #main .hero-nav a#faq-link,
+#wwdc10_awards #main .hero-nav a#events-link { background:transparent url(http://devimages.apple.com/wwdc/images/wwdc10_nav_active.png) no-repeat scroll 100% 100%; height:159px; }
+
+#wwdc10_exp #main .hero-nav a#experience-link:hover,
+#wwdc10_sessions #main .hero-nav a#sessions-link:hover,
+#wwdc10_events #main .hero-nav a#events-link:hover,
+#wwdc10_faq #main .hero-nav a#faq-link:hover,
+#wwdc10_awards #main .hero-nav a#events-link:hover { cursor:default; }
+
+
+/* Promofooter  */
+#promofooter4.promos-180 { margin-left: -2px !important; }
+#promofooter4 ul li.promo.first ul { background:none !important; }
+#promofooter4 ul#promos4 li.promo.first ul a { color:#08c; margin-left:7px; }
+#promofooter4 ul#promos4 li.promo.first ul { padding:20px 0 0 20px;  }
+#promofooter4 ul#promos4 li.promo.first ul li { line-height:22px; }
+
+
+
+
+/* -----------------------------
+	wwdc 2010
+	Single Page Styles
+   ----------------------------- */
+
+/*
+	wwdc10_index
+*/
+#wwdc10_index #main #content h1 { margin-top: 15px; }
+#wwdc10_index #main { margin-left: 0 !important; }
+#wwdc10_index #main #content { background: #ffffff url(http://devimages.apple.com/wwdc/images/wwdc10_hero_bk.png) repeat-x !important; padding: 0 40px 0 40px !important; }
+
+#wwdc10_index #main .mainHero { height:382px; width:980px; margin:0 0 0 -40px; background: url( on.jpg ) no-repeat scroll 100% 100%;  border-top-left-radius: 4px; border-top-right-radius: 4px; -webkit-border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px; -moz-border-radius-topleft: 4px; -moz-border-radius-topright: 4px; -o-border-radius: 4px; }
+#wwdc10_index #main .grid2cola { height:345px; color:#fff; }
+#wwdc10_index #main .grid2cola h1 { margin-bottom:25px; }
+#wwdc10_index #main .grid2cola h2 { font-size:22px; font-weight:normal; color:#fff; margin-bottom:6px; }
+#wwdc10_index #main .grid2cola p.intro { color:#fff; font-size:14px; }
+#wwdc10_index #main .grid2cola .column.first { width:500px; }
+#wwdc10_index #main .grid2cola .column.last { width:365px; }
+#wwdc10_index #main .grid2cola .column.last img { margin-top:-4px; }
+
+#wwdc10_index #main .grid3cola.hero { height:67px; width:960px; margin:6px 0 0 -20px; }
+#wwdc10_index #main .grid3cola.hero .column.first { width:32%; font-weight: bold; font-size: 14px; text-shadow: 1px 2px 0 rgba(255,255,255,.80); }
+#wwdc10_index #main .grid3cola.hero .column.first img { margin-top:-90px; }
+#wwdc10_index #main .grid3cola.hero .column { margin-top:19px; *margin-top:28px; }
+#wwdc10_index #main .grid3cola.hero .column.date-location {width:43%; margin-left: 0; font-weight: bold; font-size: 14px; text-shadow: 1px 2px 0 rgba(255,255,255,.80); }
+#wwdc10_index #main .grid3cola.hero .column.date-location p {text-align:center; }
+#wwdc10_index #main .grid3cola.hero .column.date-location span { margin-left:15px; }
+#wwdc10_index #main .grid3cola.hero .column.last { width:19%; margin-top:22px; font-weight: bold; font-size: 12px; text-shadow: 1px 2px 0 rgba(255,255,255,.80);}
+#wwdc10_index #main .grid3cola.hero .column.last  span { margin-right:8px; }
+
+#wwdc10_index #main .grid3cola.lastrow { margin:0 -40px; width:980px; }
+#wwdc10_index #main .grid3cola.lastrow .column.divider { height:315px;  border-right: 1px solid #ccc;  }
+#wwdc10_index #main .grid3cola.lastrow .column { padding:20px 20px 0 20px; margin-left:0; width:286px; *width:284px; *margin-right:2px;  }
+#wwdc10_index #main .grid3cola.lastrow .column:hover { background: url(http://devimages.apple.com/wwdc/images/wwdc10_home_bucket_hover.png) repeat-x; }
+#wwdc10_index #main .grid3cola.lastrow .column.first, #wwdc10_index #main .grid3cola.lastrow .column.last{  }
+#wwdc10_index #main .grid3cola.lastrow .column p { margin-bottom:0; }
+#wwdc10_index #main .grid3cola .column p.fixed-height { height: 90px; margin-bottom: 0; }
+#wwdc10_index #main .grid3cola.lastrow .column img { margin: 15px 0 0 7px; }
+
+#wwdc10_index #main .grid4col.buckets { margin:0 -40px; width: 980px; }
+#wwdc10_index #main .grid4col.buckets .column { width: 227px; height: 275px; margin: 0; padding: 20px 0 10px 17px; border-right: 1px solid #e0e0e0; }
+#wwdc10_index #main .grid4col.buckets .column:hover { background: url(http://devimages.apple.com/wwdc/images/wwdc10_home_bucket_hover.png) repeat-x; }
+#wwdc10_index #main .grid4col.buckets .column.last { width: 210px; border-right: none; padding-right: 18px; }
+#wwdc10_index #main .grid4col.buckets .column h3 { font-size: 16px; }
+#wwdc10_index #main .grid4col.buckets .column p { width: 210px; }
+#wwdc10_index #main .grid4col.buckets .column p.fixed-height { height: 105px; margin-bottom: 0; }
+
+/*
+	wwdc10_exp
+*/
+#wwdc10_exp #main #content h2 { margin-top:0; }
+
+#wwdc10_exp #main #content h2 { margin-top:10px; }
+#wwdc10_exp #main #content .highlight h2 { margin-top:10px; }
+#wwdc10_exp #main #content .advanced { padding:40px 0 50px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;}
+#wwdc10_exp #main #content .advanced h2 { margin-top:8px; }
+#wwdc10_exp #main #content .awards h2 { padding-top:40px; }
+#wwdc10_exp #main #content .awards p.last { margin-bottom:0; } 
+#wwdc10_exp #main #content img.flushright { margin:-40px -40px 20px  0; float:right; }
+#wwdc10_exp #main #content .buynow { border-top: 1px solid #ccc; padding-top:35px; margin-top:35px; }
+#wwdc10_exp #main #content .buynow img.left { margin:-104px 48px 0 70px; }
+#wwdc10_exp #main #content .buynow span.price { margin-left:10px; font-weight:bold; }
+#wwdc10_exp #main #content .buynow p { margin-right:120px; }
+#wwdc10_exp #main #content .grid2cola.beyond { padding:45px 0; }
+#wwdc10_exp #main #content .grid2cola.beyond .column.first h2 { margin-top: 0; }
+#wwdc10_exp #main #content .grid2cola.beyond .column.first img.right { }
+#wwdc10_exp #main #content .grid2cola.beyond .column.last { width:255px; margin-top:10px; }
+#wwdc10_exp #main #content .grid2cola.beyond .column.last .frame { margin-bottom:0; padding:5px 5px 1px 5px; background:#fff;
+	border:1px solid #e1e1e1; border-top:1px solid #f5f5f5; border-bottom:1px solid #c4c4c4;
+	border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px; -khtml-border-radius:5px; -o-border-radius:5px;
+	box-shadow:0 1px 2px rgba(0, 0, 0, .2); -webkit-box-shadow:0 1px 2px rgba(0, 0, 0, .2); 
+	-moz-box-shadow:0 1px 2px rgba(0, 0, 0, .2); -khtml-box-shadow:0 1px 2px rgba(0, 0, 0, .2); -o-box-shadow:0 1px 2px rgba(0, 0, 0, .2);
+}
+#wwdc10_exp #main #content .highlight { padding:40px 0; }
+#wwdc10_exp #main #content .highlight .callout { position:relative; padding:5px 5px 1px; }
+#wwdc10_exp #main #content .highlight .callout img.plussign { position:absolute; left:-9px; top:-9px; }
+#wwdc10_exp #main #content .highlight .grid2cola .column.first { width:590px; }
+#wwdc10_exp #main #content .highlight .grid2cola .column.last { width:255px; }
+#wwdc10_exp #main #content .advanced img.left { margin-right:30px; }
+#wwdc10_exp #OverlayPanel.overlaypanel { width:902px !important; }
+
+/*
+	wwdc10_events
+*/
+#wwdc10_events #main #content .grid3cola { padding:35px 0 25px 0; margin-bottom:35px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
+#wwdc10_events #main #content .grid3cola .column.first { width:150px; }
+#wwdc10_events #main #content .grid3cola .column { width:250px; margin-left:0; }
+#wwdc10_events #main #content .grid3cola .column.last { width:460px; }
+#wwdc10_events #main #content .grid3cola .column.last h4 { margin-top:20px; }
+#wwdc10_events #main #content .grid3cola .column.last img.right { margin:-25px 20px 0 10px; }
+#wwdc10_events #main #content .grid4cola .column.first { width:150px; } 
+#wwdc10_events #main #content .grid4cola .column { width:270px; }
+#wwdc10_events #main #content .grid4cola .column.imgcol { width:150px; margin-left:20px; }
+#wwdc10_events #main #content .grid4cola .column.last { width:300px; } 
+#wwdc10_events #main #content .grid4cola .column img.left { margin:2px 20px 40px 0; }
+#wwdc10_events #main #content .grid4cola .column img.last { margin-bottom:0; }
+#wwdc10_events #main #content .grid4cola .column .desc { height:165px; margin-top:2px; }
+#wwdc10_events #main #content .grid4cola .column .desc.last { height:100px; }
+
+
+/*
+	wwdc10_awards
+*/
+#wwdc10_awards #main #content img.flushtop { margin:-70px 16px 0 0; float:right; }
+#wwdc10_awards #main #content .column.last { margin-top:5px; }
+#wwdc10_awards #main #content .column.first h4 { background: url(http://devimages.apple.com/assets/elements/icons/12x12/checkmark.gif) no-repeat 0 4px; padding-left:15px; }
+#wwdc10_awards #main #content .column.first h4+p { padding-left:15px; }
+#wwdc10_awards #main #content .callout { height:140px; }
+#wwdc10_awards #main #content .callout h4, #wwdc10_students #main #content .callout h4 { margin-bottom:10px; }
+#wwdc10_awards #main #content .column.last h3 { margin-top:20px; }
+#wwdc10_awards #main #content .column.last ul { list-style-type:square; margin-left:15px; }
+
+
+/*
+	wwdc10_faq
+*/
+#wwdc10_faq #main #content h1 { margin-bottom: 1em; }
+#wwdc10_faq #main #content ul.faqlist { margin-left:111px; height:100px; }
+#wwdc10_faq #main #content ul.faqlist li { float:left; width:170px; text-align:center; }
+#wwdc10_faq #main #content ul.faqlist img { display:block; margin:0 26px 8px; }
+#wwdc10_faq #main #content #transit h2, #wwdc10_faq #main #content #awards h2, #wwdc10_faq #main #content #students h2, #wwdc10_faq #main #content #attendance h2 { padding-top:30px; }
+#wwdc10_faq #main #content #transit img.center { margin-bottom:20px; }
+#wwdc10_faq #main #content hr { margin-bottom:10px; }
+#main #content a.arrowup { background-position:100% 0.4em; position: absolute; right: 40px; }
+#main #content a.arrowup { background:transparent url(http://devimages.apple.com/iphone/images/as_arrowup.gif) no-repeat scroll 100% 50%; padding-right:10px; white-space:nowrap; }
+
+#wwdc10_faq #main #directions { padding-bottom: 20px; margin-bottom: 3em; }
+#wwdc10_faq #main #directions .grid2cola { font-size: 12px; }
+#wwdc10_faq #main #directions .grid2cola span { color:#666; }
+#wwdc10_faq #main #directions .grid2cola strong { color:#333; line-height: 1.8em; }
+#wwdc10_faq #main #directions .grid2cola .column.last { width:170px; }
+#wwdc10_faq #main #directions .hcard .adr,
+#wwdc10_faq #main #directions .hcard .street-address,
+#wwdc10_faq #main #directions .hcard .tel { display:block; }
+
+
+/*
+	wwdc10_students
+*/
+#wwdc10_students #main #content { padding:1.5em 40px 20px !important; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; background: #ffffff url( http://devimages.apple.com/wwdc/images/wwdc10_short_hero_bk.png) repeat-x !important; }
+#wwdc10_students #main #content h1 { margin-top: 70px; }
+#wwdc10_students #main #content p.intro { margin-bottom:5em; }
+#wwdc10_students #main #content img.righttop { margin: -60px 0 0 0; float:right; }
+#wwdc10_students #main #content .grid2colb.padding { margin:20px 0; }
+#wwdc10_students #main #content .grid2colb .column.first { width:580px; }
+#wwdc10_students #main #content .grid2colb .column.first h3 { margin-bottom:1em; }
+#wwdc10_students #main #content .grid2colb .column.last { width:300px; }
+#wwdc10_students #main #content .grid2cola h3 { margin-bottom:1.2em; }
+#wwdc10_students #main #content .grid2colb li { margin-top:8px; background: url( http://devimages.apple.com/assets/elements/icons/12x12/checkmark.gif ) no-repeat 0 4px; padding-left:15px; }
+#wwdc10_students #main #content .callout { height:120px; }
+#wwdc10_students #main #content .grid2cola { padding:20px 0; border-top: 1px solid #ccc; }
+#wwdc10_students #main #content .grid2cola h2 { margin-bottom:30px; }
+#wwdc10_students #main #content .grid2cola .column.first { width:450px; }
+#wwdc10_students #main #content .grid2cola .column.last{ width:400px; }
+
+
+/*
+	wwdc10_sessions
+*/
+#wwdc10_sessions #main #content h3 { font-size:14px; }
+#wwdc10_sessions #main #content #sessionscontent {  width:100%; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; -webkit-box-shadow: rgba(0,0,0,0.3) 0 1px 3px; -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;  *border:1px solid; *border-color:#e5e5e5 #dbdbdb #d2d2d2; }
+#wwdc10_sessions #main #content #sessionscontent .grid2cola { width:840px; padding:20px 10px; margin:20px; border-bottom:1px solid #ccc; }
+#wwdc10_sessions #main #content #sessionscontent .grid2cola .column.first { width:600px; }
+#wwdc10_sessions #main #content #sessionscontent .grid2cola .column.last { width:200px; }
+#wwdc10_sessions #main #content #sessionscontent .grid2cola.last { border:none; }
+#wwdc10_sessions #main #content #sessionscontent #sessionsnav { padding: 13px 20px 0; height:49px; background: url( http://devimages.apple.com/wwdc/images/wwdc10_sessions_nav.png ) repeat-x; }
+#wwdc10_sessions #main #content #sessionscontent #sessionsnav li { float:left; margin-right:9px; }
+#wwdc10_sessions #main #content #sessionscontent #sessionsnav li.overview { margin-right:17px; padding-right:11px; width:80px; background: transparent url(http://devimages.apple.com/wwdc/sessions/images/nav_pinline.png) no-repeat 100% 0; }
+#wwdc10_sessions #main #content #sessionscontent #sessionsnav li a { color:#fff; }
+#wwdc10_sessions #main #content #sessionscontent .session {  width:840px; padding:20px 10px; margin:20px; border-bottom:1px solid #ccc; }
+#wwdc10_sessions #main #content #sessionscontent .session.last { border:none; }
+#wwdc10_sessions #main #content #sessionscontent .swap-content{ display:none; } 
+#wwdc10_sessions #main #content #sessionscontent .swap-content.active{ display:block; } 
+
+#wwdc10_sessions #sessionsnav a.button { text-indent:-9999px; overflow:hidden; display:block; padding-left:0; }
+#wwdc10_sessions #sessionsnav a.button.framework { background: transparent url( http://devimages.apple.com/wwdc/sessions/images/btn_application_frameworks_off.png ) no-repeat 0 0; width:145px; }
+#wwdc10_sessions #sessionsnav a.button.overview { background: transparent url( http://devimages.apple.com/wwdc/sessions/images/btn_overview_off.png ) no-repeat 0 0; width:71px; }
+#wwdc10_sessions #sessionsnav a.button.core-os { background: transparent url( http://devimages.apple.com/wwdc/sessions/images/btn_core_os_off.png ) no-repeat 0 0; width:62px; }
+#wwdc10_sessions #sessionsnav a.button.developer-tools { background: transparent url( http://devimages.apple.com/wwdc/sessions/images/btn_developer_tools_off.png ) no-repeat 0 0; width:104px; }
+#wwdc10_sessions #sessionsnav a.button.graphics { background: transparent url( http://devimages.apple.com/wwdc/sessions/images/btn_graphics_media_off.png ) no-repeat 0 0; width:111px; }
+#wwdc10_sessions #sessionsnav a.button.web { background: transparent url( http://devimages.apple.com/wwdc/sessions/images/btn_internet_web_off.png ) no-repeat 0 0; width:104px; }
+
+#wwdc10_sessions #sessionsnav a.button.framework.active { background: transparent url( http://devimages.apple.com/wwdc/sessions/images/btn_application_frameworks_on.png ) no-repeat 0 0; width:145px; }
+#wwdc10_sessions #sessionsnav a.button.overview.active { background: transparent url( http://devimages.apple.com/wwdc/sessions/images/btn_overview_on.png ) no-repeat 0 0; width:71px; }
+#wwdc10_sessions #sessionsnav a.button.core-os.active { background: transparent url( http://devimages.apple.com/wwdc/sessions/images/btn_core_os_on.png ) no-repeat 0 0; width:62px; }
+#wwdc10_sessions #sessionsnav a.button.developer-tools.active { background: transparent url( http://devimages.apple.com/wwdc/sessions/images/btn_developer_tools_on.png ) no-repeat 0 0; width:104px; }
+#wwdc10_sessions #sessionsnav a.button.graphics.active { background: transparent url( http://devimages.apple.com/wwdc/sessions/images/btn_graphics_media_on.png ) no-repeat 0 0; width:111px; }
+#wwdc10_sessions #sessionsnav a.button.web.active { background: transparent url( http://devimages.apple.com/wwdc/sessions/images/btn_internet_web_on.png ) no-repeat 0 0; width:104px; }
+
+/* Overlay Gallery Styles */
+#content .galleryoverlay { display: none; }
+
+.galleryoverlay { width: 900px; height: 518px; margin-top: -25px; }
+.galleryoverlay .overlayPanelContent { overflow: visible !important; }
+.galleryoverlay img.overlayPanelShadowImage { left:-2.2% !important; width:104.3% !important; height:124.5% !important; }
+.galleryoverlay .closeButtonContainer { top: -37px !important; }
+.galleryoverlay .section { position: absolute; }
+.galleryoverlay .section img { margin: 20px 80px 0; -webkit-box-reflect: below -4px -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(0.9, transparent), to(rgba(0,0,0,0.25)));}
+.galleryoverlay .caption { width: 900px; text-align: center; font-weight: bold; margin-top:10px;  border-bottom: 1px solid #cdcdcd;  }
+.galleryoverlay .gallerynav { position: absolute; bottom: -108px; left: 0; width: 900px; text-align: center; z-index: 5; }
+.galleryoverlay .gallerynav li { display: inline; margin: 0 5px; }
+.galleryoverlay .gallerynav li a { outline: none; }
+.galleryoverlay .gallerynav li img { padding: 5px; border: 1px solid #fff; }
+.galleryoverlay .gallerynav li .active img { border-color: #999; }
+
+.gallery-launcher li img { border: 1px solid #e5e5e5; padding: 4px; background-color: #fff;  }
+.gallery-launcher li a:hover img { border-color: #ccc;  }
+

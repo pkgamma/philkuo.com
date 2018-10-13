@@ -1,0 +1,250 @@
+
+<!-- saved from url=(0078)http://cowwu.myweb.hinet.net/note/js/Month.htm?MywebPageId=2010111284162882296 -->
+<HTML lang="zh-TW"><SCRIPT type="text/javascript">(function() {  function isText(node) {    return node.tagName == 'TEXTAREA' ||      node.tagName == 'INPUT' && node.type == 'text';  }  document.addEventListener('focus', function(event) {      if (isText(event.target))  {        event.target.setAttribute('littleurlfocussed', 'true');      }  }, true);  document.addEventListener('blur', function(event) {      if (isText(event.target)) {        event.target.removeAttribute('littleurlfocussed');      }  }, true);})();</SCRIPT><HEAD><META http-equiv="Content-Type" content="text/html; charset=Big5"><SCRIPT language="JavaScript" src="./MakePhoto_files/new-inner.js"></SCRIPT>
+
+
+	
+	<TITLE>月曆桌面</TITLE>
+	<BODY STYLE=  "background:  #989898 url(http://philkuo.com/orang.99k.org/oranggameweb/bg.jpg) repeat-x" TOPMARGIN="0" LEFTMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0"> 
+	<link rel="shortcut icon" href="http://r1kpvq.bay.livefilestore.com/y1pzLjxumF2oTiycz8yNPfdYvQL72pE23ixaIMzg3rQhdRrGIALDPVjJiXYjXJezKGzOffkA0qkf1h3hpd6S_L-j37_HVKwQdB8/animated_favicon1.gif" type="image/x-icon" /> 
+	<STYLE type="text/css">
+		.month {padding: 10px; margin:0px; font-family:Arial;}
+		.d1 {background-color:#FFFFDF;}
+		.d2 {background-color:#FFDFBF;}
+		.f {font-size:35; font-family=Times}
+	</STYLE>
+</HEAD><BODY>
+
+<SCRIPT language="javascript">
+var SPACE    = '&nbsp;';
+var SPEC_DAY = "white";
+
+var thisDate  = new Date();
+var thisYear  = 0;
+var thisMonth = 0;
+
+var StyleFonSize = 48;
+var fontSize = new Array();
+fontSize[0] = '56';
+fontSize[1] = '48';
+fontSize[2] = '36';
+fontSize[3] = '24';
+fontSize[4] = '18';
+fontSize[5] = '12';
+
+var StyleBgColor = '#008080';
+var fontBgColor = new Array();
+fontBgColor[0] = '#008080';
+fontBgColor[1] = '#004E95';
+fontBgColor[2] = '#3A6EA5';
+fontBgColor[3] = '#690E00';
+fontBgColor[4] = '#554400';
+fontBgColor[5] = '#C0C0C0';
+
+/* -------------------------------------------------------------------------------- */
+function getMonth(f) {
+	var yy = f.yy.value;
+	var mm = f.mm.value-1;
+	if (f.yy_type.checked) {
+		yy = yy*1 + 1911;
+	}
+
+	// 取得該月的第一天的星期
+	var d = new Date();
+	d.setYear(yy);
+	d.setMonth(mm);
+	d.setDate(1);
+	var week = d.getDay();
+	var dd = getDayCount(yy, mm);
+
+	var rtn = "<tr>";
+
+	// 設年月
+	rtn += getTD(yy + "/" + (mm+1), 0, 7);
+	rtn += "</tr>\n</tr>";
+
+	// 設標頭
+	rtn += getTD("日", 1, 1);
+	rtn += getTD("一", 2, 1);
+	rtn += getTD("二", 3, 1);
+	rtn += getTD("三", 4, 1);
+	rtn += getTD("四", 5, 1);
+	rtn += getTD("五", 6, 1);
+	rtn += getTD("六", 0, 1);
+	rtn += "</tr>\n</tr>";
+
+	// 補月前空白
+	for(var i=0; i<week; i++) {
+		rtn += getTD(SPACE, -1, 1);
+	}
+
+	//
+	for(var i=1; i<dd+1; i++) {
+		rtn += getTD(i, (week+i)%7, 1);
+		if ((week+i)%7 == 0) {
+			rtn += "</tr>\n<tr>";
+		}
+	}
+
+	// 補月尾空白
+	for(var i=0; i<7-((week+dd)%7); i++) {
+		rtn += getTD(SPACE, -1, 1);
+	}
+
+	rtn += "</tr>";
+
+	document.all.result.innerHTML = getTable(rtn);
+}
+
+/* -------------------------------------------------------------------------------- */
+// 傳回當月的日數
+function getDayCount(yy, mm) {
+	var rtn = 31;
+	mm++;
+	if ((mm == 4) || (mm == 6) || (mm == 9) || (mm == 11)) {
+		rtn = 30;
+	} else if (mm == 2) {
+		if ((yy % 400 == 0) || ((yy % 100 != 0) && (yy % 4 == 0))) {
+			rtn = 29;
+		} else {
+			rtn = 28;
+		}
+	}
+	return rtn;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+// 設定日期區塊
+function getTD(str, n, cols) {
+	var color = '';
+	if ((n == 1) || (n == 0)) {
+		color = ";color:" + SPEC_DAY + ";";
+	}
+	var rtn = "";
+	rtn += "<td align='right' class='month' style='font-size:" + StyleFonSize + color + "' colspan='" + cols + "'>"
+	rtn += str + "</td>";
+	return(rtn);
+}
+
+
+/* -------------------------------------------------------------------------------- */
+// 設定 Table
+function getTable(str) {
+	var rtn = "";
+	rtn += "<table bgcolor='" + StyleBgColor + "' width='1024' height='768'><tr><td valign='top'>";
+	rtn += "<table border='0' cellspacing='0' cellpadding='0' align='right'>" + str + "</table>";
+	rtn += "</td></tr></table>";
+	return(rtn);
+}
+
+
+/* -------------------------------------------------------------------------------- */
+// 檢查年別
+function chkYear(f) {
+	if (f.yy_type.checked) {
+		thisYear = thisYear - 1911;
+	} else {
+		thisYear = thisYear + 1911;
+	}
+	document.fm.yy.value = thisYear;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+// 設定背景色與字體大小
+function setColor(f) {
+	for(var i=0; i<f.font_size.length; i++) {
+		if (f.font_size[i].checked) {
+			StyleFonSize = f.font_size[i].value;
+			break;
+		}
+	}
+
+	for(var i=0; i<f.bg_color.length; i++) {
+		if (f.bg_color[i].checked) {
+			StyleBgColor = f.bg_color[i].value;
+			break;
+		}
+	}
+}
+
+
+/* -------------------------------------------------------------------------------- */
+// 顯示選項：字體大小
+function getSet_FontSize() {
+	var rtn = '';
+	for(var i=0; i<fontSize.length; i++) {
+		rtn += "<font style='font-size:" + fontSize[i] + "'>";
+		rtn += "<input type='radio' name='font_size' value='" + fontSize[i] + "' onClick='setColor(document.fm)'";
+		if (fontSize[i] == StyleFonSize) {
+			rtn += " checked";
+		}
+		rtn += ">" + fontSize[i] + "</font>";
+	}
+	document.write(rtn);
+}
+
+
+/* -------------------------------------------------------------------------------- */
+// 顯示選項：背景色
+function getSet_BgColor() {
+	var rtn = '';
+	for(var i=0; i<fontBgColor.length; i++) {
+		rtn += "<font style='background-color:" + fontBgColor[i] + "'>";
+		rtn += "<input type='radio' name='bg_color' value='" + fontBgColor[i] + "' onClick='setColor(document.fm)'";
+		if (fontBgColor[i] == StyleBgColor) {
+			rtn += ' checked';
+		}
+		rtn += ">&nbsp;</font>&nbsp;";
+	}
+	document.write(rtn);
+}
+
+/* -------------------------------------------------------------------------------- */
+// 重設
+function doReset(f) {
+	thisYear  = thisDate.getFullYear();
+	thisMonth = thisDate.getMonth()+1;
+
+	document.fm.yy.value = thisYear;
+	document.fm.mm.value = thisMonth;
+	document.all.result.innerHTML = '';
+}
+</SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+
+<FONT color="#EF0000">自製月曆桌面</FONT>
+<FORM name="fm">
+	年份別：<INPUT type="checkbox" name="yy_type" value="1" onclick="chkYear(document.fm)">民國<BR>
+	<INPUT type="text" name="yy" size="4" maxlength="4" value="">年
+	<INPUT type="text" name="mm" size="2" maxlength="2" value="">月
+	<BR>
+	<INPUT type="button" value="Do!" onclick="getMonth(document.fm)">
+	<INPUT type="button" value="Reset" onclick="doReset(document.fm)">
+	<BR><BR>
+	字體：<SCRIPT language="javascript">getSet_FontSize();</SCRIPT><FONT style="font-size:56"><INPUT type="radio" name="font_size" value="56" onclick="setColor(document.fm)">56</FONT><FONT style="font-size:48"><INPUT type="radio" name="font_size" value="48" onclick="setColor(document.fm)" checked="">48</FONT><FONT style="font-size:36"><INPUT type="radio" name="font_size" value="36" onclick="setColor(document.fm)">36</FONT><FONT style="font-size:24"><INPUT type="radio" name="font_size" value="24" onclick="setColor(document.fm)">24</FONT><FONT style="font-size:18"><INPUT type="radio" name="font_size" value="18" onclick="setColor(document.fm)">18</FONT><FONT style="font-size:12"><INPUT type="radio" name="font_size" value="12" onclick="setColor(document.fm)">12</FONT>
+	<BR>
+	背景：<SCRIPT language="javascript">getSet_BgColor();</SCRIPT><FONT style="background-color:#008080"><INPUT type="radio" name="bg_color" value="#008080" onclick="setColor(document.fm)" checked="">&nbsp;</FONT>&nbsp;<FONT style="background-color:#004E95"><INPUT type="radio" name="bg_color" value="#004E95" onclick="setColor(document.fm)">&nbsp;</FONT>&nbsp;<FONT style="background-color:#3A6EA5"><INPUT type="radio" name="bg_color" value="#3A6EA5" onclick="setColor(document.fm)">&nbsp;</FONT>&nbsp;<FONT style="background-color:#690E00"><INPUT type="radio" name="bg_color" value="#690E00" onclick="setColor(document.fm)">&nbsp;</FONT>&nbsp;<FONT style="background-color:#554400"><INPUT type="radio" name="bg_color" value="#554400" onclick="setColor(document.fm)">&nbsp;</FONT>&nbsp;<FONT style="background-color:#C0C0C0"><INPUT type="radio" name="bg_color" value="#C0C0C0" onclick="setColor(document.fm)">&nbsp;</FONT>&nbsp;
+</FORM>
+
+<HR>
+<!-- ---------------------------------------------------------------------- -->
+<BR>程式動機：為了製造一個當月份的桌面。
+<BR>作法：產生當月份的月曆之後，再利用[Print Screen]與[小畫家]作成桌面。
+<!-- ---------------------------------------------------------------------- -->
+
+
+<FORM name="fm2"><DIV id="result"><TABLE bgcolor="#554400" width="1024" height="768"><TBODY><TR><TD valign="top"><TABLE border="0" cellspacing="0" cellpadding="0" align="right"><TBODY><TR><TD align="right" class="month" style="font-size:18;color:white;" colspan="7">2010/9</TD></TR>
+<TR><TD align="right" class="month" style="font-size:18;color:white;" colspan="1">日</TD><TD align="right" class="month" style="font-size:18" colspan="1">一</TD><TD align="right" class="month" style="font-size:18" colspan="1">二</TD><TD align="right" class="month" style="font-size:18" colspan="1">三</TD><TD align="right" class="month" style="font-size:18" colspan="1">四</TD><TD align="right" class="month" style="font-size:18" colspan="1">五</TD><TD align="right" class="month" style="font-size:18;color:white;" colspan="1">六</TD></TR>
+<TR><TD align="right" class="month" style="font-size:18" colspan="1">&nbsp;</TD><TD align="right" class="month" style="font-size:18" colspan="1">&nbsp;</TD><TD align="right" class="month" style="font-size:18" colspan="1">&nbsp;</TD><TD align="right" class="month" style="font-size:18" colspan="1">1</TD><TD align="right" class="month" style="font-size:18" colspan="1">2</TD><TD align="right" class="month" style="font-size:18" colspan="1">3</TD><TD align="right" class="month" style="font-size:18;color:white;" colspan="1">4</TD></TR>
+<TR><TD align="right" class="month" style="font-size:18;color:white;" colspan="1">5</TD><TD align="right" class="month" style="font-size:18" colspan="1">6</TD><TD align="right" class="month" style="font-size:18" colspan="1">7</TD><TD align="right" class="month" style="font-size:18" colspan="1">8</TD><TD align="right" class="month" style="font-size:18" colspan="1">9</TD><TD align="right" class="month" style="font-size:18" colspan="1">10</TD><TD align="right" class="month" style="font-size:18;color:white;" colspan="1">11</TD></TR>
+<TR><TD align="right" class="month" style="font-size:18;color:white;" colspan="1">12</TD><TD align="right" class="month" style="font-size:18" colspan="1">13</TD><TD align="right" class="month" style="font-size:18" colspan="1">14</TD><TD align="right" class="month" style="font-size:18" colspan="1">15</TD><TD align="right" class="month" style="font-size:18" colspan="1">16</TD><TD align="right" class="month" style="font-size:18" colspan="1">17</TD><TD align="right" class="month" style="font-size:18;color:white;" colspan="1">18</TD></TR>
+<TR><TD align="right" class="month" style="font-size:18;color:white;" colspan="1">19</TD><TD align="right" class="month" style="font-size:18" colspan="1">20</TD><TD align="right" class="month" style="font-size:18" colspan="1">21</TD><TD align="right" class="month" style="font-size:18" colspan="1">22</TD><TD align="right" class="month" style="font-size:18" colspan="1">23</TD><TD align="right" class="month" style="font-size:18" colspan="1">24</TD><TD align="right" class="month" style="font-size:18;color:white;" colspan="1">25</TD></TR>
+<TR><TD align="right" class="month" style="font-size:18;color:white;" colspan="1">26</TD><TD align="right" class="month" style="font-size:18" colspan="1">27</TD><TD align="right" class="month" style="font-size:18" colspan="1">28</TD><TD align="right" class="month" style="font-size:18" colspan="1">29</TD><TD align="right" class="month" style="font-size:18" colspan="1">30</TD><TD align="right" class="month" style="font-size:18" colspan="1">&nbsp;</TD><TD align="right" class="month" style="font-size:18" colspan="1">&nbsp;</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV></FORM>
+<SCRIPT language="javascript">
+	doReset(document.fm);
+</SCRIPT>
+
+
+</BODY></HTML>

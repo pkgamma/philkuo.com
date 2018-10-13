@@ -1,0 +1,375 @@
+ 
+<meta http-equiv="Content-Type" content="text/html; charset=BIG5"> 
+<HTML> 
+	<HEAD> 
+	</script> 
+<script type="text/javascript" src="vistaBox/dom-drag.js"></script> 
+<style type="text/css"> 
+	#vistaBack {
+		filter:alpha(opacity=0);
+		-moz-opacity:6;
+		opacity: 6;
+		position:absolute;
+	}
+	#glow {
+		position:absolute;
+		z-index:10;
+		filter:alpha(opacity=25);
+		-moz-opacity:0.25;
+		opacity: 0.25;
+	}
+	#vistaBox {
+		width:0;
+		height:0;
+		position:relative;
+		border:1px solid black;
+	}
+	#vistaInner {
+		position:absolute;
+		z-index:9;
+		color:black;
+		font-family:Verdana, Arial, Helvetica, sans-serif;
+		font-size:12px;
+		padding:5px;
+	}
+	BODY {
+		overflow:hidden;
+	}
+</style> 
+</head> 
+<body background="vistaBox/back.jpg" scroll="no"> 
+<div id="vistaBox" onDblClick="this.style.display='none';"> 
+  <div id="vistaInner"> 
+  </div> 
+  <div id="vistaBack"><a href="http://philkuo.com/orang.99k.org/orangontecbang/"><img src="vistaBox/window.png"></div> 
+</div> 
+<script type="text/javascript"> 
+Drag.init(document.getElementById("vistaBox"));
+</script> 
+		<TITLE>郭力銘的作品</TITLE> 
+		
+	<link rel="shortcut icon" href="http://r1kpvq.bay.livefilestore.com/y1pzLjxumF2oTiycz8yNPfdYvQL72pE23ixaIMzg3rQhdRrGIALDPVjJiXYjXJezKGzOffkA0qkf1h3hpd6S_L-j37_HVKwQdB8/animated_favicon1.gif" type="image/x-icon" /> 	
+	<BODY STYLE=  "background:  #026E92 url(http://www.microsoft.com/taiwan/mywin7/images/bg.jpg) repeat-x" TOPMARGIN="0" LEFTMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0"> 
+
+	<div class="separator" style="clear: both; text-align: center;">
+<a href="http://www.orangcom.blogspot.com/2010/03/blog-post_18.html"><img border="0" src="http://t5liqa.bay.livefilestore.com/y1pjqcxPQYWLMww6tfKTCo9Ec5rgzyvUOy1ncAqlO5m5hp6pVVatbwI713yUJ9EL6UhoK_a8vyFkYjR3aPrvRmO6Igwy5YjYiIJ/hangfoowwwww.png" /></div>
+<div style="text-align: center;">
+
+
+</div>
+	
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0"> 
+	<meta http-equiv="imagetoolbar" content="no">
+<style type="text/css">
+	html {
+		overflow: hidden;
+	}
+	body {
+		position: absolute;
+		margin: 0px;
+		padding: 0px;
+		background: #111;
+		width: 100%;
+		height: 100%;
+	}
+	#center {
+		position: absolute;
+		left: 50%;
+		top:  50%;
+	}
+	#slider {
+		position: absolute;
+		width: 820px;
+		height: 333px;
+		left: -430px;
+		top: -186px;
+		overflow: hidden;
+		background: #000;
+		border: 20px solid #000;
+	}
+	#slider .slide {
+		position: absolute;
+		top: 0px;
+		height: 333px;
+		width: 500px;
+		background: #000;
+		overflow: hidden;
+		border-left: #000 solid 1px;
+		cursor: default;
+	}
+	#slider .title   {
+		color: #F80;
+		font-weight: bold;
+		font-size: 1.2em;
+		margin-right: 1.5em;
+		text-decoration: none;
+	}
+	#slider .backgroundText {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 100%;
+		background: #000;
+		filter: alpha(opacity=40);
+		opacity: 0.4;
+	}
+	#slider .text {
+		position: absolute;
+		top: 1%;
+		top: 100%;
+		color: #FFF;
+		font-family: verdana, arial, Helvetica, sans-serif;
+		font-size: 0.9em;
+		text-align: justify;
+		width: 470px;
+		left: 10px;
+	}
+	#slider .diapo {
+		position: absolute;
+		filter: alpha(opacity=100);
+		opacity: 1;
+		visibility: hidden;
+	}
+</style>
+
+<script type="text/javascript">
+/* ==== slider nameSpace ==== */
+var slider = function() {
+	/* ==== private methods ==== */
+	function getElementsByClass(object, tag, className) {
+		var o = object.getElementsByTagName(tag);
+		for ( var i = 0, n = o.length, ret = []; i < n; i++) {
+			if (o[i].className == className) ret.push(o[i]);
+		}
+		if (ret.length == 1) ret = ret[0];
+		return ret;
+	}
+	function setOpacity (obj,o) {
+		if (obj.filters) obj.filters.alpha.opacity = Math.round(o);
+		else obj.style.opacity = o / 100;
+	}
+	/* ==== Slider Constructor ==== */
+	function Slider(oCont, speed, iW, iH, oP) {
+		this.slides = [];
+		this.over   = false;
+		this.S      = this.S0 = speed;
+		this.iW     = iW;
+		this.iH     = iH;
+		this.oP     = oP;
+		this.oc     = document.getElementById(oCont);
+		this.frm    = getElementsByClass(this.oc, 'div', 'slide');
+		this.NF     = this.frm.length;
+		this.resize();
+		for (var i = 0; i < this.NF; i++) {
+			this.slides[i] = new Slide(this, i);
+		}
+		this.oc.parent = this;
+		this.view      = this.slides[0];
+		this.Z         = this.mx;
+		/* ==== on mouse out event ==== */
+		this.oc.onmouseout = function () {
+			this.parent.mouseout();
+			return false;
+		}
+	}
+	Slider.prototype = {
+		/* ==== animation loop ==== */
+		run : function () {
+			this.Z += this.over ? (this.mn - this.Z) * .5 : (this.mx - this.Z) * .5;
+			this.view.calc();
+			var i = this.NF;
+			while (i--) this.slides[i].move();
+		},
+		/* ==== resize  ==== */
+		resize : function () {
+			this.wh = this.oc.clientWidth;
+			this.ht = this.oc.clientHeight;
+			this.wr = this.wh * this.iW;
+			this.r  = this.ht / this.wr;
+			this.mx = this.wh / this.NF;
+			this.mn = (this.wh * (1 - this.iW)) / (this.NF - 1);
+		},
+		/* ==== rest  ==== */
+		mouseout : function () {
+			this.over      = false;
+			setOpacity(this.view.img, this.oP);
+		}
+	}
+	/* ==== Slide Constructor ==== */
+	Slide = function (parent, N) {
+		this.parent = parent;
+		this.N      = N;
+		this.x0     = this.x1 = N * parent.mx;
+		this.v      = 0;
+		this.loaded = false;
+		this.cpt    = 0;
+		this.start  = new Date();
+		this.obj    = parent.frm[N];
+		this.txt    = getElementsByClass(this.obj, 'div', 'text');
+		this.img    = getElementsByClass(this.obj, 'img', 'diapo');
+		this.bkg    = document.createElement('div');
+		this.bkg.className = 'backgroundText';
+		this.obj.insertBefore(this.bkg, this.txt);
+		if (N == 0) this.obj.style.borderLeft = 'none';
+		this.obj.style.left = Math.floor(this.x0) + 'px';
+		setOpacity(this.img, parent.oP);
+		/* ==== mouse events ==== */
+		this.obj.parent = this;
+		this.obj.onmouseover = function() {
+			this.parent.over();
+			return false;
+		}
+	}
+	Slide.prototype = {
+		/* ==== target positions ==== */
+		calc : function() {
+			var that = this.parent;
+			// left slides
+			for (var i = 0; i <= this.N; i++) {
+				that.slides[i].x1 = i * that.Z;
+			}
+			// right slides
+			for (var i = this.N + 1; i < that.NF; i++) {
+				that.slides[i].x1 = that.wh - (that.NF - i) * that.Z;
+			}
+		},
+		/* ==== HTML animation : move slides ==== */
+		move : function() {
+			var that = this.parent;
+			var s = (this.x1 - this.x0) / that.S;
+			/* ==== lateral slide ==== */
+			if (this.N && Math.abs(s) > .5) {
+				this.obj.style.left = Math.floor(this.x0 += s) + 'px';
+			}
+			/* ==== vertical text ==== */
+			var v = (this.N < that.NF - 1) ? that.slides[this.N + 1].x0 - this.x0 : that.wh - this.x0;
+			if (Math.abs(v - this.v) > .5) {
+				this.bkg.style.top = this.txt.style.top = Math.floor(2 + that.ht - (v - that.Z) * that.iH * that.r) + 'px';
+				this.v = v;
+				this.cpt++;
+			} else {
+				if (!this.pro) {
+					/* ==== adjust speed ==== */
+					this.pro = true;
+					var tps = new Date() - this.start;
+					if(this.cpt > 1) {
+						that.S = Math.max(2, (28 / (tps / this.cpt)) * that.S0);
+					}
+				}
+			}
+			if (!this.loaded) {
+				if (this.img.complete) {
+					this.img.style.visibility = 'visible';
+					this.loaded = true;
+				}
+			}
+		},
+		/* ==== light ==== */
+		over : function () {
+			this.parent.resize();
+			this.parent.over = true;
+			setOpacity(this.parent.view.img, this.parent.oP);
+			this.parent.view = this;
+			this.start = new Date();
+			this.cpt = 0;
+			this.pro = false;
+			this.calc();
+			setOpacity(this.img, 100);
+		}
+	}
+	/* ==== public method - script initialization ==== */
+	return {
+		init : function() {
+			// create instances of sliders here
+			// parameters : HTMLcontainer name, speed (2 fast - 20 slow), Horizontal ratio, vertical text ratio, opacity
+			this.s1 = new Slider("slider", 12, 1.84/3, 1/3.2, 70);
+			setInterval("slider.s1.run();", 16);
+		}
+	}
+}();
+
+</script>
+</head>
+
+<body>
+<div id="center">
+	<div id="slider">
+		<div class="slide">
+			<img class="diapo" src="sf10.jpg" alt="">
+			<div class="text">
+				 <a class="title" href="http://www.6214blog.blogspot.com/">水的表面張力研究</a>
+				 一個研究網站 裡面有我的表面張力研究成果 裡面還收錄了一些好網站 進去看看吧!
+			</div>
+		</div>
+		<div class="slide">
+			<img class="diapo" src="sf14.jpg" alt="">
+			<div class="text">
+				<a class="title" href="http://5214blog.blogspot.com/">3d遊戲狂人</a>
+				一格專門貼圖的部落格 很多3d遊戲的有趣圖片都在這裡 當然也有一些秘技 快進去看看 一定有好東西!
+			</div>
+		</div>
+		<div class="slide">
+			<img class="diapo" src="sf24.jpg" alt="">
+			<div class="text">
+				  <a class="title" href="http://philkuo.com/orang.99k.org/osearch.htm">Osearch</a>
+				  使用Google引擎開發的搜尋網站 是橘子電腦網路服務的一部份 可搜尋全世界的網站或橘子電腦網站 功能強大 去試試吧!
+			</div>
+		</div>
+		<div class="slide">
+			<img class="diapo" src="sf04.jpg" alt="">
+			<div class="text">
+				<a class="title" href="http://laq-world.blogspot.com/2009/12/blog-post_26.html">LaQ作品分享站</a>
+				你知道LaQ嗎? 它是個很好玩的玩具 當然 我也很喜歡 這個網站專門界少,分享我的作品...偷偷告訴你 力面的東西都''很有藝術感''...
+			</div>
+		</div>
+		<div class="slide">
+			<img class="diapo" src="sf01.jpg" alt="">
+			<div class="text">
+				  <a class="title" href="http://tw.myblog.yahoo.com/kukugee23">球球的部落格</a>
+				  作者郭力銘在小四時自創的卡通人物 這裡有教你如何畫我可卡通人物-球球 也有它的故事 喜歡畫畫的 來看看它的創作吧!
+			</div>
+		</div>
+		<div class="slide">
+			<img class="diapo" src="sf15.jpg" alt="">
+			<div class="text">
+				  <a class="title" href="http://twgame.99k.org/forum/">中華超級聯盟</a>
+				  遊戲討論區 電腦討論區 雜物討論區 三合一 極為強大 有問題就來這裡問 一定有好答案
+			</div>
+		</div>
+		<div class="slide">
+			<img class="diapo" src="sf41.jpg" alt="">
+			<div class="text">
+				  <a class="title" href="http://www.philkuo.com/orang.99k.org/">橘子電腦</a>
+				  作者郭力銘的想像 注意 裡面的內容只是我的電腦'想像' 別太期待 不過裡面也有一些好東西 去看看 不然你會後悔的!
+			</div>
+		</div>
+		<div class="slide">
+			<img class="diapo" src="sf26.jpg" alt="">
+			<div class="text">
+				  <a class="title" href="https://www.google.com/a/orangmail.co.cc/ServiceLogin?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fa%2Forangmail.co.cc%2F&bsv=llya694le36z&ss=1&ltmpl=default&ltmplcache=2&from=login/">Omail</a>
+				  橘子電腦的一部分 是個電子郵件系統 也是以Gmail殼新開發 完全免費 絕無廣告 請找我註冊喔!
+			</div>
+		</div>
+		<div class="slide">
+			<img class="diapo" src="sf50.jpg" alt="">
+			<div class="text">
+				  <a class="title" href="http://tw.myblog.yahoo.com/kukugee12">電腦資訊站</a>
+				  介紹軟體 電腦知識的地方 對喜愛電腦的人來說 是個勝地 裡面的東西不會太難 有電腦問題來這準沒錯.
+			</div>
+		</div>
+		<div class="slide">
+			<img class="diapo" src="sf19.jpg" alt="">
+			<div class="text">
+				  <a class="title" href="http://orangtalk.99k.org/miniblog/index.php">橘子推推推</a>
+				  橘子電腦微網誌服務 像twitter一樣的服務 只是更簡單 更精簡!
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+/* ==== start script ==== */
+slider.init();
+</script>
+</body>
+</html>

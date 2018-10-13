@@ -1,0 +1,1 @@
+document.write('<a href="http://swf.com.tw/" onClick="window.open('http://swf.com.tw/', 'myWindow', 'width=400,height=200'); return false"><img alt="login" src="js/rd.png" border="0" width="150" height="50" style="position:fixed;  bottom: 0px; left: 0px"></a>')

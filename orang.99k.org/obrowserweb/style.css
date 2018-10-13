@@ -1,0 +1,92 @@
+body {
+  background: #313840  url(http://www.realmacsoftware.com/rw_common/themes/realmacsoftware2010/images/body_grad.png) repeat-x;
+  color: #fff;
+  font-family: 'Droid Sans', 'Liberation Sans', FreeSans, 'Helvetica Neue LT Std', 'Helvetica LT Std', Helvetica, Arial, Tahoma, 'Lucida Grande', 'Lucida Sans', sans-serif;
+}
+
+a {
+  color: #29f;
+}
+
+#ipad {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+#ipad.landscape {
+  background: url('landscape.png');
+  width: 1109px;
+  height: 852px;
+}
+
+
+#ipad #kbd {
+  position: absolute;
+  left: 7px;
+  top: 70px;
+  display: none;
+  z-index: 10;
+}
+
+#ipad.landscape #kbd {
+  background: url('landscape_kbd.png');
+  width: 1095px;
+  height: 470px;
+}
+
+
+#ipad #url {
+ position: absolute;
+  left: 137px;
+  top: 52px;
+  height: 21px;
+  background: #fff;
+  border: none;
+  font-family: 'Droid Sans', 'Liberation Sans', FreeSans, 'Helvetica Neue LT Std', 'Helvetica LT Std', Helvetica, Arial, Tahoma, 'Lucida Grande', 'Lucida Sans', sans-serif;
+}
+
+#ipad.landscape #url {
+  width: 600px;
+}
+
+
+#ipad #google {
+  position: absolute;
+  top: 52px;
+  height: 21px;
+  background: #fff;
+  border: none;
+  font-family: 'Droid Sans', 'Liberation Sans', FreeSans, 'Helvetica Neue LT Std', 'Helvetica LT Std', Helvetica, Arial, Tahoma, 'Lucida Grande', 'Lucida Sans', sans-serif;
+}
+
+#ipad.landscape #google {
+  left: 740px;
+  width: 250px;
+}
+
+
+#ipad #frame {
+  border: none;
+  background: #fff;
+  position: absolute;
+  left: 7px;
+  top: 83px;
+}
+
+#ipad.landscape #frame {
+  width: 1095px;
+  height: 762px;
+}
+
+
+.info {
+  margin: 16px;
+  text-align: center;
+}
+
+#about {
+  display: none;
+}

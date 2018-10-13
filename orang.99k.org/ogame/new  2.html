@@ -1,0 +1,49 @@
+
+<link rel="stylesheet" type="text/css" href="tipTip.css" /> 
+</head> 
+<body> 
+<div id="header"><div id="logo"></div></div> 
+<p class="center"><a class="tiptip" href="http://blog.computer-service-mallorca.com" target="_blank" title="MooTools, CSS, jQuery<br />and Wordpress Resources">Go back to the blog.</a></p> 
+<div id="content"> 
+Playin' with jQuery, tipTip  and some CSS3 stuff...<br /><br /> 
+I have changed some settings in the tipTip.css stylesheet.<br /><br /> 
+<div id="test"> 
+<dt class="description tiptip" title="Click to open/close<br /><br /><img src='logo_jquery.gif' />">Click me.</dt> 
+<dd>Hover over the link below.
+<dl> 
+<p>Cras sed ante.<br /> 
+Phasellus in massa.
+<a href="#" class="tiptip" title="<center>This will show up in<br />the TipTip popup.</center><br /><br />
+<img src='logo_jquery.gif' />">Curabitur</a><br /> dolor eros, gravida et, hendrerit ac, cursus non, massa.
+</p> 
+<p class="desc2">Cras sed ante. Phasellus in massa.</p> 
+</dl> 
+</dd> 
+</div> 
+<br /> 
+<p>Tested in:<br /><br /> 
+<ul> 
+<li>Firefox 3.5+</li> 
+<li>Internet Explorer 7/8</li> 
+<li class="tiptip" title="Nice gradient effect.<br /><br /><img src='logo_jquery.gif' />">Safari 4</li> 
+<li class="tiptip" title="Nice gradient effect.<br /><br /><img src='logo_jquery.gif' />">Chrome 3.0</li> 
+<li>Opera 10.10</li> 
+</ul> 
+<br /> 
+<p>The TipTip jQuery Plugin is from <a class="tiptip" href="http://code.drewwilson.com/entry/tiptip-jquery-plugin/" title="TipTip jQuery Plugin from Drew Wilson" target="_blank">Drew Wilson</a> Check out the gradient in <a class="tiptip" href="#" title="Safari 4 and Chrome 3">webkit</a> browsers.</p> 
+</div> 
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script> 
+<script type="text/javascript" src="jquery.tipTip.js"></script> 
+<script type="text/javascript"> 
+ $(document).ready(function() {
+	// TipTip
+	$(".tiptip").tipTip({maxWidth: "auto", edgeOffset: 4, delay: 250, fadeIn: 100, fadeOut: 800});
+	// simple toggle effect
+	$('#test').find('dd').hide().end().find('dt').click(function() {
+    $(this).next().slideToggle();
+	return false;
+		});
+ });
+</script> 
+</body> 
+</html>

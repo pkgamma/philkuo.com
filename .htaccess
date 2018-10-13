@@ -19,6 +19,10 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html
 # Replace html with your file extension, eg: php, htm, asp
 
+RewriteCond %{HTTP_HOST} ^www\.philkuo\.com [NC]
+RewriteRule (.*) http://philkuo.com/$1 [R=301,L]
+# Redirect www urls to non-www
+
 RewriteCond %{HTTP_HOST} ^philkuo\.com$ [OR]
 RewriteCond %{HTTP_HOST} ^www\.philkuo\.com$
 RewriteRule ^TED$ "https\:\/\/youtu\.be\/0qZo7\-nx2Ik" [R=301,L]
@@ -37,12 +41,17 @@ RewriteRule ^tedx$ "https\:\/\/youtu\.be\/0qZo7\-nx2Ik" [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^philkuo\.com$ [OR]
 RewriteCond %{HTTP_HOST} ^www\.philkuo\.com$
-RewriteRule ^admin$ "http\:\/\/customers\.freehosting\.com\:2082\/cpsess3427562617\/frontend\/paper_lantern\/index\.html" [R=301,L]
+RewriteRule ^114RecapVideo$ "https\:\/\/vimeo\.com\/PhilKuo\/114" [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^philkuo\.com$ [OR]
 RewriteCond %{HTTP_HOST} ^www\.philkuo\.com$
-RewriteRule ^114RecapVideo$ "https\:\/\/vimeo\.com\/PhilKuo\/114" [R=301,L]
+RewriteRule ^admin$ "https\:\/\/alto\.websitewelcome\.com\:2087\/" [R=301,L]
 
+RewriteCond %{HTTP_HOST} ^pkgamma\.philkuo\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.pkgamma\.philkuo\.com$
+RewriteRule ^/?$ "https\:\/\/pkgamma\.com\/" [R=301,L]
 
-
+RewriteCond %{HTTP_HOST} ^pktw\.philkuo\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.pktw\.philkuo\.com$
+RewriteRule ^/?$ "https\:\/\/pkgamma\.com\/" [R=301,L]
 

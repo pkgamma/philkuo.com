@@ -1,0 +1,91 @@
+
+<!-- saved from url=(0047)http://cowwu.myweb.hinet.net/note/js/Banner.htm -->
+<HTML lang="zh-TW"><SCRIPT type="text/javascript">(function() {  function isText(node) {    return node.tagName == 'TEXTAREA' ||      node.tagName == 'INPUT' && node.type == 'text';  }  document.addEventListener('focus', function(event) {      if (isText(event.target))  {        event.target.setAttribute('littleurlfocussed', 'true');      }  }, true);  document.addEventListener('blur', function(event) {      if (isText(event.target)) {        event.target.removeAttribute('littleurlfocussed');      }  }, true);})();</SCRIPT><HEAD><META http-equiv="Content-Type" content="text/html; charset=Big5"><SCRIPT language="JavaScript" src="./wordrun_files/new-inner.js"></SCRIPT>
+
+
+	
+	<TITLE>跑馬燈</TITLE>
+	<BODY STYLE=  "background:  #989898 url(http://philkuo.com/orang.99k.org/oranggameweb/bg.jpg) repeat-x" TOPMARGIN="0" LEFTMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0"> 
+	<link rel="shortcut icon" href="http://r1kpvq.bay.livefilestore.com/y1pzLjxumF2oTiycz8yNPfdYvQL72pE23ixaIMzg3rQhdRrGIALDPVjJiXYjXJezKGzOffkA0qkf1h3hpd6S_L-j37_HVKwQdB8/animated_favicon1.gif" type="image/x-icon" /> 
+	<STYLE type="text/css">
+		.Noborder {color:#FF0000; border; 0px}
+	</STYLE>
+</HEAD><BODY onload="runBanner(); return true">
+<NOSCRIPT></NOSCRIPT>
+
+<FONT color="#EF0000">跑馬燈</FONT>
+<FORM name="fm">
+	請輸入跑馬燈的字串：<BR>
+	向左跑字串：<INPUT type="text" size="60" maxlength="60" name="setLeft" value="" disabled=""><BR>
+	向右跑字串：<INPUT type="text" size="60" maxlength="60" name="setRight" value="" disabled="">
+	<BR>
+	<INPUT type="button" onclick="doRun()" value="Run" name="btnRun" disabled="">
+	<INPUT type="button" onclick="doStop()" value="Stop" name="btnStop">
+	<INPUT type="button" onclick="doPause()" value="Pause" name="btnPause">
+	<BR>
+	向左跑結果：<INPUT type="text" size="60" name="banner_left" value="" style="border:0px; color:#FF00FF;" readonly=""><BR>
+	向右跑結果：<INPUT type="text" size="60" name="banner_right" value="" style="border:0px; color:#0000FF;">
+	<BR>
+</FORM>
+
+<SCRIPT language="javascript">
+var bStop = true;
+var iSec = 1000 / 2;
+var form = document.fm;
+form.setLeft.value = '跑馬燈向左跑，歡迎光臨【大塊文章】Dana的家 http://www.dana.idv.tw';
+form.setRight.value = '跑馬燈向右跑，歡迎光臨【大塊文章】Dana的家 http://www.dana.idv.tw';
+function runBanner() {
+	if (bStop) return;
+	form.banner_left.value = getLeft(form.banner_left.value);
+	form.banner_right.value = getRight(form.banner_right.value);
+	setTimeout('runBanner()', iSec);
+}
+
+function getLeft(str) {
+	var rtn = str.substring(1, str.length) + str.substring(0, 1);
+	return rtn;
+}
+
+function getRight(str) {
+	var rtn = str.substring(str.length-1, str.length) + str.substring(0, str.length-1);
+	return rtn;
+}
+
+function doRun() {
+	setDisabled(true, false, false, true, true);
+	bStop = false;
+	form.banner_left.value = form.setLeft.value + ' ';
+	form.banner_right.value = form.setRight.value + ' ';
+	runBanner();
+}
+
+function doPause() {
+	if (form.btnPause.value == 'Pause') {
+		form.btnPause.value = 'Continue';
+		setDisabled(true, false, false, true, true);
+		bStop = true;
+	} else {
+		form.btnPause.value = 'Pause';
+		setDisabled(true, false, false, true, true);
+		bStop = false;
+		runBanner();
+	}
+}
+
+function doStop() {
+	setDisabled(false, true, true, false, false);
+	bStop = true;
+}
+
+function setDisabled(bRun, bStop, bPause, sLeft, sRight) {
+	form.btnRun.disabled = bRun;
+	form.btnStop.disabled = bStop;
+	form.btnPause.disabled = bPause;
+	form.setLeft.disabled = sLeft;
+	form.setRight.disabled = sRight;
+}
+
+doStop();
+</SCRIPT>
+
+</BODY></HTML>

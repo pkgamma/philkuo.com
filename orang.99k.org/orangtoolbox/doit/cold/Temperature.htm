@@ -1,0 +1,43 @@
+
+<!-- saved from url=(0052)http://cowwu.myweb.hinet.net/note/js/Temperature.htm -->
+<HTML lang="zh-TW"><SCRIPT type="text/javascript">(function() {  function isText(node) {    return node.tagName == 'TEXTAREA' ||      node.tagName == 'INPUT' && node.type == 'text';  }  document.addEventListener('focus', function(event) {      if (isText(event.target))  {        event.target.setAttribute('littleurlfocussed', 'true');      }  }, true);  document.addEventListener('blur', function(event) {      if (isText(event.target)) {        event.target.removeAttribute('littleurlfocussed');      }  }, true);})();</SCRIPT><HEAD><META http-equiv="Content-Type" content="text/html; charset=Big5"><SCRIPT language="JavaScript" src="./cold_files/new-inner.js"></SCRIPT>
+
+
+	
+	<TITLE>攝氏及華氏的轉換</TITLE>
+<BODY STYLE=  "background:  #989898 url(http://philkuo.com/orang.99k.org/oranggameweb/bg.jpg) repeat-x" TOPMARGIN="0" LEFTMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0"> 
+	<link rel="shortcut icon" href="http://r1kpvq.bay.livefilestore.com/y1pzLjxumF2oTiycz8yNPfdYvQL72pE23ixaIMzg3rQhdRrGIALDPVjJiXYjXJezKGzOffkA0qkf1h3hpd6S_L-j37_HVKwQdB8/animated_favicon1.gif" type="image/x-icon" /> 
+	</HEAD><BODY>
+
+<SCRIPT language="javascript">
+function swapTemp(form, kind) {
+	var c = form.TempC.value;
+	var f = form.TempF.value;
+	if (kind == 'c2f') {
+		f = c*(9/5)+32;
+	} else if (kind = 'f2c') {
+		c = (f-32)*5/9;
+	}
+	form.TempC.value = Math.round(c*100)/100;
+	form.TempF.value = Math.round(f*100)/100;
+}
+</SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+
+<FONT color="#EF0000">攝氏及華氏的轉換</FONT>
+<FORM name="fm">
+	攝氏(C) <INPUT type="text" size="10" maxlength="4" name="TempC" onchange="swapTemp(this.form, &quot;c2f&quot;)">
+	＝
+	華氏(F) <INPUT type="text" size="10" maxlength="4" name="TempF" onchange="swapTemp(this.form, &quot;f2c&quot;)">
+</FORM>
+
+<HR>
+轉換公式：
+<BR>華氏 = 攝氏*(9/5)+32
+<BR>攝氏 = (華氏-32)*5/9
+
+
+
+
+
+</BODY></HTML>

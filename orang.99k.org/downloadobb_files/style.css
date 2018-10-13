@@ -1,0 +1,200 @@
+@charset "big5";
+body {
+	background-color: #EB7C00;
+	margin-left: 0px;
+margin-top: 0px;
+margin-right: 0px;
+margin-bottom: 0px;
+}
+#download ul,li,p{
+list-style:none;
+padding:0px;
+margin:0px}
+
+#download2 ul,li,p{
+list-style:none;
+padding:0px;
+margin:0px}
+
+#download3 ul,li,p{
+list-style:none;
+padding:0px;
+margin:0px}
+
+#download4 ul,li,p{
+list-style:none;
+padding:0px;
+margin:0px}
+
+#footer {
+	font-family: Verdana, Arial, Helvetica, sans-serif, "新細明體-ExtB";
+	font-size: 12px;
+	line-height: 18px;
+	color: #333333;
+}
+
+#footer a{
+	font-family: Verdana, Arial, Helvetica, sans-serif, "新細明體-ExtB";
+	font-size: 12px;
+	line-height: 18px;
+	color: #FFCC00;
+}
+.survey_q {
+	font-family: Verdana, Arial, Helvetica, sans-serif, "新細明體-ExtB";
+	font-size: 12px;
+	line-height: 24px;
+	font-weight: bold;
+}
+.survey_H {
+	font-family: Verdana, Arial, Helvetica, sans-serif, "新細明體-ExtB";
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #FACE32;
+}
+.survey_q3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif, "新細明體-ExtB";
+	font-size: 11px;
+	font-weight: normal;
+	line-height: 14px;
+}
+#download {
+	font-family: Verdana, Arial, Helvetica, sans-serif, "新細明體-ExtB";
+	font-size: 12px;
+	line-height: 20px;
+	*background: #FFFFFF; 
+	filter:alpha(opacity=80);
+	 -moz-opacity:0.80;
+	 visibility:hidden;
+	zoom:1;
+	height: 211px;
+	width: 170px;
+	*width: 200px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+#download2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif, "新細明體-ExtB";
+	font-size: 12px;
+	line-height: 20px;
+	*background: #FFFFFF; 
+	filter:alpha(opacity=80);
+	-moz-opacity:0.80;
+	visibility:hidden;
+	zoom:1;
+	height: 211px;
+	width: 170px;
+	*width: 200px;
+	margin-left: 10px;
+	font-weight: bold;
+	top:0px;
+	left:0px;
+}
+#download3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif, "新細明體-ExtB";
+	font-size: 12px;
+	line-height: 20px;
+	*background: #FFFFFF; 
+	filter:alpha(opacity=80);
+	 -moz-opacity:0.80;
+	 visibility:hidden;
+	zoom:1;
+		top:0px;
+	left:0px;
+	height: 211px;
+	width: 180px;
+	*width: 210px;
+	margin-left: 10px;
+	font-weight: bold;
+	z-index:10
+}
+#download4 {
+	font-family: Verdana, Arial, Helvetica, sans-serif, "新細明體-ExtB";
+	font-size: 12px;
+	line-height: 20px;
+	*background: #FFFFFF; 
+	filter:alpha(opacity=80);
+	 -moz-opacity:0.80;
+	 visibility:hidden;
+	zoom:1;
+	height: 211px;
+	width: 180px;
+	*width: 210px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+.ulul{
+background-color:rgba(255,255,255,0.8);
+color:#003366;
+display:block;
+padding-left:30px;}
+.ulul02{
+	top:187px;
+	left:140px;
+	z-index:5;
+	position:absolute;
+}
+.rel{
+position:relative}
+.download02 a{
+position:relative;
+color:#003366}
+#download a:hover {
+	color: #138cdd;
+	text-decoration: underline;
+} 
+#download a:link {
+	color: #005a88;
+	text-decoration: none;
+} 
+
+#download2 a:hover {
+	color: #138cdd;
+	text-decoration: underline;
+} 
+#download2 a:link {
+	color: #005a88;
+	text-decoration: none;
+} 
+
+#download3 a:hover {
+	color: #138cdd;
+	text-decoration: underline;
+} 
+#download3 a:link {
+	color: #005a88;
+	text-decoration: none;
+} 
+
+
+#download4 a:hover {
+	color: #138cdd;
+	text-decoration: underline;
+} 
+#download4 a:link {
+	color: #005a88;
+	text-decoration: none;
+} 
+#rule {
+	font-family: Verdana, Arial, Helvetica, sans-serif, "新細明體-ExtB";
+	font-size: 12px;
+	line-height: 20px;
+	color: #333333;
+}
+#rule ul,li,p{
+
+	list-style-position: outside;
+	list-style-type: decimal;
+}
+
+
+.ruleh {
+	font-weight: bold;
+	color: #723000;
+}
+.survey_grey {
+	font-family: Verdana, Arial, Helvetica, sans-serif, "新細明體-ExtB";
+	font-size: 11px;
+	font-weight: normal;
+	line-height: 14px;
+	color: #333333;
+}
