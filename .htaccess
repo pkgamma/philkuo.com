@@ -11,47 +11,103 @@ RewriteOptions inherit
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} (.+)/$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^ %1 [L,R=301]
 
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^(.*)$ $1.html
 # Replace html with your file extension, eg: php, htm, asp
 
 RewriteCond %{HTTP_HOST} ^www\.philkuo\.com [NC]
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule (.*) http://philkuo.com/$1 [R=301,L]
 # Redirect www urls to non-www
 
 RewriteCond %{HTTP_HOST} ^philkuo\.com$ [OR]
 RewriteCond %{HTTP_HOST} ^www\.philkuo\.com$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^TED$ "https\:\/\/youtu\.be\/0qZo7\-nx2Ik" [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^philkuo\.com$ [OR]
 RewriteCond %{HTTP_HOST} ^www\.philkuo\.com$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^ted$ "https\:\/\/youtu\.be\/0qZo7\-nx2Ik" [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^philkuo\.com$ [OR]
 RewriteCond %{HTTP_HOST} ^www\.philkuo\.com$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^TEDx$ "https\:\/\/youtu\.be\/0qZo7\-nx2Ik" [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^philkuo\.com$ [OR]
 RewriteCond %{HTTP_HOST} ^www\.philkuo\.com$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^tedx$ "https\:\/\/youtu\.be\/0qZo7\-nx2Ik" [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^philkuo\.com$ [OR]
 RewriteCond %{HTTP_HOST} ^www\.philkuo\.com$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^114RecapVideo$ "https\:\/\/vimeo\.com\/PhilKuo\/114" [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^philkuo\.com$ [OR]
 RewriteCond %{HTTP_HOST} ^www\.philkuo\.com$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^admin$ "https\:\/\/alto\.websitewelcome\.com\:2087\/" [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^pkgamma\.philkuo\.com$ [OR]
 RewriteCond %{HTTP_HOST} ^www\.pkgamma\.philkuo\.com$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^/?$ "https\:\/\/pkgamma\.com\/" [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^pktw\.philkuo\.com$ [OR]
 RewriteCond %{HTTP_HOST} ^www\.pktw\.philkuo\.com$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^/?$ "https\:\/\/pkgamma\.com\/" [R=301,L]
 
+RewriteCond %{HTTP_HOST} ^philkuo\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.philkuo\.com$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^f$ "https\:\/\/youtu\.be\/kOucrAFX810" [R=302,L]
+
+RedirectMatch 301 /resume(.*) https://drive.google.com/file/d/1kOZkqa-21VzOwM3wph9w9sSwPD9d-KgU/view?usp=sharing/$1
+
+RedirectMatch 301 /linkedin(.*) https://www.linkedin.com/in/pkgamma//$1
+
+RedirectMatch 301 /facebook(.*) https://www.facebook.com/pkgamma/$1
+
+RedirectMatch 301 /fb(.*) https://www.facebook.com/pkgamma/$1 
+
+RedirectMatch 301 /instagram(.*) https://www.instagram.com/pkgamma//$1
+
+RedirectMatch 301 /ig(.*) https://www.instagram.com/pkgamma//$1 
+
+RedirectMatch 301 /youtube(.*) https://www.youtube.com/user/pkgamma/$1
+
+RedirectMatch 301 /yt(.*) https://www.youtube.com/user/pkgamma/$1
+ 
