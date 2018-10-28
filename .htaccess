@@ -111,3 +111,4 @@ RedirectMatch 301 /youtube(.*) https://www.youtube.com/user/pkgamma/$1
 
 RedirectMatch 301 /yt(.*) https://www.youtube.com/user/pkgamma/$1
  
+RedirectMatch 301 /meet(.*) https://calendly.com/pkgamma/meet/$1
