@@ -1,1 +1,0 @@
-document.write('<a href="http://philkuo.com/orang.99k.org/login.htm" target="_blank"><img src="http://t5liqa.bay.livefilestore.com/y1pTWXS04ahJXC2vZKzOsB2xCsLIvjHAmuDLpG6rm-cT6NeLDeOATqgQNZGk2qkRMkGcRlNJ5BBgog_UgEP4qEctznAqnrzkPfQ/loginpic.png" border="0" width="150" height="50" style="position:absolute; right:0px; top:0px; margin:0px; padding:0px"></a>')
