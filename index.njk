@@ -338,7 +338,49 @@ page_title: Designer and Entrepreneur
 <!--ARTICLE DEVIDER-->
 
 
-
+			<script type="text/javascript">
+				function initPage(num){
+					showfixedfooter = 0;
+					
+					// intro
+					if (num != 1){
+						intro();
+					}
+					
+					// shot new items
+					showNewItems();
+					
+					// resize functions
+					$(window).resize(function(){
+						// homesize
+						if (resizeintro == true){
+							homeSize();
+						}
+					});
+					
+					// close filter
+					$('.filter_close').on({
+						click:function(){
+							$('.backstretch:first').css({
+								marginTop:'0px'
+							});
+						}
+					});
+					
+					// slide button
+											var buttonSlideTo = $('#article1').position().top-60;
+						$('.btn_slideto').on({
+							click:function(){
+								$('html,body').animate({
+									scrollTop:buttonSlideTo+'px'
+								}, 1700, 'easeInOutExpo', function(){
+									//
+								});
+								return false;
+							}
+						});
+									}
+			</script>
 		</div>
 	</section>
 </div>
