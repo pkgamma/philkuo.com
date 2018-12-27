@@ -1,0 +1,20 @@
+# invalid URL gets sent to root (/ doesn't work for some reason)
+/* https://PhilKuo.com 302
+
+/resume https://drive.google.com/file/d/1kOZkqa-21VzOwM3wph9w9sSwPD9d-KgU/view?usp=sharing
+
+/linkedin https://www.linkedin.com/in/pkgamma/
+
+/facebook https://www.facebook.com/pkgamma
+
+/fb https://www.facebook.com/pkgamma
+
+/instagram https://www.instagram.com/pkgamma/
+
+/ig https://www.instagram.com/pkgamma/
+
+/youtube https://www.youtube.com/user/pkgamma
+
+/yt https://www.youtube.com/user/pkgamma
+ 
+/meet https://calendly.com/pkgamma/meet

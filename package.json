@@ -1,0 +1,26 @@
+{
+  "name": "philkuo.com",
+  "version": "1.0.0",
+  "description": "Static sources of Philip's personal website",
+  "scripts": {
+    "build": "npx eleventy",
+    "watch": "npx eleventy --watch",
+    "debug": "DEBUG=* npx eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pkgamma/PhilKuo.com.git"
+  },
+  "author": {
+    "name": "PhilKuo.com",
+    "email": "pkgamma@gmail.com",
+    "url": "https://PhilKuo.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pkgamma/PhilKuo.com/issues"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.6.0"
+  }
+}
