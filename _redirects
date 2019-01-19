@@ -20,3 +20,6 @@
 
 # invalid URL gets sent to root (/ doesn't work for some reason)
 /* https://PhilKuo.com 302
+
+# Redirect default Netlify subdomain to primary domain
+http://pkgamma.netlify.com/* http://philkuo.com/:splat 301!
