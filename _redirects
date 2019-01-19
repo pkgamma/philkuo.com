@@ -22,8 +22,6 @@
 
 
 
-
-
 # invalid URL gets sent to root (/ doesn't work for some reason)
 /* https://PhilKuo.com 302
 
