@@ -1,26 +1,31 @@
+# General
+
 /resume https://drive.google.com/file/d/1916kdWSz4_aUEI0VDF6nGxDwj-xxJxLO/view?usp=sharing
 
-/linkedin https://www.linkedin.com/in/pkgamma/
-
-/facebook https://www.facebook.com/pkgamma
-
-/fb https://www.facebook.com/pkgamma
-
-/instagram https://www.instagram.com/pkgamma/
-
-/ig https://www.instagram.com/pkgamma/
-
-/youtube https://www.youtube.com/user/pkgamma
-
-/yt https://www.youtube.com/user/pkgamma
- 
 /meet https://calendly.com/pkgamma/meet
 
 /contacts https://airtable.com/shrKhIGUB0A7HhIUR
 
+# Social
 
+/linkedin https://www.linkedin.com/in/pkgamma/
+/LinkedIn https://www.linkedin.com/in/pkgamma/
 
+/facebook https://www.facebook.com/pkgamma
+/Facebook https://www.facebook.com/pkgamma
+/fb https://www.facebook.com/pkgamma
 
+/instagram https://www.instagram.com/pkgamma/
+/Instagram https://www.instagram.com/pkgamma/
+/ig https://www.instagram.com/pkgamma/
+
+/youtube https://www.youtube.com/user/pkgamma
+/YouTube https://www.youtube.com/user/pkgamma
+/yt https://www.youtube.com/user/pkgamma
+
+/github https://github.com/pkgamma
+/GitHub https://github.com/pkgamma
+/gh https://github.com/pkgamma
 
 # invalid URL gets sent to root (/ doesn't work for some reason)
 /* https://PhilKuo.com 302
