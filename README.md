@@ -1,4 +1,4 @@
-# PhilKuo.com
+# PhilKuo.com [![Netlify Status](https://api.netlify.com/api/v1/badges/158b0c6c-8707-424e-8535-f45d5dc45997/deploy-status)](https://app.netlify.com/sites/pkgamma/deploys)
 
 This is the static sources of Philip's personal website. Built with [Eleventy](https://www.11ty.io/) and hosted on [Netlify](https://www.netlify.com/). Netlify builds the site automatically every time the source files are pushed to the [git repo](https://github.com/pkgamma/philkuo.com) so that I don't have to build locally.
 
