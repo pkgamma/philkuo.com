@@ -10,6 +10,11 @@
 
 /c https://uxdesign.cc/ui-ux-case-study-helping-people-feel-safe-walking-at-night-at-u-of-illinois-2f36db9a2951
 
+/spotify https://open.spotify.com/playlist/6L1lAbAPzKISEek1VJixza?si=YCMd8Jg_Sx2BurjeAerLXA
+
+/films  https://letterboxd.com/pkgamma/films/
+/movies https://letterboxd.com/pkgamma/films/
+
 # Social
 
 /linkedin https://www.linkedin.com/in/pkgamma/
@@ -17,19 +22,19 @@
 
 /facebook https://www.facebook.com/pkgamma
 /Facebook https://www.facebook.com/pkgamma
-/fb https://www.facebook.com/pkgamma
+/fb       https://www.facebook.com/pkgamma
 
 /instagram https://www.instagram.com/pkgamma/
 /Instagram https://www.instagram.com/pkgamma/
-/ig https://www.instagram.com/pkgamma/
+/ig        https://www.instagram.com/pkgamma/
 
 /youtube https://www.youtube.com/user/pkgamma
 /YouTube https://www.youtube.com/user/pkgamma
-/yt https://www.youtube.com/user/pkgamma
+/yt      https://www.youtube.com/user/pkgamma
 
 /github https://github.com/pkgamma
 /GitHub https://github.com/pkgamma
-/gh https://github.com/pkgamma
+/gh     https://github.com/pkgamma
 
 # invalid URL gets sent to root (/ doesn't work for some reason)
 /* https://PhilKuo.com 302
