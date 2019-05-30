@@ -5119,10 +5119,6 @@ hr {
 	display: inline;
 }
 
-.social_top {
-	display:none
-}
-
 .footer .threecol {
 	width:45%;
 	margin-right:5%;
@@ -5440,10 +5436,6 @@ body,html {
 .package_col p {
 	font-size:1em;
 	padding-bottom:0
-}
-
-.social_top {
-	display:none
 }
 
 .facewall_filter {
