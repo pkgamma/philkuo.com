@@ -1240,7 +1240,8 @@ hr {
 	z-index:500;
 	font-size:14px;
 	font-weight:300;
-	top:0
+	top:0;
+	backdrop-filter: blur(10px);
 }
 
 .logo {
