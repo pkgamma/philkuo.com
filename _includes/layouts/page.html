@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>{{ title }}</title>
+
+  <link rel="alternate" hreflang="en" href="https://PhilKuo.com">
+  <link rel="alternate" hreflang="zh" href="https://PhilKuo.com/ch">
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="{{ description }}" />
+  <meta name="keywords"
+    content="Philip Kuo, 郭力銘, Software Engineering, Product Design, Product Management, UX Design, UI, UX, Human Computer Interaction" />
+
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:description" content="{{ description }}" />
+  <meta property="og:url" content="https://PhilKuo.com" />
+  <meta property="og:image" content="img/share.jpg" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/png" href="img/favicon@4x.png" sizes="64x64" />
+  <link rel="icon" type="image/png" href="img/favicon@3x.png" sizes="48x48" />
+  <link rel="icon" type="image/png" href="img/favicon@2x.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="img/favicon@1x.png" sizes="16x16" />
+
+  <link rel="stylesheet" href="css/main.css" type="text/css" />
+  <script src="https://kit.fontawesome.com/605059e9af.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 content">
+
+        {{ content | safe }}
+
+        <div class="social">
+          <ul>
+            <li>
+              <a target="_blank" href="https://linkedin.com/in/pkgamma/"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://facebook.com/pkgamma"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://instagram.com/pkgamma/"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/pkgamma"><i class="fab fa-github"></i></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://medium.com/@pkgamma"><i class="fab fa-medium"></i></a>
+            </li>
+            <li>
+              <a target="_blank" href="http://philkuo.com/spotify"><i class="fab fa-spotify"></i></a>
+            </li>
+            <li>
+              <a target="_blank" href="http://youtube.com/pkgamma"><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <footer>
+          Copyright &copy; 2019 Philip Kuo. View the <a href="http://archive.philkuo.com">Past Projects Archive</a>.
+        </footer>
+
+      </div>
+
+      <div class="portrait col-sm-3">
+        <img alt="Philip Kuo" src="img/philip_kuo.jpg" />
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
