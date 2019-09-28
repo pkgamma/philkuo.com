@@ -36,7 +36,11 @@
 /GitHub https://github.com/pkgamma
 /gh     https://github.com/pkgamma
 
-# invalid URL gets sent to root (/ doesn't work for some reason)
+# Facebook fbclid redirects
+/ id=:id fbclid=:fbclid / 301
+/* id=:id fbclid=:fbclid /:splat 301!
+
+# Invalid URL gets sent to root (/ doesn't work for some reason)
 /* https://PhilKuo.com 302
 
 # Redirect default Netlify subdomain to primary domain
