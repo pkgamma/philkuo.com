@@ -37,7 +37,9 @@
 /gh     https://github.com/pkgamma
 
 # Facebook fbclid redirects
+/ fbclid=:fbclid / 301
 / id=:id fbclid=:fbclid / 301
+/* fbclid=:fbclid /:splat 301!
 /* id=:id fbclid=:fbclid /:splat 301!
 
 # Invalid URL gets sent to root (/ doesn't work for some reason)
