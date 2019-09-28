@@ -1,6 +1,7 @@
 ---
 layout: layouts/page.html
 permalink: ch.html
+language: zh
 title: 郭力銘 - 使用者體驗工程師
 description: 手工製造令人驚艷的人性化數位體驗。
 ---

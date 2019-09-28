@@ -1,5 +1,6 @@
 ---
 layout: layouts/page.html
+language: en
 title: Philip Kuo - Software Engineer and Product Designer
 description: I craft stunning digital experiences for human folks to enjoy.
 ---
