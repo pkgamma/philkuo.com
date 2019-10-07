@@ -11,7 +11,7 @@ Hello, my name is Philip Kuo. I’m a third-year computer science student at the
 
 Currently a Technical Product Manager Intern at [DeepWalk Research](https://www.deepwalkresearch.com/). Previously worked as a Product Design Engineer at [Menu3](https://menuthree.com) and [Hack4Impact](http://philkuo.com/c). Founded [PKGamma Digital Agency](http://pkgamma.com); organized a TEDx, and helped organize [HackIllinois](https://hackillinois.org) and the [R|P](https://reflectionsprojections.org) tech conference. 
 
-Please have a look at my [resume](http://philkuo.com/resume).
+Please have a look at my [resume](http://philkuo.com/resume). Thanks for stopping by!
 
 <div class="section"><p>Get In Touch</p><hr/></div>
 
