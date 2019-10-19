@@ -3443,7 +3443,7 @@ html {
 }
 
 html {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto,
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'SF Pro Text', "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -3474,7 +3474,7 @@ h3,
 h4,
 h5 {
   color: #1d1d1f;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto,
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'SF Pro Display', "Segoe UI", Roboto,
   "Helvetica Neue", Arial, sans-serif;
 }
 
