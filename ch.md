@@ -18,6 +18,6 @@ description: 手工製造令人驚艷的人性化數位體驗。
 
 我一直都對新專案專案感興趣！你可以在 [LinkedIn](https://linkedin.com/in/pkgamma/) 或是 [Facebook](https://facebook.com/pkgamma) 上找到我。也可以發封郵件到 [pk@philkuo.com](mailto:pk@philkuo.com)，或是[和我約時間](http://philkuo.com/meet)聊聊天！
 
-<div class="section"></div>
+<div class="section"><hr/></div>
 
-根據你的位置導引至此中文網站。View my website in [English](https://philkuo.com/en) instead.
+Go to my [English](https://philkuo.com/en) (primary) site instead.
