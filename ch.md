@@ -17,3 +17,5 @@ description: 手工製造令人驚艷的人性化數位體驗。
 <div class="section"><p>聯繫方式</p><hr/></div>
 
 我一直都對新專案專案感興趣！你可以在 [LinkedIn](https://linkedin.com/in/pkgamma/) 或是 [Facebook](https://facebook.com/pkgamma) 上找到我。也可以發封郵件到 [pk@philkuo.com](mailto:pk@philkuo.com)，或是[和我約時間](http://philkuo.com/meet)聊聊天！
+
+View my website in [English](https://philkuo.com/en).
