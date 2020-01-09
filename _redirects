@@ -42,6 +42,12 @@
 /* fbclid=:fbclid /:splat 301!
 /* id=:id fbclid=:fbclid /:splat 301!
 
+# if certain countries, redirect to that page
+/ /ch 302 Country=hk,tw,cn
+
+# if user want to see english version, take them to /en which shadows the root (English) page
+/en / 200
+
 # Invalid URL gets sent to root (/ doesn't work for some reason)
 /* https://PhilKuo.com 302
 
