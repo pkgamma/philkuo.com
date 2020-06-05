@@ -3513,7 +3513,7 @@ p {
 .container {
   max-width: 1024px;
   margin-top: 60px;
-  margin-bottom: 10px;
+  padding-bottom:60px;
 }
 
 .portrait img {
