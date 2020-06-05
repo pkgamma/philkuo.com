@@ -6,6 +6,38 @@ title: 郭力銘 - 使用者體驗工程師
 description: 手工製造令人驚艷的人性化數位體驗。
 ---
 
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC:wght@900&display=swap" rel="stylesheet">
+
+<style>
+
+html {
+  font-family: GT-Walsheim, 'Noto Sans TC', -apple-system, system-ui, BlinkMacSystemFont, 'SF Pro Text', "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+p {
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #333333;
+  font-family: 'Noto Serif TC', GT-Walsheim, -apple-system, system-ui, BlinkMacSystemFont, 'SF Pro Display', "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 52px;
+  max-width: 470px;
+  letter-spacing: 0;
+}
+
+</style>
+
 # 手工製造令人驚艷的人性化數位體驗
 
 哈囉！我是郭力銘，一名來自臺灣的工程師和使用者體驗設計師，並對科技與設計充滿熱情。我目前正在伊利諾伊大學香檳分校攻讀電腦科學學位。

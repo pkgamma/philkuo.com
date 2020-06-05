@@ -3581,6 +3581,7 @@ p {
   }
   .content h1 {
     font-size: 44px;
+    max-width: 270px;
   }
   .container {
     margin-top: 40px;
