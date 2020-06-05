@@ -3443,7 +3443,7 @@ html {
 }
 
 html {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'SF Pro Text', "Segoe UI", Roboto,
+  font-family: GT-Walsheim, -apple-system, system-ui, BlinkMacSystemFont, 'SF Pro Text', "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -3464,7 +3464,7 @@ html {
 }
 
 body {
-  color: #8c8c8c;
+  color: #333333;
   /* background: #fafafa; */
 }
 
@@ -3473,23 +3473,23 @@ h2,
 h3,
 h4,
 h5 {
-  color: #1d1d1f;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'SF Pro Display', "Segoe UI", Roboto,
+  color: #333333;
+  font-family: GT-Walsheim, -apple-system, system-ui, BlinkMacSystemFont, 'SF Pro Display', "Segoe UI", Roboto,
   "Helvetica Neue", Arial, sans-serif;
 }
 
 h1 {
-  font-weight: 700;
-  font-size: 68px;
-  letter-spacing: -0.0275em;
-  line-height: 1.1;
+  font-weight: 600;
+  font-size: 58px;
+  letter-spacing: -0.046em;
+  line-height: 1.05;
   margin-bottom: 40px;
-  max-width: 600px;
+  max-width: 550px;
   margin-right: auto;
 }
 
 a {
-  color: #1d1d1f;
+  color: #0071e3;
   text-decoration: none;
   transition: all 0.2s ease;
 }
@@ -3503,87 +3503,42 @@ p {
   line-height: 32px; */
 
   margin-top: 22px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
-  color: #8c8c8c;
-  line-height: 32px;
-  letter-spacing: 0.002em;
-}
-
-.jumbotron.vertical-center {
-  margin-bottom: 0; /* Remove the default bottom margin of .jumbotron */
-}
-
-.vertical-center {
-  min-height: 100%; /* Fallback for vh unit */
-  min-height: 100vh; /* You might also want to use
-                        'height' property instead.
-                        
-                        Note that for percentage values of
-                        'height' or 'min-height' properties,
-                        the 'height' of the parent element
-                        should be specified explicitly.
-  
-                        In this case the parent of '.vertical-center'
-                        is the <body> element */
-
-  /* Make it a flex container */
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-
-  /* Align the bootstrap's container vertically */
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -moz-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-
-  /* In legacy web browsers such as Firefox 9
-     we need to specify the width of the flex container */
-  width: 100%;
-
-  /* Also 'margin: 0 auto' doesn't have any effect on flex items in such web browsers
-     hence the bootstrap's container won't be aligned to the center anymore.
-  
-     Therefore, we should use the following declarations to get it centered again */
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
+  color: #333333;
+  line-height: 1.75;
+  letter-spacing: -0.032em;
 }
 
 .container {
   max-width: 1024px;
-  margin-top: 50px;
-  margin-bottom: 40px;
+  margin-top: 60px;
+  margin-bottom: 10px;
 }
 
 .portrait img {
-  max-width: 90%;
+  max-width: 85%;
   border-radius: 50%;
+  float: right;
 }
 
 .content {
   padding-left: 40px;
   padding-right: 40px;
 }
+
 .content .section p {
   margin-bottom: 10px;
-  margin-top: 40px;
+  margin-top: 30px;
   font-size: 21px;
-  font-weight: 700;
-  color: #1d1d1f;
+  font-weight: 600;
   line-height: 27px;
-  letter-spacing: 0.00125em;
 }
+
 .content .section hr {
-  border-top: 1px solid #8c8c8c;
-  margin-bottom: 25px;
+  border-top: 1px solid #ededed;
 }
+
 .content .copy-to-clipboard {
   cursor: pointer;
 }
@@ -3620,7 +3575,7 @@ p {
   opacity: 0.5;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 576px) {
   .portrait {
     display: none;
   }
@@ -3628,6 +3583,6 @@ p {
     font-size: 44px;
   }
   .container {
-    margin-top: 50px;
+    margin-top: 40px;
   }
 }
