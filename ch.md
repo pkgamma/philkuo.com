@@ -3,7 +3,7 @@ layout: layouts/page.html
 permalink: ch.html
 language: zh
 title: 郭力銘 - 使用者體驗工程師
-description: 手工製造令人驚艷的人性化數位體驗。
+description: 細心研製令人驚艷的人性化數位體驗。
 ---
 
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC:wght@900&display=swap" rel="stylesheet">
@@ -38,9 +38,9 @@ h1 {
 
 </style>
 
-# 手工製造令人驚艷的人性化數位體驗
+# 細心研製令人驚艷的人性化數位體驗
 
-哈囉！我是郭力銘，一名來自臺灣的工程師和使用者體驗設計師，並對科技與設計充滿熱情。我目前正在伊利諾伊大學香檳分校攻讀電腦科學學位。
+哈囉！我是郭力銘，一名來自臺灣的軟體工程師和使用者體驗設計師，並對科技與設計充滿熱情。我目前正在伊利諾伊大學香檳分校攻讀電腦科學學位。
 
 目前於美國[ Caterpillar 開拓重工](https://www.caterpillar.com/en/company.html)的數位部門擔任軟體工程師，並曾於 [DeepWalk Research](https://www.deepwalkresearch.com/) 進行產品企劃，和於 [Menu3](https://menuthree.com) 和 [Hack4Impact](http://philkuo.com/c) 擔任產品設計工程師。我亦持續盡心投入運行 [PKGamma 數位機構](http://pkgamma.com)，與我的客戶密切合作，開發成效良的數位解決方案。
 
