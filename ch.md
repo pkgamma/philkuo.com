@@ -40,13 +40,13 @@ h1 {
 
 # 細心研製令人驚艷的人性化數位體驗
 
-哈囉！我是郭力銘，一名來自臺灣的軟體工程師和使用者體驗設計師，並對科技與設計充滿熱情。我目前正在伊利諾伊大學香檳分校攻讀電腦科學學位。
+嗨，我是郭力銘。我是來自臺灣的軟體工程師和使用者體驗設計師，對軟體開發與人本設計充滿熱情；目前正在伊利諾伊大學香檳分校攻讀資訊工程學位。
 
-目前於美國 [Caterpillar 卡特彼勒](https://www.cat.com/zh_TW/company.html)的數位部門擔任軟體工程師，並曾於 [DeepWalk Research](https://www.deepwalkresearch.com/) 進行產品企劃，和於 [Menu3](https://menuthree.com) 和 [Hack4Impact](http://philkuo.com/c) 擔任產品設計工程師。我亦持續盡心投入運行 [PKGamma 數位機構](http://pkgamma.com)，與我的客戶密切合作，開發成效出色的數位解決方案。
+現於美國 [Caterpillar 卡特彼勒](https://www.cat.com/zh_TW/company.html)的數位部門擔任軟體工程師，並曾於 [DeepWalk Research](https://www.deepwalkresearch.com/) 擔任產品企劃，和於 [Hack4Impact](http://philkuo.com/c) 及 [menu3](https://menuthree.com) 擔任產品設計工程師。我亦持續盡心投入運行 [PKGamma 數位機構](http://pkgamma.com)，與我的客戶密切合作，開發成效出色的數位解決方案。
 
-我的作品皆經歷過[完善的使用者體驗研究](https://medium.com/as-a-product-designer/ui-ux-設計案例分享-如何讓行人在夜間返家更安全-9370eb55e4e9?source=friends_link&sk=40ee425f1e0c166390a4f8a05b7107be)與可用性測試，提供令人驚艷的、人性化的數位體驗。歡迎檢閱我的[個人履歷](http://philkuo.com/resume)，感謝您的拜訪！
+我的作品皆經歷過[完善的使用者體驗研究](https://medium.com/as-a-product-designer/ui-ux-設計案例分享-如何讓行人在夜間返家更安全-9370eb55e4e9?source=friends_link&sk=40ee425f1e0c166390a4f8a05b7107be)與可用性測試，提供令人驚艷的、人性化的數位體驗。歡迎檢閱我的[履歷](http://philkuo.com/resume)，感謝您的拜訪！
 
-<div class="section"><p>聯繫我</p><hr/></div>
+<div class="section"><p>與我聯繫</p><hr/></div>
 
 您可以在 [LinkedIn](https://linkedin.com/in/pkgamma/) 或是 [Facebook](https://facebook.com/pkgamma) 上找到我。也可以發封郵件到 [pk@philkuo.com](mailto:pk@philkuo.com)，或是[和我約時間](http://philkuo.com/meet)聊聊天！
 
