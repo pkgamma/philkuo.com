@@ -4,6 +4,8 @@ import Layout from "../components/layout"
 
 import styles from "./index.module.scss"
 
+import { faGithub, faLinkedin, faMedium, faMediumM } from '@fortawesome/free-brands-svg-icons'
+import { faFile, faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Home() {
@@ -28,13 +30,19 @@ export default function Home() {
 
       <div className={styles.social_section}>
         <div className={styles.btn}>
-          <a href="http://www.google.com"><FontAwesomeIcon icon="check-square" />Resume</a>
+          <a href="http://www.google.com"><FontAwesomeIcon icon={faFile} className={styles.icon}/>Resume</a>
         </div>
         <div className={styles.btn}>
-          <a href="http://www.google.com">Email</a>
+          <a href="http://www.google.com"><FontAwesomeIcon icon={faEnvelope} className={styles.icon}/>Email</a>
         </div>
         <div className={styles.btn}>
-          <a href="http://www.google.com">LinkedIn</a>
+          <a href="http://www.google.com"><FontAwesomeIcon icon={faLinkedin} className={styles.icon}/>LinkedIn</a>
+        </div>
+        <div className={styles.btn}>
+          <a href="http://www.google.com"><FontAwesomeIcon icon={faGithub} className={styles.icon}/>Github</a>
+        </div>
+        <div className={styles.btn}>
+          <a href="http://www.google.com"><FontAwesomeIcon icon={faMediumM} className={styles.icon}/>Medium</a>
         </div>
       </div>
 
