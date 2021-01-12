@@ -6,8 +6,8 @@ import "normalize.css"
 export default function Layout({ children }) {
   return (
     <div>
-
       <div className={styles.page_container}>
+
         <div className={styles.sticky_navbar}>
           <div className={styles.navbar}>
             <div className={styles.left}>
@@ -31,16 +31,13 @@ export default function Layout({ children }) {
           {children}
         </div>
 
-        <div className={styles.footer_container}>
-        <div className={styles.footer}>
-          <p>Copyright © 2021 Philip Kuo. View the <a href="http://archive.philkuo.com">Project Archive</a>.</p>
+        <div className={styles.sticky_footer}>
+          <div className={styles.footer}>
+            <p>Copyright © 2021 Philip Kuo. View the <a href="http://archive.philkuo.com">Project Archive</a>.</p>
+          </div>
         </div>
+
       </div>
-      </div>
-
-      
-
-
     </div>
   )
 }
