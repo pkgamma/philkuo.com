@@ -2,54 +2,42 @@ import React from "react"
 
 import Layout from "../components/layout"
 
+import styles from "./index.module.scss"
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 export default function Home() {
   return (
     <Layout>
 
-      <div>
-        <h1>Title</h1>
-        <p>Thanks to a belief in interactive design as a core element of the product workflow, Spotify was a pioneer in their formation of a Design Prototyping team, who mainly partner with embedded designers to bring their static concepts to life. But the team has had so much success they’re now looking to simultaneously automate themselves and uplevel the greater design team’s prototyping skills. To do this, they needed to offer a toolkit that would empower all designers, regardless of technical ability. To top it off, the toolkit would need to be able to tap into the Spotify API and access the trove of data that was the backbone of the company’s success.</p>
+      <div className={styles.container}>
+
+        <div className={styles.pic}>
+          <img alt="Philip Kuo" src="https://d33wubrfki0l68.cloudfront.net/f889430202cebb38797416bf08da875a98ff4585/a607f/img/philip_kuo.jpg" />
+        </div>
+
+        <h1>I Craft Stunning Digital Experiences.</h1>
+
+        <p>Philip Kuo is a software engineer with a passion for human-centered design. He designs and develops intuitive products with great attention to detail.</p>
+
+        <p>He currently works at Moshi, and previously at Caterpillar and DeepWalk Research. He founded PKGamma Digital Agency, organized a TEDx, and helped put together HackIllinois and the RP Tech Conference.</p>
+
+        <p>In the meantime, he's pursuing a Computer Science degree from the University of Illinois at Urbana Champaign. At school, he’s developing at Hack4Impact to empower non-profits that are doing meaningful work to communities.</p>
+
       </div>
-      <div>
-        <h1>Title</h1>
-        <p>Thanks to a belief in interactive design as a core element of the product workflow, Spotify was a pioneer in their formation of a Design Prototyping team, who mainly partner with embedded designers to bring their static concepts to life. But the team has had so much success they’re now looking to simultaneously automate themselves and uplevel the greater design team’s prototyping skills. To do this, they needed to offer a toolkit that would empower all designers, regardless of technical ability. To top it off, the toolkit would need to be able to tap into the Spotify API and access the trove of data that was the backbone of the company’s success.</p>
+
+      <div className={styles.social_section}>
+        <div className={styles.btn}>
+          <a href="http://www.google.com"><FontAwesomeIcon icon="check-square" />Resume</a>
+        </div>
+        <div className={styles.btn}>
+          <a href="http://www.google.com">Email</a>
+        </div>
+        <div className={styles.btn}>
+          <a href="http://www.google.com">LinkedIn</a>
+        </div>
       </div>
-      <div>
-        <h1>Title</h1>
-        <p>Thanks to a belief in interactive design as a core element of the product workflow, Spotify was a pioneer in their formation of a Design Prototyping team, who mainly partner with embedded designers to bring their static concepts to life. But the team has had so much success they’re now looking to simultaneously automate themselves and uplevel the greater design team’s prototyping skills. To do this, they needed to offer a toolkit that would empower all designers, regardless of technical ability. To top it off, the toolkit would need to be able to tap into the Spotify API and access the trove of data that was the backbone of the company’s success.</p>
-      </div>
-      <div>
-        <h1>Title</h1>
-        <p>Thanks to a belief in interactive design as a core element of the product workflow, Spotify was a pioneer in their formation of a Design Prototyping team, who mainly partner with embedded designers to bring their static concepts to life. But the team has had so much success they’re now looking to simultaneously automate themselves and uplevel the greater design team’s prototyping skills. To do this, they needed to offer a toolkit that would empower all designers, regardless of technical ability. To top it off, the toolkit would need to be able to tap into the Spotify API and access the trove of data that was the backbone of the company’s success.</p>
-      </div>
-      <div>
-        <h1>Title</h1>
-        <p>Thanks to a belief in interactive design as a core element of the product workflow, Spotify was a pioneer in their formation of a Design Prototyping team, who mainly partner with embedded designers to bring their static concepts to life. But the team has had so much success they’re now looking to simultaneously automate themselves and uplevel the greater design team’s prototyping skills. To do this, they needed to offer a toolkit that would empower all designers, regardless of technical ability. To top it off, the toolkit would need to be able to tap into the Spotify API and access the trove of data that was the backbone of the company’s success.</p>
-      </div>
-      <div>
-        <h1>Title</h1>
-        <p>Thanks to a belief in interactive design as a core element of the product workflow, Spotify was a pioneer in their formation of a Design Prototyping team, who mainly partner with embedded designers to bring their static concepts to life. But the team has had so much success they’re now looking to simultaneously automate themselves and uplevel the greater design team’s prototyping skills. To do this, they needed to offer a toolkit that would empower all designers, regardless of technical ability. To top it off, the toolkit would need to be able to tap into the Spotify API and access the trove of data that was the backbone of the company’s success.</p>
-      </div>
-      <div>
-        <h1>Title</h1>
-        <p>Thanks to a belief in interactive design as a core element of the product workflow, Spotify was a pioneer in their formation of a Design Prototyping team, who mainly partner with embedded designers to bring their static concepts to life. But the team has had so much success they’re now looking to simultaneously automate themselves and uplevel the greater design team’s prototyping skills. To do this, they needed to offer a toolkit that would empower all designers, regardless of technical ability. To top it off, the toolkit would need to be able to tap into the Spotify API and access the trove of data that was the backbone of the company’s success.</p>
-      </div>
-      <div>
-        <h1>Title</h1>
-        <p>Thanks to a belief in interactive design as a core element of the product workflow, Spotify was a pioneer in their formation of a Design Prototyping team, who mainly partner with embedded designers to bring their static concepts to life. But the team has had so much success they’re now looking to simultaneously automate themselves and uplevel the greater design team’s prototyping skills. To do this, they needed to offer a toolkit that would empower all designers, regardless of technical ability. To top it off, the toolkit would need to be able to tap into the Spotify API and access the trove of data that was the backbone of the company’s success.</p>
-      </div>
-      <div>
-        <h1>Title</h1>
-        <p>Thanks to a belief in interactive design as a core element of the product workflow, Spotify was a pioneer in their formation of a Design Prototyping team, who mainly partner with embedded designers to bring their static concepts to life. But the team has had so much success they’re now looking to simultaneously automate themselves and uplevel the greater design team’s prototyping skills. To do this, they needed to offer a toolkit that would empower all designers, regardless of technical ability. To top it off, the toolkit would need to be able to tap into the Spotify API and access the trove of data that was the backbone of the company’s success.</p>
-      </div>
-      <div>
-        <h1>Title</h1>
-        <p>Thanks to a belief in interactive design as a core element of the product workflow, Spotify was a pioneer in their formation of a Design Prototyping team, who mainly partner with embedded designers to bring their static concepts to life. But the team has had so much success they’re now looking to simultaneously automate themselves and uplevel the greater design team’s prototyping skills. To do this, they needed to offer a toolkit that would empower all designers, regardless of technical ability. To top it off, the toolkit would need to be able to tap into the Spotify API and access the trove of data that was the backbone of the company’s success.</p>
-      </div>
-      <div>
-        <h1>Title</h1>
-        <p>Thanks to a belief in interactive design as a core element of the product workflow, Spotify was a pioneer in their formation of a Design Prototyping team, who mainly partner with embedded designers to bring their static concepts to life. But the team has had so much success they’re now looking to simultaneously automate themselves and uplevel the greater design team’s prototyping skills. To do this, they needed to offer a toolkit that would empower all designers, regardless of technical ability. To top it off, the toolkit would need to be able to tap into the Spotify API and access the trove of data that was the backbone of the company’s success.</p>
-      </div>
+
 
 
     </Layout>

@@ -5,7 +5,6 @@ import "normalize.css"
 
 export default function Layout({ children }) {
   return (
-
     <div>
 
       <div className={styles.sticky_navbar}>
@@ -27,11 +26,10 @@ export default function Layout({ children }) {
         </div>
       </div>
 
-
-
       <div className={styles.main}>
         {children}
       </div>
+
     </div>
   )
 }

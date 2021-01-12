@@ -1,0 +1,62 @@
+h1 {
+  font-family: GTWalsheimPro-Bold;
+  font-size: 32px;
+  color: #000000;
+  letter-spacing: -1px;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+p {
+  font-family: GTWalsheimPro-Regular;
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 30px;
+}
+
+.container {
+  margin-top: 70px;
+
+  .pic {
+    img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: 1px solid rgba(40, 43, 48, 0.07);
+    }
+  }
+}
+
+.social_section {
+  margin-top: 60px;
+
+  .btn {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: 20px;
+
+    a {
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fbfbfb;
+      border: 1px solid rgba(40, 43, 48, 0.07);
+      border-radius: 6px;
+      padding-left: 16px;
+      padding-right: 16px;
+      font-family: GTWalsheimPro-Regular;
+      font-size: 18px;
+      color: #000000;
+      letter-spacing: 0;
+      text-decoration: none;
+      transition: all 0.15s linear;
+
+      &:hover {
+        color: #999999;
+      }
+    }
+  }
+}
