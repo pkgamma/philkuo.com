@@ -15,13 +15,13 @@ h1 {
 p {
   font-weight: 400;
   font-size: 18px;
-  color: #000000;
+  color: #666;
   letter-spacing: 0;
   line-height: 30px;
 
   a {
     text-decoration: none;
-    color: #148cfc;
+    color: #000;
 
     display: inline-flex;
     justify-content: center;
@@ -35,7 +35,7 @@ p {
       position: absolute;
       top: 0px;
       left: -7px;
-      background: #EBF4FF;
+      background: #EEEFEF;
       z-index: -1;
       padding: 0px 7px;
       border-radius: 6px;
@@ -69,7 +69,7 @@ p {
   }
 
   .social_section {
-    margin-top: 44px;
+    margin-top: 32px;
 
     ul {
       list-style-type: none;
