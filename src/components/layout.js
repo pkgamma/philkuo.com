@@ -34,9 +34,11 @@ export default function Layout({ children }) {
           <div className={styles.footer}>
             <p>
               <span>© 2021 Philip Kuo</span>
-              <span><a href="http://archive.philkuo.com">Project Archive</a></span>
-              <span><a href="http://archive.philkuo.com">Privacy</a></span>
-              </p>
+              <span>
+                <span><a href="http://archive.philkuo.com">Project Archive</a></span>
+                <span><a href="http://archive.philkuo.com">Privacy</a></span>
+              </span>
+            </p>
           </div>
         </div>
 

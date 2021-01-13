@@ -141,3 +141,9 @@ p {
     }
   }
 }
+
+@media (max-width: 860px) {
+  .container {
+    margin-top: 30px;
+  }
+}
