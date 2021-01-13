@@ -33,7 +33,7 @@ export default function Home() {
       <div className={styles.social_section}>
 
         <ul>
-          <li><a href="http://www.google.com"><FontAwesomeIcon icon={faFile} className={styles.icon} />Resume</a></li>
+          <li><a className={styles.resume} href="http://www.google.com"><FontAwesomeIcon icon={faFile} className={styles.icon} />Resume</a></li>
           <li><a href="http://www.google.com"><FontAwesomeIcon icon={faEnvelope} className={styles.icon} />Email</a></li>
           <li><a href="http://www.google.com"><FontAwesomeIcon icon={faLinkedin} className={styles.icon} />LinkedIn</a></li>
           <li><a href="http://www.google.com"><FontAwesomeIcon icon={faGithub} className={styles.icon} />Github</a></li>

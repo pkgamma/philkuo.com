@@ -56,13 +56,60 @@ p {
     margin-right: 16px;
     margin-top: 16px;
 
+    &:nth-child(1) {
+      a {
+        &:hover {
+          color: #790394;
+          background: #FCEFFF;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      a {
+        &:hover {
+          color: #DB4437;
+          background: #FFF2F5;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      a {
+        &:hover {
+          color: #0D65C2;
+          background: #EDF7FD;
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      a {
+        &:hover {
+          color: #292B30;
+          background: #F4F4F4;
+        }
+      }
+    }
+
+    &:nth-child(5) {
+      a {
+        &:hover {
+          color: #1B8817;
+          background: #F0F7F0;
+        }
+      }
+    }
+
     a {
       height: 40px;
       display: flex;
       justify-content: center;
       align-items: center;
       // border: 1px solid rgba(40, 43, 48, 0.07);
-      background: #f7f7f7;
+      box-shadow: rgba(40, 43, 48, 0.067) 0px 0px 0px 1px inset;
+      box-sizing: border-box;
+      background: #fbfbfb;
       border-radius: 6px;
       padding-left: 16px;
       padding-right: 16px;
@@ -71,7 +118,7 @@ p {
       color: #000000;
       letter-spacing: 0;
       text-decoration: none;
-      transition: all 0.15s linear;
+      transition: color .2s ease-in-out,background .2s ease-in-out;
 
       .icon {
         font-size: 16px;
@@ -80,8 +127,9 @@ p {
       }
 
       &:hover {
-        color: #000000;
+        box-shadow: inset 0 0 0 1px rgba(40,43,48,.065);
       }
+
     }
   }
 }

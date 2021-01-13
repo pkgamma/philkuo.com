@@ -104,7 +104,7 @@
 
           a {
             text-decoration: none;
-            transition: all 0.15s linear;
+            transition: color .2s ease-in-out,background .2s ease-in-out;
             color: #999999;
 
             &:hover {
@@ -157,7 +157,7 @@
 
           a {
             text-decoration: none;
-            transition: all 0.15s linear;
+            transition: color .2s ease-in-out,background .2s ease-in-out;
             color: #999999;
 
             &:hover {
@@ -204,7 +204,7 @@
 
     a {
       text-decoration: none;
-      transition: all 0.15s linear;
+      transition: color .2s ease-in-out,background .2s ease-in-out;
       color: #000000;
 
       &:hover {
