@@ -31,7 +31,25 @@ p {
 .social_section {
   margin-top: 44px;
 
-  .btn {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    &:hover {
+      li {
+        &:not(:hover) {
+          a {
+            color: #999999;
+            background: #ffffff;
+          }
+        }
+      }
+    }
+  }
+
+  li {
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -44,7 +62,7 @@ p {
       justify-content: center;
       align-items: center;
       // border: 1px solid rgba(40, 43, 48, 0.07);
-      background: #F7F7F7;
+      background: #f7f7f7;
       border-radius: 6px;
       padding-left: 16px;
       padding-right: 16px;
@@ -62,7 +80,7 @@ p {
       }
 
       &:hover {
-        color: #999999;
+        color: #000000;
       }
     }
   }

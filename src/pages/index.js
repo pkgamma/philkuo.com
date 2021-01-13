@@ -28,7 +28,27 @@ export default function Home() {
 
       </div>
 
+
+
       <div className={styles.social_section}>
+
+        <ul>
+          <li><a href="http://www.google.com"><FontAwesomeIcon icon={faFile} className={styles.icon} />Resume</a></li>
+          <li><a href="http://www.google.com"><FontAwesomeIcon icon={faEnvelope} className={styles.icon} />Email</a></li>
+          <li><a href="http://www.google.com"><FontAwesomeIcon icon={faLinkedin} className={styles.icon} />LinkedIn</a></li>
+          <li><a href="http://www.google.com"><FontAwesomeIcon icon={faGithub} className={styles.icon} />Github</a></li>
+          <li><a href="http://www.google.com"><FontAwesomeIcon icon={faMediumM} className={styles.icon} />Medium</a></li>
+        </ul>
+
+      </div>
+
+
+
+
+
+
+      {/* <div className={styles.social_section}>
+
         <div className={styles.btn}>
           <a href="http://www.google.com"><FontAwesomeIcon icon={faFile} className={styles.icon} />Resume</a>
         </div>
@@ -44,7 +64,8 @@ export default function Home() {
         <div className={styles.btn}>
           <a href="http://www.google.com"><FontAwesomeIcon icon={faMediumM} className={styles.icon} />Medium</a>
         </div>
-      </div>
+
+      </div> */}
 
     </Layout>
   )
