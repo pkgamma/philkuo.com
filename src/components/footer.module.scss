@@ -1,10 +1,8 @@
-
 .sticky_footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 66px;
-
 
   @media (max-width: 860px) {
     margin-bottom: 22px;
@@ -17,15 +15,10 @@
 
     @media (max-width: 860px) {
       width: 80%;
-      margin: 0 auto !important;
-      float: none !important;
     }
 
     p {
-      // font-family: "GT Walsheim", -apple-system, system-ui, BlinkMacSystemFont,
-      //   "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       font-weight: 400;
-      // font-family: GTWalsheimPro-Regular;
       font-size: 14px;
       color: #999999;
       letter-spacing: 0;

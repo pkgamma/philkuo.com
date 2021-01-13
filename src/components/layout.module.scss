@@ -10,7 +10,6 @@ body {
   min-height: 100vh;
 
   .main {
-    // background-color: antiquewhite;
     max-width: 820px;
     margin: 0 auto !important;
     float: none !important;
@@ -18,8 +17,6 @@ body {
 
     @media (max-width: 860px) {
       width: 80%;
-      margin: 0 auto !important;
-      float: none !important;
     }
   }
 }
