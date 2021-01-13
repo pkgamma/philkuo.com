@@ -1,3 +1,39 @@
+@media (max-width: 820px) {
+  .page_container {
+    .sticky_navbar {
+      .navbar {
+        width: 80%;
+        margin: 0 auto !important;
+        float: none !important;
+
+        .right {
+          li {
+            .current {
+              visibility: hidden;
+            }
+          }
+        }
+      }
+    }
+
+    .main {
+      width: 80%;
+      margin: 0 auto !important;
+      float: none !important;
+    }
+
+    .sticky_footer {
+      margin-bottom: 20px;
+
+      .footer {
+        width: 80%;
+        margin: 0 auto !important;
+        float: none !important;
+      }
+    }
+  }
+}
+
 .page_container {
   position: relative;
   min-height: 100vh;
@@ -36,6 +72,8 @@
           .name {
             font-family: GTWalsheimPro-Black;
             color: #000000;
+            white-space: nowrap;
+            overflow: hidden;
           }
 
           &:hover {
