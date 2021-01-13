@@ -1,3 +1,10 @@
+@import "../styles/typography.scss";
+
+body {
+  font-family: "GT Walsheim", -apple-system, system-ui, BlinkMacSystemFont,
+    "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
 @media (max-width: 860px) {
   .page_container {
     .sticky_navbar {
@@ -70,7 +77,11 @@
           padding: 0;
 
           .name {
-            font-family: GTWalsheimPro-Black;
+            font-family: "GT Walsheim", -apple-system, system-ui,
+              BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto,
+              "Helvetica Neue", Arial, sans-serif;
+            font-weight: 800;
+            // font-family: GTWalsheimPro-Black;
             color: #000000;
             white-space: nowrap;
             overflow: hidden;
@@ -92,7 +103,11 @@
           flex: 0 1 auto; /* Default */
           list-style-type: none;
           margin-right: 20px;
-          font-family: GTWalsheimPro-Medium;
+          font-family: "GT Walsheim", -apple-system, system-ui,
+            BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto,
+            "Helvetica Neue", Arial, sans-serif;
+          font-weight: 500;
+          // font-family: GTWalsheimPro-Medium;
           font-size: 18px;
           letter-spacing: -0.56px;
           float: left;
@@ -104,7 +119,7 @@
 
           a {
             text-decoration: none;
-            transition: color .2s ease-in-out,background .2s ease-in-out;
+            transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
             color: #999999;
 
             &:hover {
@@ -144,7 +159,11 @@
           display: block;
           flex: 0 1 auto; /* Default */
           list-style-type: none;
-          font-family: GTWalsheimPro-Medium;
+          font-family: "GT Walsheim", -apple-system, system-ui,
+            BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto,
+            "Helvetica Neue", Arial, sans-serif;
+          font-weight: 500;
+          // font-family: GTWalsheimPro-Medium;
           font-size: 18px;
           letter-spacing: -0.56px;
           float: left;
@@ -157,7 +176,7 @@
 
           a {
             text-decoration: none;
-            transition: color .2s ease-in-out,background .2s ease-in-out;
+            transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
             color: #999999;
 
             &:hover {
@@ -190,7 +209,10 @@
     float: none !important;
 
     p {
-      font-family: GTWalsheimPro-Regular;
+      font-family: "GT Walsheim", -apple-system, system-ui, BlinkMacSystemFont,
+        "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-weight: 400;
+      // font-family: GTWalsheimPro-Regular;
       font-size: 14px;
       color: #999999;
       letter-spacing: 0;
@@ -204,7 +226,7 @@
 
     a {
       text-decoration: none;
-      transition: color .2s ease-in-out,background .2s ease-in-out;
+      transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
       color: #999999;
 
       &:hover {

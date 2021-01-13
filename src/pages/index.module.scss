@@ -1,5 +1,8 @@
 h1 {
-  font-family: GTWalsheimPro-Bold;
+  font-family: "GT Walsheim", -apple-system, system-ui, BlinkMacSystemFont,
+    "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  // font-family: GTWalsheimPro-Bold;
   font-size: 32px;
   color: #000000;
   letter-spacing: -1px;
@@ -8,7 +11,10 @@ h1 {
 }
 
 p {
-  font-family: GTWalsheimPro-Regular;
+  font-family: "GT Walsheim", -apple-system, system-ui, BlinkMacSystemFont,
+    "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  // font-family: GTWalsheimPro-Regular;
   font-size: 18px;
   color: #000000;
   letter-spacing: 0;
@@ -60,7 +66,7 @@ p {
       a {
         &:hover {
           color: #790394;
-          background: #FCEFFF;
+          background: #fcefff;
         }
       }
     }
@@ -68,8 +74,8 @@ p {
     &:nth-child(2) {
       a {
         &:hover {
-          color: #DB4437;
-          background: #FFF2F5;
+          color: #db4437;
+          background: #fff2f5;
         }
       }
     }
@@ -77,8 +83,8 @@ p {
     &:nth-child(3) {
       a {
         &:hover {
-          color: #0D65C2;
-          background: #EDF7FD;
+          color: #0d65c2;
+          background: #edf7fd;
         }
       }
     }
@@ -86,8 +92,8 @@ p {
     &:nth-child(4) {
       a {
         &:hover {
-          color: #292B30;
-          background: #F4F4F4;
+          color: #292b30;
+          background: #f4f4f4;
         }
       }
     }
@@ -95,8 +101,8 @@ p {
     &:nth-child(5) {
       a {
         &:hover {
-          color: #1B8817;
-          background: #F0F7F0;
+          color: #1b8817;
+          background: #f0f7f0;
         }
       }
     }
@@ -118,7 +124,7 @@ p {
       color: #282b30;
       letter-spacing: 0;
       text-decoration: none;
-      transition: color .2s ease-in-out,background .2s ease-in-out;
+      transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
 
       .icon {
         font-size: 16px;
@@ -127,9 +133,8 @@ p {
       }
 
       &:hover {
-        box-shadow: inset 0 0 0 1px rgba(40,43,48,.065);
+        box-shadow: inset 0 0 0 1px rgba(40, 43, 48, 0.065);
       }
-
     }
   }
 }
