@@ -33,7 +33,10 @@ export default function Layout({ children }) {
 
         <div className={styles.sticky_footer}>
           <div className={styles.footer}>
-            <p>Copyright © 2021 Philip Kuo. View the <a href="http://archive.philkuo.com">Project Archive</a>.</p>
+            <p>
+              <span>Copyright © 2021 Philip Kuo.</span>
+              <span>View the <a href="http://archive.philkuo.com">Project Archive</a>.</span>
+              </p>
           </div>
         </div>
 
