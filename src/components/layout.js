@@ -1,5 +1,4 @@
 import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
 import styles from "./layout.module.scss"
 import "normalize.css"
 

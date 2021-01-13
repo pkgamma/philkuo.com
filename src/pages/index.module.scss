@@ -29,7 +29,7 @@ p {
       width: 90px;
       height: 90px;
       border-radius: 50%;
-      border: 1px solid rgba(40, 43, 48, 0.07);
+      // border: 1px solid rgba(40, 43, 48, 0.07);
     }
   }
 }
@@ -119,7 +119,10 @@ p {
       border-radius: 6px;
       padding-left: 16px;
       padding-right: 16px;
-      font-family: GTWalsheimPro-Regular;
+      font-family: "GT Walsheim", -apple-system, system-ui, BlinkMacSystemFont,
+        "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-weight: 400;
+      // font-family: GTWalsheimPro-Regular;
       font-size: 18px;
       color: #282b30;
       letter-spacing: 0;
