@@ -30,7 +30,8 @@
     "sass": "^1.32.4"
   },
   "devDependencies": {
-    "prettier": "2.2.1"
+    "prettier": "2.2.1",
+    "sass-loader": "^7.1.0"
   },
   "repository": {
     "type": "git",
