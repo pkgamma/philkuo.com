@@ -3,9 +3,3 @@
   publish = "public"
 [build.environment]
   NODE_VERSION = "12.19.0"
-[context.production]
-  NODE_ENV = "production"
-[context.deploy-preview]
-  NODE_ENV = "production"
-[context.branch-deploy] 
-  NODE_ENV = "production"
