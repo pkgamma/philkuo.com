@@ -1,5 +1,5 @@
 {
-  "name": "Philip Kuo",
+  "name": "philkuo.com",
   "private": true,
   "description": "I Craft Stunning Digital Experiences.",
   "scripts": {
@@ -26,12 +26,5 @@
   "devDependencies": {
     "prettier": "2.2.1",
     "sass-loader": "^7.3.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/pkgamma/philkuo.com"
-  },
-  "bugs": {
-    "url": "https://github.com/pkgamma/philkuo.com/issues"
   }
 }
