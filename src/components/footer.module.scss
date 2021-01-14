@@ -46,7 +46,7 @@
         position: absolute;
         top: 0px;
         left: -7px;
-        background: #E9F3FF;
+        background: var(--color-btn-hover-bg);
         z-index: -1;
         padding: 0px 7px;
         border-radius: 6px;
@@ -55,7 +55,7 @@
       }
 
       &:hover {
-        color: var(--color-link);
+        color: var(--color-text-1);
         &::before {
           opacity: 1;
           transition: 0.1s ease-in-out;

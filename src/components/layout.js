@@ -7,13 +7,13 @@ import Footer from "./footer"
 export default function Layout({ children }) {
   return (
     <div className={styles.page_container}>
-      <Navbar></Navbar>
+      <Navbar />
       <div className={styles.main}>
         <div className={styles.main_container}>
           {children}
         </div>
       </div>
-      <Footer></Footer>
+      <Footer />
     </div>
   )
 }
