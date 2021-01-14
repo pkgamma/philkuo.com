@@ -18,8 +18,8 @@ export default function Home() {
       </h1>
 
       <p>Philip Kuo is a software engineer with a passion for human-centered design. He designs and develops intuitive products with great attention to detail.</p>
-      <p>He currently works at Moshi, and previously at <a href="https://www.builtinchicago.org/company/cat-digital">Caterpillar</a> and DeepWalk Research. He founded PKGamma Digital Agency, organized a TEDx, and helped put together HackIllinois and the RP Tech Conference.</p>
-      <p>In the meantime, he's pursuing a Computer Science degree from the University of Illinois at Urbana Champaign. At school, he’s developing at Hack4Impact to empower non-profits that are doing meaningful work to communities.</p>
+      <p>He currently works at <a target="_blank" href="https://www.moshi.com/">Moshi</a>, and previously at <a target="_blank" href="https://www.builtinchicago.org/company/cat-digital">Caterpillar</a> and <a target="_blank" href="https://www.deepwalkresearch.com/">DeepWalk Research</a>. He founded <a target="_blank" href="http://pkgamma.com">PKGamma Digital Agency</a>, organized a <a target="_blank" href="https://www.ted.com/">TEDx</a>, and helped put together <a target="_blank" href="https://hackillinois.org">HackIllinois</a> and the <a target="_blank" href="https://reflectionsprojections.org">RP Tech Conference</a>.</p>
+      <p>In the meantime, he's pursuing a Computer Science degree from the University of Illinois at Urbana Champaign. At school, he’s developing at <a target="_blank" href="https://uiuc.hack4impact.org/">Hack4Impact</a> to empower non-profits that are doing meaningful work to communities.</p>
 
       <SocialBtns />
 

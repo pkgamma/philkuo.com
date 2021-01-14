@@ -27,7 +27,7 @@
   --color-btn-linkedin: #0d65c2;
   --color-btn-linkedin-bg: #edf7fd;
   --color-btn-github: #292b30;
-  --color-btn-github-bg: #F4F4F4;
+  --color-btn-github-bg: #f4f4f4;
   --color-btn-medium: #1b8817;
   --color-btn-medium-bg: #f0f7f0;
 }
@@ -46,7 +46,7 @@
   --color-text-3: var(--color-gray37);
 
   --color-link: hsl(206, 100%, 47%);
-  
+
   --color-btn-bg: hsla(0, 0%, 100%, 0.03);
   --color-btn-hover-bg: var(--color-gray19);
   --color-btn-text: var(--color-text-2);
@@ -67,6 +67,8 @@
 /* Global Variables */
 /* ================= */
 :root {
+  --main-container-max-width: 860px;
+
   --color-gray02: hsl(0, 0%, 2%);
   --color-gray04: hsl(0, 0%, 4%);
   --color-gray06: hsl(0, 0%, 6%);
@@ -84,4 +86,10 @@
   --color-gray97: hsl(0, 0%, 97%);
   --color-gray98: hsl(0, 0%, 98%);
   --color-gray99: hsl(0, 0%, 99%);
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --main-container-max-width: 960px;
+  }
 }

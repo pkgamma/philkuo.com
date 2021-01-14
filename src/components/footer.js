@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 import styles from "./footer.module.scss"
 
@@ -8,8 +9,8 @@ export default function Footer() {
         <p>
           <span>© 2021 Philip Kuo</span>
           <span>
-            <span><a href="http://archive.philkuo.com">Project Archive</a></span>
-            <span><a href="http://archive.philkuo.com">Privacy</a></span>
+            <span><a target="_blank" href="http://archive.philkuo.com">Project Archive</a></span>
+            <span><Link to="/privacy">Privacy</Link></span>
           </span>
         </p>
       </div>

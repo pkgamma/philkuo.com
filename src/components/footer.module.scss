@@ -9,7 +9,7 @@
   }
 
   .footer {
-    max-width: 820px;
+    max-width: var(--main-container-max-width);
     margin: 0 auto !important;
     float: none !important;
 
