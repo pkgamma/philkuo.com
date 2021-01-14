@@ -10,6 +10,35 @@ h1 {
 
 p {
   line-height: 30px;
+
+  // a {
+  //   display: inline-flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   position: relative;
+
+  //   &:before {
+  //     content: "";
+  //     width: 100%;
+  //     height: 100%;
+  //     position: absolute;
+  //     top: 0px;
+  //     left: -7px;
+  //     background: #eeefef;
+  //     z-index: -1;
+  //     padding: 0px 7px;
+  //     border-radius: 6px;
+  //     opacity: 0;
+  //     transition: 0.1s ease-in-out;
+  //   }
+
+  //   &:hover {
+  //     &::before {
+  //       opacity: 1;
+  //       transition: 0.1s ease-in-out;
+  //     }
+  //   }
+  // }
 }
 
 .pic {
