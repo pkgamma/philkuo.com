@@ -1,35 +1,81 @@
 @import "./typography.scss";
 
-:root {
-  
-}
-
+/* LIGHT MODE */
+/* ================= */
 .light-mode {
   transition: background-color 0.5s ease;
 
   --color-bg: #fff;
   --color-bg-navbar: rgba(255, 255, 255, 0.8);
+  --pic-opacity: 1;
 
-  --color-text-1: #000;
-  --color-text-2: #666;
-  --color-text-3: #999;
+  --color-text-1: var(--color-gray06);
+  --color-text-2: var(--color-gray37);
+  --color-text-3: var(--color-gray70);
 
-  --color-link: #06D;
+  --color-link: hsl(204, 100%, 50%);
   --color-btn-bg: #fbfbfb;
-  --box-shadow-btn-border:  rgba(40, 43, 48, 0.067) 0px 0px 0px 1px inset;
+  --box-shadow-btn-border: inset 0 0 0 1px rgba(40, 43, 48, 0.065);
+
+  --color-btn-resume: #790394;
+  --color-btn-resume-bg: #fcefff;
+  --color-btn-email: #db4437;
+  --color-btn-email-bg: #fff2f5;
+  --color-btn-linkedin: #0d65c2;
+  --color-btn-linkedin-bg: #edf7fd;
+  --color-btn-github: #292b30;
+  --color-btn-github-bg: #F4F4F4;
+  --color-btn-medium: #1b8817;
+  --color-btn-medium-bg: #f0f7f0;
 }
 
+/* DARK MODE */
+/* ================= */
 .dark-mode {
   transition: background-color 0.5s ease;
 
-  --color-bg: #191B1F;
-  --color-bg-navbar: #191B1F;
+  --color-bg: #191b1f;
+  --color-bg-navbar: #191b1f;
+  --pic-opacity: 0.8;
 
-  --color-text-1: #fff;
-  --color-text-2: #fff;
-  --color-text-3: #fff;
+  --color-text-1: var(--color-gray97);
+  --color-text-2: var(--color-gray70);
+  --color-text-3: var(--color-gray37);
 
-  --color-link: #06D;
-  --color-btn-bg: hsla(0,0%,100%,.03);
-  --box-shadow-btn-border: inset 0 0 0 1px hsla(0,0%,100%,.1);
+  --color-link: hsl(206, 100%, 47%);
+  --color-btn-bg: hsla(0, 0%, 100%, 0.03);
+  --box-shadow-btn-border: inset 0 0 0 1px hsla(0, 0%, 100%, 0.1);
+
+  --color-btn-resume: #790394;
+  --color-btn-resume-bg: var(--color-btn-bg);
+  --color-btn-email: #db4437;
+  --color-btn-email-bg: var(--color-btn-bg);
+  --color-btn-linkedin: #0d65c2;
+  --color-btn-linkedin-bg: var(--color-btn-bg);
+  --color-btn-github: #ffffff;
+  --color-btn-github-bg: var(--color-btn-bg);
+  --color-btn-medium: #1b8817;
+  --color-btn-medium-bg: var(--color-btn-bg);
+}
+
+/* Global Variables */
+/* ================= */
+:root {
+  --color-gray02: hsl(0, 0%, 2%);
+  --color-gray04: hsl(0, 0%, 4%);
+  --color-gray06: hsl(0, 0%, 6%);
+  --color-gray08: hsl(0, 0%, 8%);
+  --color-gray10: hsl(0, 0%, 10%);
+  --color-gray14: hsl(0, 0%, 14%);
+  --color-gray19: hsl(0, 0%, 19%);
+  --color-gray24: hsl(0, 0%, 24%);
+  --color-gray37: hsl(0, 0%, 37%);
+  --color-gray54: hsl(0, 0%, 54%);
+  --color-gray70: hsl(0, 0%, 70%);
+  --color-gray83: hsl(0, 0%, 83%);
+  --color-gray92: hsl(0, 0%, 92%);
+  --color-gray95: hsl(0, 0%, 95%);
+  --color-gray97: hsl(0, 0%, 97%);
+  --color-gray98: hsl(0, 0%, 98%);
+  --color-gray99: hsl(0, 0%, 99%);
 }

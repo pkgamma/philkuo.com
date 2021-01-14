@@ -17,6 +17,7 @@ p {
     width: 90px;
     height: 90px;
     border-radius: 50%;
+    opacity: var(--pic-opacity);
   }
 }
 
@@ -51,8 +52,8 @@ p {
     &:nth-child(1) {
       a {
         &:hover {
-          color: #790394;
-          background: #fcefff;
+          color: var(--color-btn-resume);
+          background: var(--color-btn-resume-bg);
         }
       }
     }
@@ -60,8 +61,8 @@ p {
     &:nth-child(2) {
       a {
         &:hover {
-          color: #db4437;
-          background: #fff2f5;
+          color: var(--color-btn-email);
+          background: var(--color-btn-email-bg);
         }
       }
     }
@@ -69,8 +70,8 @@ p {
     &:nth-child(3) {
       a {
         &:hover {
-          color: #0d65c2;
-          background: #edf7fd;
+          color: var(--color-btn-linkedin);
+          background: var(--color-btn-linkedin-bg);
         }
       }
     }
@@ -78,8 +79,8 @@ p {
     &:nth-child(4) {
       a {
         &:hover {
-          color: #292b30;
-          background: #f4f4f4;
+          color: var(--color-btn-github);
+          background: var(--color-btn-github-bg);
         }
       }
     }
@@ -87,8 +88,8 @@ p {
     &:nth-child(5) {
       a {
         &:hover {
-          color: #1b8817;
-          background: #f0f7f0;
+          color: var(--color-btn-medium);
+          background: var(--color-btn-medium-bg);
         }
       }
     }
