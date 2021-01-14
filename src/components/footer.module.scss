@@ -20,7 +20,7 @@
     p {
       font-weight: 400;
       font-size: 14px;
-      color: #999999;
+      color: var(--color-text-3);
       letter-spacing: 0;
       line-height: 26px;
 
@@ -33,7 +33,7 @@
     a {
       text-decoration: none;
       transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
-      color: #999999;
+      color: var(--color-text-3);
       display: inline-flex;
       justify-content: center;
       align-items: center;
@@ -55,7 +55,7 @@
       }
 
       &:hover {
-        color: #138CFC;
+        color: var(--color-link);
         &::before {
           opacity: 1;
           transition: 0.1s ease-in-out;

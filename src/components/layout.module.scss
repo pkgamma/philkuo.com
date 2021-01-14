@@ -1,29 +1,27 @@
-@import "../styles/typography.scss";
-@import "../styles/variables.scss";
-
 body {
   font-family: "GT Walsheim", -apple-system, system-ui, BlinkMacSystemFont,
     "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
+  background: var(--color-bg);
 }
 
 h1 {
   font-weight: 700;
   font-size: 32px;
-  color: #000;
+  color: var(--color-text-1);
   letter-spacing: -1px;
 }
 
 p {
   font-weight: 400;
   font-size: 18px;
-  color: #666;
+  color: var(--color-text-2);
   letter-spacing: 0;
 }
 
 a {
   text-decoration: none;
-  color: var(--color-blue);
+  color: var(--color-link);
 
   &:hover {
     text-decoration: underline;

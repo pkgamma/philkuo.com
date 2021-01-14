@@ -2,7 +2,7 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: var(--color-bg-navbar);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   // box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 0px 0px inset;
@@ -35,7 +35,7 @@
 
         .name {
           font-weight: 800;
-          color: #000000;
+          color: var(--color-text-1);
           white-space: nowrap;
         }
 
@@ -43,7 +43,7 @@
           li {
             &:not(:hover) {
               a {
-                color: #999999;
+                color: var(--color-text-3);
               }
             }
           }
@@ -62,16 +62,16 @@
         list-style: none;
 
         .current {
-          color: #000000;
+          color: var(--color-text-1);
         }
 
         a {
           text-decoration: none;
           transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
-          color: #999999;
+          color: var(--color-text-3);
 
           &:hover {
-            color: #000000;
+            color: var(--color-text-1);
           }
         }
       }
@@ -96,7 +96,7 @@
           li {
             &:not(:hover) {
               a {
-                color: #999999;
+                color: var(--color-text-3);
               }
             }
           }
@@ -115,7 +115,7 @@
         list-style: none;
 
         .current {
-          color: #000000;
+          color: var(--color-text-1);
 
           @media (max-width: 400px) {
             visibility: hidden;
@@ -125,10 +125,10 @@
         a {
           text-decoration: none;
           transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
-          color: #999999;
+          color: var(--color-text-3);
 
           &:hover {
-            color: #000000;
+            color: var(--color-text-1);
           }
         }
       }
