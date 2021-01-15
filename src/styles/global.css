@@ -16,7 +16,7 @@
   --color-link: hsl(204, 100%, 50%);
 
   --color-btn-bg: #fbfbfb;
-  --color-btn-hover-bg: var(--color-gray92);
+  --color-btn-hover-bg: #ECECEC;
   --color-btn-text: var(--color-text-1);
   --box-shadow-btn-border: inset 0 0 0 1px rgba(40, 43, 48, 0.065);
 
@@ -48,7 +48,7 @@
   --color-link: hsl(206, 100%, 47%);
 
   --color-btn-bg: hsla(0, 0%, 100%, 0.03);
-  --color-btn-hover-bg: var(--color-gray19);
+  --color-btn-hover-bg: var(--color-btn-bg);
   --color-btn-text: var(--color-text-2);
   --box-shadow-btn-border: inset 0 0 0 1px hsla(0, 0%, 100%, 0.1);
 
@@ -90,6 +90,6 @@
 
 @media (min-width: 1280px) {
   :root {
-    --main-container-max-width: 960px;
+    --main-container-max-width: 1000px;
   }
 }

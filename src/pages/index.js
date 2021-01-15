@@ -3,13 +3,17 @@ import Layout from "../components/layout"
 import SocialBtns from "../components/social-btns"
 import styles from "./index.module.scss"
 import PhilipKuoPic from "../img/philip_kuo.jpg"
+import useDarkMode from 'use-dark-mode';
 
 export default function Home() {
+
+  const darkMode = useDarkMode(false);
+
   return (
     <Layout>
 
       <div className={styles.pic}>
-        <img alt="Philip Kuo" src={PhilipKuoPic} />
+        <img onClick={darkMode.toggle} alt="Philip Kuo" src={PhilipKuoPic} />
       </div>
 
       <h1>

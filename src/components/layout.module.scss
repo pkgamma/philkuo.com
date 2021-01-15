@@ -52,7 +52,6 @@ li {
   color: var(--color-text-2);
   letter-spacing: 0;
   line-height: 30px;
-
   margin-block-start: 1em;
   margin-block-end: 1em;
 }
@@ -67,14 +66,14 @@ li {
     float: none !important;
     padding-bottom: 100px;
 
-    @media (max-width: 860px) {
+    @media (max-width: 920px) {
       width: 80%;
     }
 
     .main_container {
       margin-top: 60px;
 
-      @media (max-width: 860px) {
+      @media (max-width: 920px) {
         margin-top: 30px;
       }
     }
