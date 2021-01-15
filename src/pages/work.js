@@ -9,12 +9,34 @@ export default function Work() {
       <h1>Work</h1>
 
       <div className={styles.container}>
-        <div>sdfgdfg</div>
-        <div>sdfgdfg</div>
-        <div>sdfgdfg</div>
-        <div>sdfgdfg</div>
-        <div>sdfgdfg</div>
-        <div>sdfgdfg</div>
+        <div className={styles.item_container}>
+          <div className={styles.pic}>
+            <img src="https://source.unsplash.com/user/erondu/1600x900" />
+          </div>
+          <div className={styles.description}>
+            This is it!
+          </div>
+        </div>
+
+
+        <div className={styles.item_container}>
+          <div className={styles.pic}>
+            <img src="https://source.unsplash.com/user/erondu/1600x900" />
+          </div>
+          <div className={styles.description}>
+            This is it!
+          </div>
+        </div>
+
+
+        <div className={styles.item_container}>
+          <div className={styles.pic}>
+            <img src="https://source.unsplash.com/user/erondu/1600x900" />
+          </div>
+          <div className={styles.description}>
+            This is it!
+          </div>
+        </div>
 
       </div>
 
