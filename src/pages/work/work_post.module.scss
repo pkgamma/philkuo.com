@@ -6,6 +6,12 @@
     margin: 0;
     font-weight: 600;
     color: var(--color-text-3);
+
+    .icon {
+      font-size: 15px;
+      margin-right: 6px;
+      margin-bottom: 1px;
+    }
   }
 
   h1 {
@@ -19,11 +25,6 @@ article {
 
   * {
     grid-column: 4 / span 12;
-  }
-
-  h2 {
-    text-align: center;
-    // margin: 0;
   }
 
   img {
@@ -43,5 +44,21 @@ article {
     grid-column: 5 / span 10;
     margin: 0;
     font-style: italic;
+  }
+
+  @media (max-width: 920px) {
+    * {
+      grid-column: 2 / span 16;
+    }
+
+    img {
+      width: 100vw;
+      margin-left: calc(-7vw);
+      border-radius: 0px;
+    }
+
+    blockquote {
+      grid-column: 3 / span 14;
+    }
   }
 }
