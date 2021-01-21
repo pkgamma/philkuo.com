@@ -1,48 +1,58 @@
 import React from "react"
 import Layout from "../components/layout"
 import styles from "./work.module.scss"
+import BG1 from "../img/work/1.jpg"
+import BG2 from "../img/work/2.jpg"
+import BG3 from "../img/work/3.jpg"
+import BG4 from "../img/work/4.jpg"
 
 export default function Work() {
   return (
     <Layout>
 
-      <h1>Work</h1>
+      <div className={styles.title_container}>
+        <h1>Work</h1>
+      </div>
 
-      <div className={styles.container}>
+      <div className={styles.grid_container}>
         <div className={styles.item_container}>
-          <div className={styles.pic}>
-            <img src="https://source.unsplash.com/user/erondu/1600x900" />
+          <div className={styles.pic} style={{ backgroundImage: "url(" + BG1 + ")" }}>
           </div>
-          <div className={styles.description}>
-            This is it!
+          <div className={styles.description_container}>
+            <div className={styles.title}>Item Title One</div>
+            <div className={styles.description}>Lorem ipsum dolor sit amet</div>
           </div>
         </div>
 
-
         <div className={styles.item_container}>
-          <div className={styles.pic}>
-            <img src="https://source.unsplash.com/user/erondu/1600x900" />
+          <div className={styles.pic} style={{ backgroundImage: "url(" + BG2 + ")" }}>
           </div>
-          <div className={styles.description}>
-            This is it!
+          <div className={styles.description_container}>
+            <div className={styles.title}>Item Title Two</div>
+            <div className={styles.description}>Lorem ipsum dolor sit amet</div>
           </div>
         </div>
 
+        <div className={styles.item_container}>
+          <div className={styles.pic} style={{ backgroundImage: "url(" + BG3 + ")" }}>
+          </div>
+          <div className={styles.description_container}>
+            <div className={styles.title}>Item Title Three</div>
+            <div className={styles.description}>Lorem ipsum dolor sit amet</div>
+          </div>
+        </div>
 
         <div className={styles.item_container}>
-          <div className={styles.pic}>
-            <img src="https://source.unsplash.com/user/erondu/1600x900" />
+          <div className={styles.pic} style={{ backgroundImage: "url(" + BG4 + ")" }}>
           </div>
-          <div className={styles.description}>
-            This is it!
+          <div className={styles.description_container}>
+            <div className={styles.title}>Item Title Four</div>
+            <div className={styles.description}>Lorem ipsum dolor sit amet</div>
           </div>
         </div>
 
       </div>
 
-      <p>Philip Kuo is a software engineer with a passion for human-centered design. He designs and develops intuitive products with great attention to detail.</p>
-      <p>He currently works at Moshi, and previously at <a href="https://www.builtinchicago.org/company/cat-digital">Caterpillar</a> and DeepWalk Research. He founded PKGamma Digital Agency, organized a TEDx, and helped put together HackIllinois and the RP Tech Conference.</p>
-      <p>In the meantime, he's pursuing a Computer Science degree from the University of Illinois at Urbana Champaign. At school, he’s developing at Hack4Impact to empower non-profits that are doing meaningful work to communities.</p>
 
     </Layout>
   )

@@ -12,9 +12,7 @@ export default function Layout({ children }) {
     <div className={styles.page_container}>
       <Navbar />
       <div className={styles.main}>
-        <div className={styles.main_container}>
-          {children}
-        </div>
+        {children}
       </div>
       <Footer />
     </div>

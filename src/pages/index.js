@@ -16,10 +16,12 @@ export default function Home() {
         <img onClick={darkMode.toggle} alt="Philip Kuo" src={PhilipKuoPic} />
       </div>
 
-      <h1>
-        <span>I Craft Stunning&nbsp;</span>
-        <span>Digital Experiences.</span>
-      </h1>
+      <div className={styles.title_container}>
+        <h1>
+          <span>I Craft Stunning&nbsp;</span>
+          <span>Digital Experiences.</span>
+        </h1>
+      </div>
 
       <p>Philip Kuo is a software engineer with a passion for human-centered design. He designs and develops intuitive products with great attention to detail.</p>
       <p>He currently works at <a target="_blank" href="https://www.moshi.com/">Moshi</a>, and previously at <a target="_blank" href="https://www.builtinchicago.org/company/cat-digital">Caterpillar</a> and <a target="_blank" href="https://www.deepwalkresearch.com/">DeepWalk Research</a>. He founded <a target="_blank" href="http://pkgamma.com">PKGamma Digital Agency</a>, organized a <a target="_blank" href="https://www.ted.com/">TEDx</a>, and helped put together <a target="_blank" href="https://hackillinois.org">HackIllinois</a> and the <a target="_blank" href="https://reflectionsprojections.org">RP Tech Conference</a>.</p>

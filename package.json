@@ -4,7 +4,8 @@
   "description": "I Craft Stunning Digital Experiences.",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop"
+    "develop": "gatsby develop",
+    "clean": "gatsby clean"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
