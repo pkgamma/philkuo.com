@@ -16,41 +16,29 @@ export default function Work() {
       </div>
 
       <div className={styles.grid_container}>
-        
-        <Link to="/work/one" className={styles.item_container}>
-          <div className={styles.pic} style={{ backgroundImage: "url(" + BG1 + ")" }}>
-          </div>
-          <div className={styles.description_container}>
-            <div className={styles.title}>Item Title One</div>
-            <div className={styles.description}>Lorem ipsum dolor sit amet</div>
-          </div>
+
+        <Link to="/work/one" className={styles.item}>
+          <img src={BG1}></img>
+          <p className={styles.title}>Item Title One</p>
+          <p className={styles.description}>Lorem ipsum dolor sit amet</p>
         </Link>
 
-        <Link className={styles.item_container}>
-          <div className={styles.pic} style={{ backgroundImage: "url(" + BG2 + ")" }}>
-          </div>
-          <div className={styles.description_container}>
-            <div className={styles.title}>Item Title Two</div>
-            <div className={styles.description}>Lorem ipsum dolor sit amet</div>
-          </div>
+        <Link to="/work/one" className={styles.item}>
+          <img src={BG2}></img>
+          <p className={styles.title}>Item Title One</p>
+          <p className={styles.description}>Lorem ipsum dolor sit amet</p>
         </Link>
 
-        <Link className={styles.item_container}>
-          <div className={styles.pic} style={{ backgroundImage: "url(" + BG3 + ")" }}>
-          </div>
-          <div className={styles.description_container}>
-            <div className={styles.title}>Item Title Three</div>
-            <div className={styles.description}>Lorem ipsum dolor sit amet</div>
-          </div>
+        <Link to="/work/one" className={styles.item}>
+          <img src={BG3}></img>
+          <p className={styles.title}>Item Title One</p>
+          <p className={styles.description}>Lorem ipsum dolor sit amet</p>
         </Link>
 
-        <Link className={styles.item_container}>
-          <div className={styles.pic} style={{ backgroundImage: "url(" + BG4 + ")" }}>
-          </div>
-          <div className={styles.description_container}>
-            <div className={styles.title}>Item Title Four</div>
-            <div className={styles.description}>Lorem ipsum dolor sit amet</div>
-          </div>
+        <Link to="/work/one" className={styles.item}>
+          <img src={BG4}></img>
+          <p className={styles.title}>Item Title One</p>
+          <p className={styles.description}>Lorem ipsum dolor sit amet</p>
         </Link>
 
       </div>
