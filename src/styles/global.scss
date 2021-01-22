@@ -35,6 +35,11 @@
 /* DARK MODE */
 /* ================= */
 .dark-mode {
+
+  img {
+    filter: brightness(.8) contrast(1.1);
+  }
+  
   transition: background-color 0.5s ease;
 
   --color-bg: #191b1f;

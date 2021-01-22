@@ -15,6 +15,6 @@ module.exports = {
     title: "Philip Kuo",
     titleTemplate: "%s - Philip Kuo",
     description: "I Craft Stunning Digital Experiences.",
-    url: "http://philkuo.com", // No trailing slash allowed!
+    siteUrl: "http://philkuo.com",
   },
 }

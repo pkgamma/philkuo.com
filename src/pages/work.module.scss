@@ -8,9 +8,9 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 50px 30px;
 
-  @media (max-width: 760px) {
+  @media (max-width: 724px) {
     grid-template-columns: 1fr;
-    row-gap: 20px;
+    row-gap: 36px;
   }
 
   .item {

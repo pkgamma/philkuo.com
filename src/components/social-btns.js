@@ -8,11 +8,11 @@ export default function SocialBtns() {
   return (
     <div className={styles.social_section}>
       <ul>
-        <li><a target="_blank" href="http://philkuo.com/resume"><FontAwesomeIcon icon={faFile} className={styles.icon} />Resume</a></li>
-        <li><a target="_blank" href="mailto:pk@philkuo.com"><FontAwesomeIcon icon={faEnvelope} className={styles.icon} />Email</a></li>
-        <li><a target="_blank" href="https://linkedin.com/in/pkgamma/"><FontAwesomeIcon icon={faLinkedin} className={styles.icon} />LinkedIn</a></li>
-        <li><a target="_blank" href="https://github.com/pkgamma"><FontAwesomeIcon icon={faGithub} className={styles.icon} />Github</a></li>
-        <li><a target="_blank" href="https://medium.com/@pkgamma"><FontAwesomeIcon icon={faMediumM} className={styles.icon} />Medium</a></li>
+        <li><a target="_blank" rel="noreferrer" href="http://philkuo.com/resume"><FontAwesomeIcon icon={faFile} className={styles.icon} />Resume</a></li>
+        <li><a target="_blank" rel="noreferrer" href="mailto:pk@philkuo.com"><FontAwesomeIcon icon={faEnvelope} className={styles.icon} />Email</a></li>
+        <li><a target="_blank" rel="noreferrer" href="https://linkedin.com/in/pkgamma/"><FontAwesomeIcon icon={faLinkedin} className={styles.icon} />LinkedIn</a></li>
+        <li><a target="_blank" rel="noreferrer" href="https://github.com/pkgamma"><FontAwesomeIcon icon={faGithub} className={styles.icon} />Github</a></li>
+        <li><a target="_blank" rel="noreferrer" href="https://medium.com/@pkgamma"><FontAwesomeIcon icon={faMediumM} className={styles.icon} />Medium</a></li>
       </ul>
     </div>
   )

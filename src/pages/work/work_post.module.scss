@@ -46,6 +46,10 @@ article {
     }
   }
 
+  h2 + p {
+    margin-block-start: 0em !important;
+  }
+
   blockquote {
     grid-column: 5 / span 10;
     margin: 0;
