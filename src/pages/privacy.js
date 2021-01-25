@@ -1,9 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
+import SEO from '../components/seo';
 
 export default function Privacy() {
   return (
     <Layout>
+
+      <SEO title={"Privacy - Philip Kuo"} />
 
       <h1>Privacy Policy</h1>
       <p>Last updated: January 14, 2021</p>

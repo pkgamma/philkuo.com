@@ -9,12 +9,15 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-fontawesome-css`,
+    `gatsby-plugin-react-helmet`,
     'gatsby-plugin-use-dark-mode',
   ],
   siteMetadata: {
-    title: "Philip Kuo",
+    title: "Philip Kuo - Software Engineer and Product Designer",
     titleTemplate: "%s - Philip Kuo",
     description: "I Craft Stunning Digital Experiences.",
-    siteUrl: "http://philkuo.com",
+    url: "https://philkuo.com",
+    image: "/social.jpg", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@pkgamma",
   },
 }

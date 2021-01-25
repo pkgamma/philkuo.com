@@ -2,8 +2,8 @@ import React from "react"
 import Layout from "../components/layout"
 import SocialBtns from "../components/social-btns"
 import styles from "./index.module.scss"
-import PhilipKuoPic from "../img/philip_kuo.jpg"
 import useDarkMode from 'use-dark-mode';
+import SEO from '../components/seo';
 
 export default function Home() {
 
@@ -12,8 +12,10 @@ export default function Home() {
   return (
     <Layout>
 
+      <SEO />
+
       <div className={styles.pic}>
-        <img onClick={darkMode.toggle} alt="Philip Kuo" src={PhilipKuoPic} />
+        <img onClick={darkMode.toggle} alt="Philip Kuo" src={'/philip_kuo.jpg'} />
       </div>
 
       <div className={styles.title_container}>

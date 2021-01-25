@@ -6,10 +6,13 @@ import BG1 from "../img/work/1.jpg"
 import BG2 from "../img/work/2.jpg"
 import BG3 from "../img/work/3.jpg"
 import BG4 from "../img/work/4.jpg"
+import SEO from '../components/seo';
 
 export default function Work() {
   return (
     <Layout>
+
+      <SEO title={"Work - Philip Kuo"} />
 
       <div className={styles.title_container}>
         <h1>Work</h1>
