@@ -2,10 +2,10 @@ import React from "react"
 import Layout from "../components/layout"
 import styles from "./work.module.scss"
 import { Link } from "gatsby"
-import BG1 from "../img/work/1.jpg"
-import BG2 from "../img/work/2.jpg"
-import BG3 from "../img/work/3.jpg"
-import BG4 from "../img/work/4.jpg"
+import BG1 from "./work/img/A01.jpg"
+import BG2 from "./work/img/A02.jpg"
+import BG3 from "./work/img/A03.jpg"
+import BG4 from "./work/img/A04.jpg"
 import SEO from '../components/seo';
 
 export default function Work() {

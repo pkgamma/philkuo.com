@@ -4,7 +4,7 @@ import styles from "./work_post.module.scss"
 import { Link } from "gatsby"
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import BG1 from "../../img/work/1.jpg"
+import BG1 from "./img/A01.jpg"
 
 export default function One() {
   return (

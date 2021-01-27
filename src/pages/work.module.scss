@@ -35,14 +35,17 @@
     .title {
       font-weight: 600;
       line-height: normal;
-      margin-top: 10px;
+      margin-top: 8px;
       margin-bottom: 6px;
+      margin-left: 12px;
       color: var(--color-text-1);
     }
 
     .description {
       line-height: normal;
-      margin: 0;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 12px;
       color: var(--color-text-2);
     }
   }
