@@ -11,7 +11,7 @@ export default function HackIllinois() {
   return (
     <Layout>
 
-      <SEO title={"SafeMaps - Philip Kuo"} />
+      <SEO title={"HackIllinois - Philip Kuo"} />
 
       <div className={styles.title_container}>
         <Link to="/work" className={styles.back}>
