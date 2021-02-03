@@ -8,10 +8,9 @@ export default function Footer() {
       <div className={styles.footer}>
         <p>
           <span>© 2021 Philip Kuo</span>
-          <span>
-            <span><a target="_blank" rel="noreferrer" href="http://archive.philkuo.com">Project Archive</a></span>
-            <span><Link to="/privacy">Privacy</Link></span>
-          </span>
+          <span><a target="_blank" rel="noreferrer" href="http://archive.philkuo.com">Project Archive</a></span>
+          <span><Link to="/privacy">Privacy</Link></span>
+          <span><Link to="/privacy">中文</Link></span>
         </p>
       </div>
     </div>

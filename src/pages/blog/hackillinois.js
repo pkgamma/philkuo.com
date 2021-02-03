@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import SEO from "../../components/seo"
 import BG1 from "./img/A01.jpg"
 
-export default function One() {
+export default function HackIllinois() {
   return (
     <Layout>
 
@@ -18,7 +18,7 @@ export default function One() {
           <FontAwesomeIcon icon={faChevronLeft} className={styles.icon} />
           Back
         </Link>
-        <h1>Building SafeMaps</h1>
+        <h1>HackIllinois 2020</h1>
       </div>
 
       <article>
