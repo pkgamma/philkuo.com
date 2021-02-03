@@ -9,11 +9,11 @@
   --color-bg-navbar: rgba(255, 255, 255, 0.9);
   --pic-opacity: 1;
 
-  --color-text-1: var(--color-gray06);
-  --color-text-2: var(--color-gray37);
-  --color-text-3: var(--color-gray70);
+  --color-text-1: rgb(17, 24, 39);
+  --color-text-2: rgb(55, 65, 81);
+  --color-text-3: rgb(156, 163, 175);
 
-  --color-link: hsl(204, 100%, 50%);
+  --color-link:rgb(0, 168, 255);
 
   --color-btn-bg: #fbfbfb;
   --color-btn-hover-bg: #ECECEC;
@@ -36,9 +36,9 @@
 /* ================= */
 .dark-mode {
 
-  img {
-    filter: brightness(.8) contrast(1.1);
-  }
+  // img {
+  //   filter: brightness(.8) contrast(1.1);
+  // }
   
   transition: background-color 0.5s ease;
 
@@ -54,7 +54,7 @@
 
   --color-btn-bg: hsla(0, 0%, 100%, 0.03);
   --color-btn-hover-bg: var(--color-btn-bg);
-  --color-btn-text: var(--color-text-2);
+  --color-btn-text: var(--color-text-1);
   --box-shadow-btn-border: inset 0 0 0 1px hsla(0, 0%, 100%, 0.1);
 
   --color-btn-resume: #790394;

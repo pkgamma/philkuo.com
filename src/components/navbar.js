@@ -12,6 +12,7 @@ export default function Navbar() {
             <li className={styles.name}>Philip Kuo</li>
             <li><Link to="/" activeClassName={styles.current}>About</Link></li>
             <li><Link to="/work" activeClassName={styles.current}>Work</Link></li>
+            <li><Link to="/blog" activeClassName={styles.current}>Blog</Link></li>
           </ul>
         </div>
         <div className={styles.spacer}></div>

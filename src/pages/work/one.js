@@ -4,11 +4,14 @@ import styles from "./work_post.module.scss"
 import { Link } from "gatsby"
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import SEO from "../../components/seo"
 import BG1 from "./img/A01.jpg"
 
 export default function One() {
   return (
     <Layout>
+
+      <SEO title={"SafeMaps - Philip Kuo"} />
 
       <div className={styles.title_container}>
         <Link to="/work" className={styles.back}>

@@ -74,7 +74,7 @@
 
     a {
       font-weight: 400;
-      font-size: 18px;
+      font-size: 16px;
       letter-spacing: 0;
       text-decoration: none;
       color: var(--color-btn-text);
@@ -86,8 +86,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-left: 16px;
-      padding-right: 16px;
+      padding-left: 14px;
+      padding-right: 14px;
       transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
 
       .icon {
