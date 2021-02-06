@@ -1,6 +1,7 @@
 import React from "react"
 import "normalize.css"
 import styles from "./layout.module.scss"
+import "./layout.module.zh.scss"
 import Navbar from "./navbar.zh"
 import Footer from "./footer.zh"
 
