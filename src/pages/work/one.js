@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../../components/layout.en"
-import styles from "../shared.post.module.scss"
 import SEO from "../../components/seo"
 import BG1 from "./img/A01.jpg"
 import Title from "../../components/title"

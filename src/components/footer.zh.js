@@ -9,7 +9,7 @@ export default function Footer() {
         <p>
           <span>© 2021 郭力銘</span>
           <span><a target="_blank" rel="noreferrer" href="http://archive.philkuo.com">過去專案封存</a></span>
-          <span><Link to="/privacy">隱私權政策</Link></span>
+          <span><Link to="/zh/privacy">隱私權政策</Link></span>
           <span className={styles.language}>
             <span><Link to="/">English</Link></span>
           </span>
