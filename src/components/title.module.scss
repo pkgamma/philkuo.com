@@ -1,0 +1,26 @@
+.title_container {
+  margin-top: 36px;
+  margin-bottom: 66px;
+
+  .back {
+    margin: 0;
+    font-weight: 600;
+    color: var(--color-text-3);
+    transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+
+    &:hover {
+      color: var(--color-text-1);
+      text-decoration: none;
+    }
+
+    .icon {
+      font-size: 15px;
+      margin-right: 6px;
+      margin-bottom: 1px;
+    }
+  }
+
+  .back_title_adjust {
+    margin-top: 8px;
+  }
+}

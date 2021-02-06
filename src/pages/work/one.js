@@ -1,25 +1,16 @@
 import React from "react"
 import Layout from "../../components/layout"
 import styles from "../shared.post.module.scss"
-import { Link } from "gatsby"
-import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import SEO from "../../components/seo"
 import BG1 from "./img/A01.jpg"
+import Title from "../../components/title"
 
 export default function One() {
   return (
     <Layout>
 
       <SEO title={"SafeMaps - Philip Kuo"} />
-
-      <div className={styles.title_container}>
-        <Link to="/work" className={styles.back}>
-          <FontAwesomeIcon icon={faChevronLeft} className={styles.icon} />
-          Back
-        </Link>
-        <h1>Building SafeMaps</h1>
-      </div>
+      <Title title="Building SafeMaps" back_btn={true} />
 
       <article>
         <img src={BG1}></img>
