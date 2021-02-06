@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout.zh"
 import SEO from '../components/seo';
-import Title from "../components/title"
+import Title from "../components/title.zh"
 
 export default function Privacy() {
   return (

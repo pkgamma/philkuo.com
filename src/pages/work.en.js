@@ -6,7 +6,7 @@ import BG3 from "./work/img/B01.jpg"
 import BG4 from "./work/img/B02.jpg"
 import SEO from '../components/seo';
 import ItemCard from "../components/item-card.en"
-import Title from "../components/title"
+import Title from "../components/title.en"
 
 export default function Work() {
   return (

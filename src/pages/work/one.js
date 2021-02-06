@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../../components/layout.en"
 import SEO from "../../components/seo"
 import BG1 from "./img/A01.jpg"
-import Title from "../../components/title"
+import Title from "../../components/title.en"
 
 export default function One() {
   return (

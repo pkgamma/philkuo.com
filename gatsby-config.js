@@ -13,7 +13,7 @@ module.exports = {
     'gatsby-plugin-use-dark-mode',
     {
       resolve: 'gatsby-plugin-i18n',
-      options: {        
+      options: {
         langKeyDefault: 'en',
         useLangKeyLayout: false,
         prefixDefault: false,
@@ -27,5 +27,7 @@ module.exports = {
     url: "https://philkuo.com",
     image: "/social.jpg", // Path to your image you placed in the 'static' folder
     twitterUsername: "@pkgamma",
+    langs: ['en', 'zh'],
+    defaultLangKey: 'en',
   },
 }

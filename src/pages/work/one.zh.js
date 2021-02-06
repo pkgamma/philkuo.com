@@ -1,15 +1,15 @@
 import React from "react"
-import Layout from "../../components/layout.en"
+import Layout from "../../components/layout.zh"
 import SEO from "../../components/seo"
 import BG1 from "./img/A01.jpg"
-import Title from "../../components/title.en"
+import Title from "../../components/title.zh"
 
-export default function HackIllinois() {
+export default function One() {
   return (
     <Layout>
 
-      <SEO title={"HackIllinois - Philip Kuo"} />
-      <Title title="HackIllinois 2020" back_btn={true} />
+      <SEO title={"SafeMaps - Philip Kuo"} />
+      <Title title="建置 SafeMaps" back_btn={true} />
 
       <article>
         <img src={BG1}></img>

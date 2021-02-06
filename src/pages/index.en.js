@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout.en"
-import SocialBtns from "../components/social-btns"
+import SocialBtns from "../components/social-btns.en"
 import styles from "./index.module.scss"
 import useDarkMode from 'use-dark-mode';
 import SEO from '../components/seo';
