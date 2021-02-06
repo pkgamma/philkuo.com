@@ -1,8 +1,8 @@
 import React from "react"
 import "normalize.css"
 import styles from "./layout.module.scss"
-import Navbar from "./navbar"
-import Footer from "./footer"
+import Navbar from "./navbar.zh"
+import Footer from "./footer.zh"
 
 export default function Layout({ children }) {
 

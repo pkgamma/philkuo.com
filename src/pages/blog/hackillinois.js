@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../../components/layout"
+import Layout from "../../components/layout.en"
 import styles from "../shared.post.module.scss"
 import { Link } from "gatsby"
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'

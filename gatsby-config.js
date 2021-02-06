@@ -11,6 +11,14 @@ module.exports = {
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-react-helmet`,
     'gatsby-plugin-use-dark-mode',
+    {
+      resolve: 'gatsby-plugin-i18n',
+      options: {        
+        langKeyDefault: 'en',
+        useLangKeyLayout: false,
+        prefixDefault: false,
+      }
+    },
   ],
   siteMetadata: {
     title: "Philip Kuo - Software Engineer and Product Designer",

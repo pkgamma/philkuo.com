@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../components/layout"
+import Layout from "../components/layout.en"
 import SocialBtns from "../components/social-btns"
 import styles from "./index.module.scss"
 import useDarkMode from 'use-dark-mode';

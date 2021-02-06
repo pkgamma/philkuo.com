@@ -9,17 +9,17 @@ export default function Navbar() {
       <div className={styles.navbar}>
         <div className={styles.left}>
           <ul>
-            <li className={styles.name}>Philip Kuo</li>
-            <li><Link to="/" activeClassName={styles.current}>About</Link></li>
-            <li><Link to="/work" activeClassName={styles.current}>Work</Link></li>
-            <li><Link to="/blog" activeClassName={styles.current}>Blog</Link></li>
+            <li className={styles.name}>郭力銘</li>
+            <li><Link to="/zh" activeClassName={styles.current}>關於</Link></li>
+            <li><Link to="/zh/work" activeClassName={styles.current}>作品</Link></li>
+            <li><Link to="/zh/blog" activeClassName={styles.current}>經驗</Link></li>
           </ul>
         </div>
         <div className={styles.spacer}></div>
         <div className={styles.right}>
           <ul>
             <li><Link to="/" activeClassName={styles.current}>EN</Link></li>
-            <li><Link to="/ch" activeClassName={styles.current}>中</Link></li>
+            <li><Link to="/zh" activeClassName={styles.current}>中</Link></li>
           </ul>
         </div>
       </div>

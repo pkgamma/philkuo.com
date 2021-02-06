@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../components/layout"
+import Layout from "../components/layout.en"
 import BG1 from "./work/img/A01.jpg"
 import BG2 from "./work/img/A02.jpg"
 import BG3 from "./work/img/B01.jpg"
