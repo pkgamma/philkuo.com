@@ -18,8 +18,8 @@ export default function Navbar() {
         <div className={styles.spacer}></div>
         <div className={styles.right}>
           <ul>
-            <li><Link to="/" activeClassName={styles.current}>EN</Link></li>
-            <li><Link to="/zh" activeClassName={styles.current}>中</Link></li>
+            <li><Link to="/">EN</Link></li>
+            <li><Link to="/zh" className={styles.current}>中</Link></li>
           </ul>
         </div>
       </div>
