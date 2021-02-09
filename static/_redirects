@@ -1,7 +1,6 @@
-# language redirect
+# Invalid URL gets sent to root
 
-/  /zh         302  Language=zh
-/* /zh/:splat  302  Language=zh
+/* / 404
 
 # General
 
@@ -20,8 +19,6 @@
 /c https://uxdesign.cc/ui-ux-case-study-helping-people-feel-safe-walking-at-night-at-u-of-illinois-2f36db9a2951
 /casestudy https://uxdesign.cc/ui-ux-case-study-helping-people-feel-safe-walking-at-night-at-u-of-illinois-2f36db9a2951
 /CaseStudy https://uxdesign.cc/ui-ux-case-study-helping-people-feel-safe-walking-at-night-at-u-of-illinois-2f36db9a2951
-
-/spotify https://open.spotify.com/user/12100013895
 
 /films  https://letterboxd.com/pkgamma/films/
 /movies https://letterboxd.com/pkgamma/films/
@@ -51,6 +48,13 @@
 /GitHub https://github.com/pkgamma
 /gh     https://github.com/pkgamma
 
+/spotify https://open.spotify.com/user/12100013895
+
+# language redirect
+
+/  /zh         302  Language=zh
+/* /zh/:splat  302  Language=zh
+
 # Facebook fbclid redirects
 
 / fbclid=:fbclid / 301
@@ -60,10 +64,6 @@
 
 # if user want to see english version, take them to /en which shadows the root (English) page
 /en / 200
-
-# Invalid URL gets sent to root
-
-/* / 404
 
 # Redirect default Netlify subdomain to primary domain
 https://pkgamma.netlify.com/* https://philkuo.com/:splat 301!
