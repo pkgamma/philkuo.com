@@ -7,7 +7,7 @@ export default function Privacy() {
   return (
     <Layout>
 
-      <SEO title={"隱私權政策 - 郭力銘 Philip Kuo"} />
+      <SEO zh title={"隱私權政策 - 郭力銘 Philip Kuo"} />
       <Title title="隱私權政策" />
 
       <p>本《隱私權政策》旨在協助您瞭解郭力銘個人網站（以下簡稱本網站）收集的資訊類型，為了讓您能夠安心使用本網站的各項服務與資訊，特此向您說明本網站的隱私權保護政策，以保障您的權益，請您詳閱下列內容： </p>

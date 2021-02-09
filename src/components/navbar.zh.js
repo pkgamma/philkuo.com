@@ -1,8 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
 import styles from "./navbar.module.scss"
+import { useLocation } from "@reach/router"
 
 export default function Navbar() {
+  const { pathname } = useLocation()
 
   return (
     <div className={styles.sticky_navbar}>
@@ -18,8 +20,8 @@ export default function Navbar() {
         <div className={styles.spacer}></div>
         <div className={styles.right}>
           <ul>
-            <li><Link to="/">EN</Link></li>
-            <li><Link to="/zh" className={styles.current}>中</Link></li>
+            <li><Link to={`${"/."}${pathname.replace("/zh", "")}`}>EN</Link></li>
+            <li><Link to={`${"/zh"}${pathname.replace("/zh", "")}`} className={styles.current}>中</Link></li>
           </ul>
         </div>
       </div>

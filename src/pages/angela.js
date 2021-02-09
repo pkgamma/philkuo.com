@@ -6,8 +6,8 @@ import SEO from '../components/seo';
 export default function Angela() {
   return (
     <Layout>
-      <SEO title={"Angela's Page"} />
-      <Title title="Angela Only"/>
+      <SEO noindex title={"Angela's Page"} />
+      <Title title="Angela's Page"/>
       <p>This page is for Angela Only and no one else.</p>
     </Layout>
   )

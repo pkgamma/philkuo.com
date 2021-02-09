@@ -11,7 +11,7 @@ import Title from "../components/title.zh"
 export default function Blog() {
   return (
     <Layout>
-      <SEO title={"經驗 - 郭力銘 Philip Kuo"} />
+      <SEO zh title={"經驗 - 郭力銘 Philip Kuo"} />
       <Title title="經驗"/>
       <div className="grid_container">
         <ItemCard link={null} image={BG1} title="HackIllinois 2020" description="Making the Largest Hackathon in Midwest Happen"/>

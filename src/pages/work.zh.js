@@ -11,7 +11,7 @@ import Title from "../components/title.zh"
 export default function Work() {
   return (
     <Layout>
-      <SEO title={"作品 -  郭力銘 Philip Kuo"} />
+      <SEO zh title={"作品 -  郭力銘 Philip Kuo"} />
       <Title title="作品"/>
       <div className="grid_container">
         <ItemCard link={null} image={BG1} title="Caterpillar Inc." description="Robust Fleet Management Solutions"/>
