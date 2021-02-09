@@ -24,11 +24,10 @@
       letter-spacing: 0;
       line-height: 26px;
 
-      white-space: nowrap;
-
       span {
-        margin-right: 20px;
+        margin-right: 16px;
         display: inline-block;
+        white-space: nowrap;
       }
 
       .language {

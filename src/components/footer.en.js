@@ -8,10 +8,12 @@ export default function Footer() {
       <div className={styles.footer}>
         <p>
           <span>© {new Date().getFullYear()} Philip Kuo</span>
-          <span><a target="_blank" rel="noreferrer" href="http://archive.philkuo.com">Project Archive</a></span>
-          <span><Link to="/privacy">Privacy</Link></span>
-          <span className={styles.language}>
-            <span><Link to="/zh">中文</Link></span>
+          <span>
+            <span><a target="_blank" rel="noreferrer" href="http://archive.philkuo.com">Project Archive</a></span>
+            <span><Link to="/privacy">Privacy</Link></span>
+            <span className={styles.language}>
+              <span><Link to="/zh">中文</Link></span>
+            </span>
           </span>
         </p>
       </div>
