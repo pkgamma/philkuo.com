@@ -1,0 +1,69 @@
+# General
+
+/internal/cathack2020 https://archive.philkuo.com/2020_cathack/confirm.html
+
+/story https://medium.com/@pkgamma/the-story-of-creating-the-perfect-disney-themed-dorm-room-b9d8da9c1f44
+/setup https://medium.com/@pkgamma/my-digital-workspace-1790a0b0420c
+
+/resume https://drive.google.com/file/d/1ddSXunt3fMK3AZPCUv10P080ufe7mfSx/view?usp=sharing
+
+/meet https://calendly.com/pkgamma/meet
+/zoom http://zoom.us/my/pkgamma
+
+/contacts https://airtable.com/shrKhIGUB0A7HhIUR
+
+/c https://uxdesign.cc/ui-ux-case-study-helping-people-feel-safe-walking-at-night-at-u-of-illinois-2f36db9a2951
+/casestudy https://uxdesign.cc/ui-ux-case-study-helping-people-feel-safe-walking-at-night-at-u-of-illinois-2f36db9a2951
+/CaseStudy https://uxdesign.cc/ui-ux-case-study-helping-people-feel-safe-walking-at-night-at-u-of-illinois-2f36db9a2951
+
+/spotify https://open.spotify.com/user/12100013895
+
+/films  https://letterboxd.com/pkgamma/films/
+/movies https://letterboxd.com/pkgamma/films/
+
+# Social
+
+/medium https://medium.com/@pkgamma
+/Medium https://medium.com/@pkgamma
+/m https://medium.com/@pkgamma
+
+/linkedin https://www.linkedin.com/in/pkgamma/
+/LinkedIn https://www.linkedin.com/in/pkgamma/
+
+/facebook https://www.facebook.com/pkgamma
+/Facebook https://www.facebook.com/pkgamma
+/fb       https://www.facebook.com/pkgamma
+
+/instagram https://www.instagram.com/pkgamma/
+/Instagram https://www.instagram.com/pkgamma/
+/ig        https://www.instagram.com/pkgamma/
+
+/youtube https://www.youtube.com/user/pkgamma
+/YouTube https://www.youtube.com/user/pkgamma
+/yt      https://www.youtube.com/user/pkgamma
+
+/github https://github.com/pkgamma
+/GitHub https://github.com/pkgamma
+/gh     https://github.com/pkgamma
+
+# language redirect
+
+/  /zh         302  Language=zh
+/* /zh/:splat  302  Language=zh
+
+# Facebook fbclid redirects
+
+/ fbclid=:fbclid / 301
+/ id=:id fbclid=:fbclid / 301
+/* fbclid=:fbclid /:splat 301!
+/* id=:id fbclid=:fbclid /:splat 301!
+
+# if user want to see english version, take them to /en which shadows the root (English) page
+/en / 200
+
+# Invalid URL gets sent to root
+
+/* / 404
+
+# Redirect default Netlify subdomain to primary domain
+http://pkgamma.netlify.com/* http://philkuo.com/:splat 301!

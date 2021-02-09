@@ -32,6 +32,7 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-netlify`,
   ],
   siteMetadata: {
     title: "Philip Kuo - Software Engineer and Product Designer",
