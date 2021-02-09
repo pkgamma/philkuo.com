@@ -6,7 +6,7 @@ import Footer from "./footer.zh"
 
 export default function Layout({ children }) {
 
-  console.log("%cHey, you like coding too?\nLet's work together! :)", "font: 3em sans-serif; -webkit-text-stroke: 1px black; color: white; text-shadow: 3px 3px 0 #999, -1px -1px 0 #999, 1px -1px 0 #999, -1px 1px 0 #999, 1px 1px 0 #999;");
+  console.log("%c哈囉! 你怎麼會在這?\n既然都見面了, 發封訊息給我, 我們來聊聊天吧!", "font: 3em sans-serif; -webkit-text-stroke: 1px black; color: white; text-shadow: 3px 3px 0 #999, -1px -1px 0 #999, 1px -1px 0 #999, -1px 1px 0 #999, 1px 1px 0 #999;");
 
   return (
     <div className={styles.zh}>
