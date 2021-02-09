@@ -8,7 +8,7 @@ export default function One() {
   return (
     <Layout>
 
-      <SEO title={"SafeMaps - Philip Kuo"} />
+      <SEO title={"SafeMaps - Philip Kuo"} article={true}/>
       <Title title="Building SafeMaps" back_btn={true} />
 
       <article>

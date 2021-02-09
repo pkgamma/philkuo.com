@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <Layout>
 
-      <SEO title={"郭力銘 - 使用者體驗工程師"}/>
+      <SEO zh/>
 
       <div className={styles.pic}>
         <img onClick={darkMode.toggle} alt="Philip Kuo" src={'/philip_kuo.jpg'} />

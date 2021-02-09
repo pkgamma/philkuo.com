@@ -8,7 +8,7 @@ export default function HackIllinois() {
   return (
     <Layout>
 
-      <SEO title={"HackIllinois - Philip Kuo"} />
+      <SEO title={"HackIllinois - Philip Kuo"} article={true}/>
       <Title title="HackIllinois 2020" back_btn={true} />
 
       <article>
