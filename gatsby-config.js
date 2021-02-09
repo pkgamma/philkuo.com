@@ -19,6 +19,19 @@ module.exports = {
         prefixDefault: false,
       }
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "UA-63814084-1", // Google Analytics
+        ],
+        pluginConfig: {
+          head: true,
+          respectDNT: true,
+          exclude: [],
+        },
+      },
+    },
   ],
   siteMetadata: {
     title: "Philip Kuo - Software Engineer and Product Designer",
@@ -26,8 +39,8 @@ module.exports = {
     description: "I Craft Stunning Digital Experiences.",
     description_zh: "細心研製令人驚艷的人性化數位體驗。",
     url: "https://philkuo.com",
-    image: "/social.jpg", // Path to your image you placed in the 'static' folder
-    image_zh: "/social_zh.jpg", // Path to your image you placed in the 'static' folder
+    image: "/social.jpg", // Path to image placed in 'static' folder
+    image_zh: "/social_zh.jpg", // Path to image placed in 'static' folder
     twitterUsername: "@pkgamma",
     langs: ['en', 'zh'],
     defaultLangKey: 'en',
