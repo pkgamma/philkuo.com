@@ -1,13 +1,3 @@
-# language redirect
-
-/  /zh         302  Language=zh,zh-tw,zh-sg,zh-cn,zh-hk
-/* /zh/:splat  302  Language=zh,zh-tw,zh-sg,zh-cn,zh-hk
-/* /zh/:splat  302  Country=TW,CN,HK,MO
-
-# Invalid URL gets sent to root
-
-/* / 404
-
 # General
 
 /internal/cathack2020 https://archive.philkuo.com/2020_cathack/confirm.html
@@ -55,6 +45,16 @@
 /gh     https://github.com/pkgamma
 
 /spotify https://open.spotify.com/user/12100013895
+
+# language redirect
+
+/  /zh         302  Language=zh,zh-tw,zh-sg,zh-cn,zh-hk
+/* /zh/:splat  302  Language=zh,zh-tw,zh-sg,zh-cn,zh-hk
+/* /zh/:splat  302  Country=TW,CN,HK,MO
+
+# Invalid URL gets sent to root
+
+/* / 404
 
 # Facebook fbclid redirects
 
