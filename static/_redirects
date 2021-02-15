@@ -1,5 +1,7 @@
 # General
 
+/ch /zh 301
+
 /internal/cathack2020 https://archive.philkuo.com/2020_cathack/confirm.html
 
 /story https://medium.com/@pkgamma/the-story-of-creating-the-perfect-disney-themed-dorm-room-b9d8da9c1f44
@@ -46,26 +48,12 @@
 
 /spotify https://open.spotify.com/user/12100013895
 
-# language redirect
-
-/* /zh/:splat  302  Country=TW,CN,HK,MO
-/* /zh/:splat  302  Language=zh,zh-tw,zh-sg,zh-cn,zh-hk
-/  /zh         302  Country=TW,CN,HK,MO
-/  /zh         302  Language=zh,zh-tw,zh-sg,zh-cn,zh-hk
-
 # Invalid URL gets sent to root
-
 /* / 404
 
-# Facebook fbclid redirects
-
-/ fbclid=:fbclid / 301
-/ id=:id fbclid=:fbclid / 301
-/* fbclid=:fbclid /:splat 301!
-/* id=:id fbclid=:fbclid /:splat 301!
-
-# if user want to see english version, take them to /en which shadows the root (English) page
-/en / 200
-
-# Redirect default Netlify subdomain to primary domain
-https://pkgamma.netlify.com/* https://philkuo.com/:splat 301!
+# ===== NOT WORKING =====
+# language redirect
+# /* /zh/:splat  302  Country=TW,CN,HK,MO
+# /* /zh/:splat  302  Language=zh,zh-tw,zh-sg,zh-cn,zh-hk
+# /  /zh         302  Country=TW,CN,HK,MO
+# /  /zh         302  Language=zh,zh-tw,zh-sg,zh-cn,zh-hk
