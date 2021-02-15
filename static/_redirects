@@ -48,10 +48,10 @@
 
 # language redirect
 
-/  /zh         302  Language=zh,zh-tw,zh-sg,zh-cn,zh-hk
-/  /zh         302  Country=TW,CN,HK,MO
-/* /zh/:splat  302  Language=zh,zh-tw,zh-sg,zh-cn,zh-hk
 /* /zh/:splat  302  Country=TW,CN,HK,MO
+/* /zh/:splat  302  Language=zh,zh-tw,zh-sg,zh-cn,zh-hk
+/  /zh         302  Country=TW,CN,HK,MO
+/  /zh         302  Language=zh,zh-tw,zh-sg,zh-cn,zh-hk
 
 # Invalid URL gets sent to root
 
