@@ -14,10 +14,10 @@ export default function Work() {
       <SEO zh title={"作品 -  郭力銘 Philip Kuo"} />
       <Title title="作品"/>
       <div className="grid_container">
-        <ItemCard link={null} image={BG1} title="Caterpillar Inc." description="Robust Fleet Management Solutions"/>
-        <ItemCard link={null} image={BG2} title="SafeMaps" description="Campus Navigation App that Put Safety First"/>
-        <ItemCard link={null} image={BG3} title="PKGamma Digital Agency" description="Digital Solutions for Small Businesses"/>
-        <ItemCard link={null} image={BG4} title="The Hoverboard Guys" description="Successful Premium Hoverboards Startup"/>
+        <ItemCard link={null} image={BG1} title="Caterpillar 公司" description="重新打造更智慧的車隊控管解決方案"/>
+        <ItemCard link={null} image={BG2} title="SafeMaps 程式" description="開發以安全為先的校園導航手機程式"/>
+        <ItemCard link={null} image={BG3} title="PKGamma 數位機構" description="為中小企業開發數位解決方案"/>
+        <ItemCard link={null} image={BG4} title="The Hoverboard Guys 公司" description="販售高品質懸浮滑板的新創公司"/>
       </div>
     </Layout>
   )
