@@ -4,6 +4,7 @@ import BG1 from "./blog/img/A01.jpg"
 import BG2 from "./work/img/A02.jpg"
 import BG3 from "./work/img/B01.jpg"
 import BG4 from "./work/img/B02.jpg"
+import img_minimalist_workplace from "./img/minimalist_workplace.jpg"
 import SEO from '../components/seo';
 import ItemCard from "../components/item-card.zh"
 import Title from "../components/title.zh"
@@ -14,6 +15,7 @@ export default function Blog() {
       <SEO zh title={"經驗 - 郭力銘 Philip Kuo"} />
       <Title title="經驗"/>
       <div className="grid_container">
+        <ItemCard link="https://medium.com/swlh/my-digital-workspace-1790a0b0420c" image={img_minimalist_workplace} title="我的極簡數位工作站" description="分享我最常使用的幾個軟體 (英文)"/>
         <ItemCard link={null} image={BG1} title="HackIllinois 黑客松 2020" description="舉辦美國中部最具規模的開發競賽活動"/>
         <ItemCard link={null} image={BG1} title="RP 科技論壇 2019" description="為全美國透過多管道行銷這個活動"/>
         <ItemCard link={null} image={BG1} title="Interconnect 客戶關係管理程式" description="與朋友打造這個科技新創公司"/>

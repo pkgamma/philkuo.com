@@ -15,7 +15,7 @@ export default function Work() {
       <Title title="Work"/>
       <div className="grid_container">
         <ItemCard link={null} image={BG1} title="Caterpillar Inc." description="Robust Fleet Management Solutions"/>
-        <ItemCard link={null} image={BG2} title="SafeMaps" description="Campus Navigation App that Put Safety First"/>
+        <ItemCard link="https://uxdesign.cc/ui-ux-case-study-helping-people-feel-safe-walking-at-night-at-u-of-illinois-2f36db9a2951?gi=6f471069ee6b" image={BG2} title="SafeMaps" description="Campus Navigation App that Put Safety First"/>
         <ItemCard link={null} image={BG3} title="PKGamma Digital Agency" description="Digital Solutions for Small Businesses"/>
         <ItemCard link={null} image={BG4} title="The Hoverboard Guys" description="Successful Premium Hoverboards Startup"/>
       </div>
