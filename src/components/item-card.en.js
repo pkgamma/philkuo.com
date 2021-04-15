@@ -11,7 +11,7 @@ const ItemCard = ({ link, image, title, description }) => {
         <p className={styles.title}>{title}</p>
         <p className={styles.description}>{description}</p>
         {!link && (
-          <p className={styles.construction}>This page is under construction</p>
+          <p className={styles.construction}>Page under construction</p>
         )}
       </Link>
     </div>
