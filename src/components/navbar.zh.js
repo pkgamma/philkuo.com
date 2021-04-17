@@ -13,8 +13,8 @@ export default function Navbar() {
           <ul>
             <li className={styles.name}>郭力銘</li>
             <li><Link to="/zh" activeClassName={styles.current}>關於</Link></li>
-            <li><Link to="/zh/work" activeClassName={styles.current}>作品</Link></li>
-            <li><Link to="/zh/blog" activeClassName={styles.current}>經驗</Link></li>
+            <li><Link to="/zh/work" activeClassName={styles.current}>經驗</Link></li>
+            <li><Link to="/zh/blog" activeClassName={styles.current}>部落格</Link></li>
           </ul>
         </div>
         <div className={styles.spacer}></div>

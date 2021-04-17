@@ -15,8 +15,8 @@ import Title from "../components/title.zh"
 export default function Blog() {
   return (
     <Layout>
-      <SEO zh title={"經驗 - 郭力銘 Philip Kuo"} />
-      <Title title="經驗"/>
+      <SEO zh title={"部落格 - 郭力銘 Philip Kuo"} />
+      <Title title="部落格"/>
       <div className="grid_container">
         <ItemCard link="wireframes" image={img_iphone_wireframes} title="iPhone 12 Pro 線搞圖模板" description="提供給設計與工程師社群的免費資源"/>
         <ItemCard link="https://medium.com/swlh/my-digital-workspace-1790a0b0420c" image={img_minimalist_workplace} title="我的極簡數位工作站" description="分享我最常使用的幾個軟體 (英文)"/>
