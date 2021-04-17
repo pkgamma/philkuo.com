@@ -10,7 +10,7 @@ const Title = ({ title, back_btn }) => {
     <div className={styles.title_container}>
 
       {back_btn && (
-        <Link to="/work" className={styles.back}>
+        <Link to=".." className={styles.back}>
           <FontAwesomeIcon icon={faChevronLeft} className={styles.icon} />
       上一頁
         </Link>

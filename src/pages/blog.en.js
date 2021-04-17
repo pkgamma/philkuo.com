@@ -18,7 +18,7 @@ export default function Blog() {
       <SEO title={"Blog - Philip Kuo"} />
       <Title title="Blog"/>
       <div className="grid_container">
-        <ItemCard link={null} image={img_iphone_wireframes} title="iPhone 12 Pro Wireframe Templates" description="Made for the community, free to download."/>
+        <ItemCard link="wireframes" image={img_iphone_wireframes} title="iPhone 12 Pro Wireframe Templates" description="Made for the community, free to download."/>
         <ItemCard link="https://medium.com/swlh/my-digital-workspace-1790a0b0420c" image={img_minimalist_workplace} title="My Minimalist Digital Workspace" description="Sharing the beautiful, powerful apps I use everyday."/>
         <ItemCard link="https://medium.com/@pkgamma/the-story-of-creating-the-perfect-disney-themed-dorm-room-b9d8da9c1f44" image={img_disney_posters} title="Preserving Vintage Posters from Disney Parks" description="Digitally restoring the stunning Disney attraction posters."/>
         <ItemCard link="https://medium.com/@pkgamma/builtworlds-hackathon-2019-a180fddf1024" image={img_builtworlds} title="BuiltWorlds Hackathon 2019" description="Winning the hackathon with a great team."/>

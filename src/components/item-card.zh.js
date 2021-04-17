@@ -8,7 +8,12 @@ const ItemCard = ({ link, image, title, description }) => {
     <div>
       <Link to={link} className={styles.item}>
         <img src={image}></img>
-        <p className={styles.title}>{title}</p>
+        <p className={styles.title}>
+          {title}
+          {link && link.startsWith("http") && (
+            " ↗"
+          )}
+        </p>
         <p className={styles.description}>{description}</p>
         {!link && (
           <p className={styles.construction}>詳細介紹頁面建置中</p>
