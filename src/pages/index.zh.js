@@ -25,11 +25,9 @@ export default function Home() {
         </h1>
       </div>
 
-      <p>你好！我是郭力銘，來自臺灣的軟體工程師和使用者體驗設計師。我對軟體開發與人本設計充滿熱情，目前正在美國伊利諾伊大學香檳分校攻讀資訊工程學位。</p>
+      <p>你好！我是郭力銘，來自臺灣的軟體工程師和使用者體驗設計師。我對軟體開發與人本設計充滿熱情，目前正在美國芝加哥的開拓重工擔任軟體工程師。</p>
 
-      <p>先前任職於 <a target="_blank" rel="noreferrer" href="https://www.apple.com">Apple</a>、<a target="_blank" rel="noreferrer" href="https://www.cat.com/zh_TW/company.html">Caterpillar 集團</a>，與 <a target="_blank" rel="noreferrer" href="https://www.deepwalkresearch.com/">DeepWalk 實驗室</a>。亦曾於 <a target="_blank" rel="noreferrer" href="http://philkuo.com/c">Hack4Impact</a> 與 <a target="_blank" rel="noreferrer" href="https://menuthree.com">Menu3</a> 擔任產品設計工程師。現在，我盡心投入運行 <a target="_blank" rel="noreferrer" href="http://pkgamma.com">PKGamma 數位機構</a>，與企業客戶密切合作，開發成效出色的數位解決方案。</p>
-
-      <p>讓我協助您或您的組織將好點子成真！歡迎透過任何服務管道與我聯絡，聊聊如何合作。如欲獲取更多資訊，亦歡迎查閱經驗與部落格頁面。</p>
+      <p>我畢業於美國伊利諾伊大學香檳分校的資訊工程系，在學時曾於 Hack4Impact 為非營利組織建構解決方案，致力回饋社群。此外，我曾經於台北主辦 TEDx，亦曾擔任 HackIllinois 與 RP 研討會兩活動的關鍵籌辦人員。</p>
 
       <SocialBtns />
 
