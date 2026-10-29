@@ -3,3 +3,10 @@
   publish = "public"
 [build.environment]
   NODE_VERSION = "12.19.0"
+
+# The site now lives at 2021.philkuo.com as an archive; philkuo.com is the
+# new site, so keep this copy (pages, PDFs, images) out of search results.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
