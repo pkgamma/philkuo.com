@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet"
 import { useLocation } from "@reach/router"
 import { useStaticQuery, graphql } from "gatsby"
 
-const SEO = ({ title, description, image, article, zh, noindex }) => {
+const SEO = ({ title, description, image, article, zh }) => {
   const { pathname } = useLocation()
   const { site } = useStaticQuery(query)
 
@@ -58,7 +58,7 @@ const SEO = ({ title, description, image, article, zh, noindex }) => {
       <meta name="msapplication-wide310x150logo" content="favicon/mstile-310x150.png" />
       <meta name="msapplication-square310x310logo" content="favicon/mstile-310x310.png" />
 
-      {noindex && <meta name="robots" content="noindex"></meta>}
+      <meta name="robots" content="noindex" />
 
       {seo.url && <meta property="og:url" content={seo.url} />}
 

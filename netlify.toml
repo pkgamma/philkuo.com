@@ -3,3 +3,11 @@
   publish = "public"
 [build.environment]
   NODE_VERSION = "12.19.0"
+
+# Archived copy of the site, now at 2021.philkuo.com. Keep every response,
+# PDFs and images included, out of search results; the pages also carry a
+# robots meta tag from seo.js.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"

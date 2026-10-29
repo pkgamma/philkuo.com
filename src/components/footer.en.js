@@ -12,7 +12,7 @@ export default function Footer() {
         <p>
           <span>© {new Date().getFullYear()} Philip Kuo</span>
           <span>
-            <span><a target="_blank" rel="noreferrer" href="http://archive.philkuo.com">Project Archive</a></span>
+            <span><a target="_blank" rel="noreferrer" href="https://archive.philkuo.com">Project Archive</a></span>
             <span><Link to="/privacy">Privacy</Link></span>
             <span className={styles.language}>
               <span><Link to={`${"/zh"}${pathname}`}>中文</Link></span>
